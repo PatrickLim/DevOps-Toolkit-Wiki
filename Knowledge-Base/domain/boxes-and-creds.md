@@ -34,3 +34,19 @@ crmc-rcm-collector-test
 crmc-rcm-sislnk
 
 rcm-db01e1\AAT
+
+
+## CHLB
+
+openvista\chlbrcmsql
+tmkqOdiQlfsSHh2NCAdL
+
+openvista\chlbrcmwebapp
+TlBqVqx2TxcFMsUXzob1
+
+openvista\chlbrcmsignalr
+6MktB7VEQ6oGd6Dl1TWh
+
+https://wb01w1-chlb.openvista.net:21502
+
+https://wb01e1-aat.openvista.net:21501

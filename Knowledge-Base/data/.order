@@ -1,3 +1,4 @@
+audit_prep
 alter-authorization
 AddWebRoleRightsScript
 AddWebQueueUserMapScript

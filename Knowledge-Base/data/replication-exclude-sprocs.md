@@ -14,7 +14,7 @@ bad sprocs:
 9.	[PATIENT_SEARCH_V2015_Q2_V1]
 10.	[Rpt_MAMMO_REMINDERS_V2019_Q1_V1]
 
-VERY IMPORTANT! ANYTHING that says SqlQueryNotificationService!
+# `**VERY IMPORTANT! ANYTHING that says SqlQueryNotificationService!**`
 
 from AAT:
 [FMA_SF_PAYER_MIX]

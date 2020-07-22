@@ -1,3 +1,4 @@
+alter-authorization
 AddWebRoleRightsScript
 AddWebQueueUserMapScript
 replication-notes

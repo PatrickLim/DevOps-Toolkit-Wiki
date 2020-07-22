@@ -1,7 +1,7 @@
-had to drop "with schemabinding" for the view CHARGE_MSTR_VIEW.
-had to recreate view Rpt_ChargeMstrView because it relies on the above view.
+# bad sprocs
 
-bad sprocs:
+_had to drop "with schemabinding" for the view CHARGE_MSTR_VIEW.
+had to recreate view Rpt_ChargeMstrView because it relies on the above view._
 
 1.	[EDI_270_CONVERT_WORK_V2013_Q1_V1]
 2.	[GE_UPD_PRINTER]
@@ -14,12 +14,12 @@ bad sprocs:
 9.	[PATIENT_SEARCH_V2015_Q2_V1]
 10.	[Rpt_MAMMO_REMINDERS_V2019_Q1_V1]
 
-# `**VERY IMPORTANT! ANYTHING that says SqlQueryNotificationService!**`
+## VERY IMPORTANT! ANYTHING that says SqlQueryNotificationService!
 
 from AAT:
 [FMA_SF_PAYER_MIX]
 
-bad views:
+# bad views:
 [ETL].[PayerMixReferral]
 
 SELECT DISTINCT a.[name]

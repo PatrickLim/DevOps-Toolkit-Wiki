@@ -9,5 +9,5 @@ audit_prep
 alter-authorization
 AddWebRoleRightsScript
 AddWebQueueUserMapScript
-replication-notes
+replication-exclude-sprocs
 collector-table-path-updates

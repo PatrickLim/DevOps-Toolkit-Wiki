@@ -14,7 +14,7 @@ had to recreate view Rpt_ChargeMstrView because it relies on the above view._
 9.	[PATIENT_SEARCH_V2015_Q2_V1]
 10.	[Rpt_MAMMO_REMINDERS_V2019_Q1_V1]
 
-## VERY IMPORTANT! ANYTHING that says SqlQueryNotificationService!
+### _VERY IMPORTANT! ANYTHING that says_ **SqlQueryNotificationService!**
 
 from AAT:
 [FMA_SF_PAYER_MIX]

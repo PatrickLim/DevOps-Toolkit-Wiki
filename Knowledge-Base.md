@@ -1,7 +1,7 @@
 [[_TOC_]]
 
-# tenants
-# domain
-# web
-# application
-# data
+# [tenants](/Knowledge-Base/tenants)
+# [domain](/Knowledge-Base/domain)
+# [web](/Knowledge-Base/web)
+# [application](/Knowledge-Base/application)
+# [data](/Knowledge-Base/data)

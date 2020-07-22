@@ -1,11 +1,3 @@
-select @@SERVERNAME
-SELECT * FROM sys.dm_exec_connections where auth_scheme = 'KERBEROS'
-
-sp_dropserver 'real-server-name'
-go
-
-sp_addserver 'db01w1-chlb', LOCAL
-go
 
 SELECT auth_scheme FROM sys.dm_exec_connections WHERE session_id = @@spid
 SELECT * FROM sys.dm_exec_connections
@@ -28,16 +20,3 @@ where s.is_user_process = 1
 and c.auth_scheme = 'KERBEROS'
 order by s.last_request_end_time desc
 ```
-
-
-nltest /dsgetdc:openvista.net
-
-EC2AMAZ-5PL6K14
-
-EC2AMAZ-24STU9D.openvista.net
-administrator password:
-PPeZO4.TQRLeELQPL((;9t2;MSJ8)H47
-10.251.3.115
-
-mscadmin
-NsbjTUEbBSxXJtI5ngqu

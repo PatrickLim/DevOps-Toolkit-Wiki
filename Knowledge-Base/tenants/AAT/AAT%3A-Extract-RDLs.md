@@ -1,6 +1,8 @@
 Thursday, January 2, 2020
 9:03 PM
 
+
+```
 -- Allow advanced options to be changed.
 EXEC sp_configure 'show advanced options', 1
 GO
@@ -88,3 +90,5 @@ BEGIN
   --Execute the Dynamic Query
   EXEC SP_EXECUTESQL @TSQL
 END
+```
+

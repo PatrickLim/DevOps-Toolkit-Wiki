@@ -1,0 +1,37 @@
+
+CREATE TABLE [dbo].[configurator](
+	[NAME] [nvarchar](50) NOT NULL,
+	[INITIAL] [nvarchar](50) NOT NULL,
+	[_NICK_NAME_] [nvarchar](1) NULL,
+	[SEX] [nvarchar](1) NULL,
+	[TITLE] [nvarchar](1) NULL,
+	[DEGREE] [nvarchar](1) NULL,
+	[_DETOX_MAINTENANCE_ID_NUMBER_] [nvarchar](1) NULL,
+	[DEA_] [nvarchar](1) NULL,
+	[_DEA_EXPIRATION_DATE_] [nvarchar](1) NULL,
+	[_PHYSICIAN_ID_] [nvarchar](1) NULL,
+	[_PRIMARY_MENU_OPTION_] [nvarchar](1) NULL,
+	[_SECONDARY_MENU_OPTION_] [nvarchar](1) NULL,
+	[_CPRS_TAB_1_] [nvarchar](1) NULL,
+	[_KEY_1_] [nvarchar](1) NULL,
+	[_AUTHORIZED_TO_WRITE_MED_ORDERS_] [nvarchar](50) NOT NULL,
+	[_REQUIRES_COSIGNER_] [nvarchar](50) NOT NULL,
+	[SERVICE_SECTION] [nvarchar](1) NULL,
+	[_User_Class_] [nvarchar](1) NULL,
+	[_REMOVE_EXISTING_PERSON_CLASSES_] [nvarchar](50) NOT NULL,
+	[_PERSON_CLASS_1_] [nvarchar](1) NULL,
+	[_PERSON_CLASS_2_] [nvarchar](1) NULL,
+	[_DIVISION_1_] [nvarchar](1) NULL,
+	[_ACCESS_CODE_] [nvarchar](50) NOT NULL,
+	[_VERIFY_CODE_] [nvarchar](50) NOT NULL,
+	[_REQUIRE_VERIFY_CODE_CHANGE_] [nvarchar](50) NOT NULL,
+	[_ELECTRONIC_SIGNATURE_CODE_] [nvarchar](1) NULL,
+	[_MSC_AUTOFAX_USER_] [nvarchar](50) NOT NULL,
+	[_FAX_NUMBER_] [nvarchar](1) NULL,
+	[_FAX_MODULE_] [nvarchar](1) NULL,
+	[_TOKEN_CREATED_] [nvarchar](1) NULL,
+	[_TOKEN_KEY_] [nvarchar](1) NULL,
+	[_TOKEN_MESSAGE_] [nvarchar](1) NULL
+) ON [PRIMARY]
+GO
+

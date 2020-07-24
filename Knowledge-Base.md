@@ -1,12 +1,9 @@
 # [tenants](/Knowledge-Base/tenants)
 
-## [AAT](/Knowledge-Base/tenants)
 [AAT: SPNs & SQL Instances](/Knowledge-Base/tenants/AAT:-SPNs-&-SQL-Instances)
 [AAT: Extract RDLs](/Knowledge-Base/tenants/AAT:-Extract-RDLs)
 [AAT: 2019.3 Web Services](/Knowledge-Base/tenants/AAT:-2019.3-Web-Services)
-
-## [CRMC](/Knowledge-Base/tenants)
-[sql agent job history](/Knowledge-Base/tenants/CRMC:-sql-agent-job-history)
+[CRMC: sql agent job history](/Knowledge-Base/tenants/CRMC:-sql-agent-job-history)
 
 # [domain](/Knowledge-Base/domain)
 [boxes and creds](/Knowledge-Base/domain/boxes-and-creds)

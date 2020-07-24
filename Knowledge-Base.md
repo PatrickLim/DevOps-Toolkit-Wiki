@@ -1,5 +1,3 @@
-[[_TOC_]]
-
 # [tenants](/Knowledge-Base/tenants)
 
 ## [AAT](/Knowledge-Base/tenants)

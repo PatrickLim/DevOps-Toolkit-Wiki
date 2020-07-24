@@ -4,5 +4,5 @@
 
 # [Maintenance Plans](https://docs.microsoft.com/en-us/sql/relational-databases/maintenance-plans/maintenance-plans?view=sql-server-ver15)
 
-[Use SSMS](https://docs.microsoft.com/en-us/sql/relational-databases/maintenance-plans/create-a-maintenance-plan?view=sql-server-ver15#SSMSProcedure)
+[Using SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/relational-databases/maintenance-plans/create-a-maintenance-plan?view=sql-server-ver15#SSMSProcedure)
 

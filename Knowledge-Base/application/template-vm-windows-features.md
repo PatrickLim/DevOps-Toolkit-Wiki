@@ -1,6 +1,8 @@
 Get-WindowsFeature
 
 
+
+```
 Display Name                                            Name                       Install State
 ------------                                            ----                       -------------
 [ ] Active Directory Certificate Services               AD-Certificate                 Available
@@ -271,5 +273,7 @@ Display Name                                            Name                    
 [ ] Wireless LAN Service                                Wireless-Networking            Available
 [X] WoW64 Support                                       WoW64-Support                  Installed
 [X] XPS Viewer                                          XPS-Viewer                     Installed
+```
+
 
 

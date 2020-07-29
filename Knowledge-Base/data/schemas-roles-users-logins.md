@@ -57,3 +57,15 @@ revoke select on schema::dbo to misterlimited
 grant select on object::dbo.USER_MSTR to misterlimited
 
 sp_msloginmappings
+
+
+----------------
+
+create user userschemaowner without login
+CREATE SCHEMA [userschema] AUTHORIZATION [userschemaowner]
+
+create synonym [userschema].[USER_MSTR] for [gmh-rcm].[dbo].[USER_MSTR]
+
+select * from [userschema].[USER_MSTR]
+
+update [userschema].[USER_MSTR] set MIDDLE_INITIAL = 'x' where USERNAME = 'brian.stockell'

@@ -2,8 +2,8 @@ USE [master]
 GO
 
 /****** Object:  Database [gmh-rcm-userbulk]    Script Date: 7/29/2020 10:15:06 PM ******/
-DROP DATABASE [gmh-rcm-userbulk]
-GO
+--DROP DATABASE [gmh-rcm-userbulk]
+--GO
 
 /****** Object:  Database [gmh-rcm-userbulk]    Script Date: 7/29/2020 10:15:06 PM ******/
 CREATE DATABASE [gmh-rcm-userbulk]
@@ -114,6 +114,9 @@ GO
 ALTER DATABASE [gmh-rcm-userbulk] SET  READ_WRITE 
 GO
 
+
+use [gmh-rcm-userbulk]
+go
 
 create user userschemaowner without login
 GO

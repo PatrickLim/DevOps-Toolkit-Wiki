@@ -10,7 +10,8 @@ pghrcminsight
 insightdb
 
 
-Needed to add Chrome Registry Edits to authorize RCM Cloud web services as a trusted namespace in the internal domain.
+
+- [ ] Needed to add Chrome Registry Edits to authorize RCM Cloud web services as a trusted namespace in the internal domain.
 
 
 

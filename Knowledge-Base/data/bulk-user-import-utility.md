@@ -116,6 +116,8 @@ GO
 
 
 create user userschemaowner without login
+GO
 CREATE SCHEMA [userschema] AUTHORIZATION [userschemaowner]
-
+GO
 create synonym [userschema].[USER_MSTR] for [gmh-rcm].[dbo].[USER_MSTR]
+GO

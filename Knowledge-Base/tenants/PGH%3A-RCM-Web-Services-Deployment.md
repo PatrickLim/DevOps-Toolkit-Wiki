@@ -6,7 +6,7 @@ Web Servername: pghrcminsight.domain.nomc.org
 Database Server IP: 146.82.52.82
 Database Servername: insightdb.domain.nomc.org
 
-- Enable Kerberos Delegation via Active Directory Users and Computers for the following users and computers.
+- [x] Enable Kerberos Delegation via Active Directory Users and Computers for the following users and computers.
 
 pghrcminsight
 insightdb

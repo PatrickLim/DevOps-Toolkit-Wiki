@@ -12,6 +12,7 @@ pghrcminsight
 insightdb
 nomcpdc2\icssup
 nomcpdc2\icssql
+password - alphanumeric `stockell`
 
 - [x] Needed to add Chrome Registry Edits to authorize RCM Cloud web services as a trusted namespace in the internal domain.
 

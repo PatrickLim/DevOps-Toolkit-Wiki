@@ -6,7 +6,6 @@
 [CRMC: sql agent job history](/Knowledge-Base/tenants/CRMC:-sql-agent-job-history)
 
 # [domain](/Knowledge-Base/domain)
-[boxes and creds](/Knowledge-Base/domain/boxes-and-creds)
 [kerberos](/Knowledge-Base/domain/kerberos)
 
 # [web](/Knowledge-Base/web)

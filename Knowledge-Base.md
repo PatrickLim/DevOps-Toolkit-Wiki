@@ -9,6 +9,7 @@
 [kerberos](/Knowledge-Base/domain/kerberos)
 
 # [web](/Knowledge-Base/web)
+[RCM: Deploy Chrome Registry Edits via Group Policy](/Knowledge-Base/web/RCM:-Deploy-Chrome-Registry-Edits-via-Group-Policy)
 
 # [application](/Knowledge-Base/application)
 [dbserver installed things](/Knowledge-Base/application/dbserver-installed-things)

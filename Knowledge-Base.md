@@ -1,3 +1,5 @@
+# [Migration Strategies](/Knowledge-Base/Migration-Strategies)
+
 # [tenants](/Knowledge-Base/tenants)
 
 [AAT: SPNs & SQL Instances](/Knowledge-Base/tenants/AAT:-SPNs-&-SQL-Instances)

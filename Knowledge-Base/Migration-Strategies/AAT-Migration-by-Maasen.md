@@ -1,3 +1,5 @@
+[AAT - Cloud Cutover Plan.xlsx](/.attachments/AAT%20-%20Cloud%20Cutover%20Plan-8ee3002c-7dd7-48c4-b0e1-e396e2290175.xlsx)
+
 Task	Responsible	Time (EST)		What: Prod Cutover to RCM Cloud environment (Classic)		
 Turn off Insight interfaces / background services	Medsphere	10:30 PM				
 Disable nightly processes and Waystar tasks	Medsphere	10:40 PM		When: Tuesday, June 16th - Wendesday, June 17th		

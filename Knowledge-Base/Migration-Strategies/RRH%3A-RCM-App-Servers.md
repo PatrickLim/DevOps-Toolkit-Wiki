@@ -1,5 +1,5 @@
 # RCM Prod Application Server
-
+[rcm-hosp-app1](https://portal.azure.com/#@medspheresystems.com/resource/subscriptions/69592250-9a14-4f99-8239-6d7e8a143cc3/resourceGroups/msc-cus-resgrp/providers/Microsoft.Compute/virtualMachines/rcm-hosp-app1/overview)
 
 
 # RCM Test Application Server

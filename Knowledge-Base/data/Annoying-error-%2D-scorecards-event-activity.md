@@ -10,4 +10,8 @@ The path of the item 'scorecards/EventActivity' is not valid. The full path must
 ### Work-around is to ....
 
 
+
 @<C6D49B38-49FC-660D-A122-33267AE18473> SQL statement
+
+![image.png](/.attachments/image-12a037d9-968b-4d2b-be31-5b254a73df07.png)
+

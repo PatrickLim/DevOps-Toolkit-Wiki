@@ -20,7 +20,11 @@ Need link to recent install document
 
 ![image.png](/.attachments/image-822d7542-7963-4383-92e1-12e89b5ac1bb.png)
 
-5. AAT Maint Prod link in AAT Portal (just for fun)
+5. Update web.config of backend
+
+![image.png](/.attachments/image-ca29bbdc-ac12-4c1b-9c2d-5ad3a22cf7e0.png)
+
+6. AAT Maint Prod link in AAT Portal (just for fun)
 
 ![image.png](/.attachments/image-7f89a6d6-561e-4170-bc5f-fa608f5ac058.png)
 

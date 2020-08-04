@@ -15,3 +15,5 @@ The path of the item 'scorecards/EventActivity' is not valid. The full path must
 
 ![image.png](/.attachments/image-12a037d9-968b-4d2b-be31-5b254a73df07.png)
 
+![image.png](/.attachments/image-985de2e5-7e7b-4905-a8b4-695cface2dc8.png)
+

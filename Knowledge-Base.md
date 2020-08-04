@@ -1,5 +1,3 @@
-_[Need help with Markdown syntax for wikis?](https://docs.microsoft.com/en-us/azure/devops/project/wiki/wiki-markdown-guidance?view=azure-devops)_
-
 # [Migration Strategies](/Knowledge-Base/Migration-Strategies)
 
 # [tenants](/Knowledge-Base/tenants)
@@ -24,3 +22,5 @@ _[Need help with Markdown syntax for wikis?](https://docs.microsoft.com/en-us/az
 [replication instructions](/Knowledge-Base/data/replication-instructions)
 [replication exclude sprocs](/Knowledge-Base/data/replication-exclude-sprocs)
 [collector table path updates](/Knowledge-Base/data/collector-table-path-updates)
+
+_[Need help with Markdown syntax for wikis?](https://docs.microsoft.com/en-us/azure/devops/project/wiki/wiki-markdown-guidance?view=azure-devops)_

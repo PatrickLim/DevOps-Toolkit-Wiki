@@ -14,5 +14,11 @@ Need link to recent install document
 
 ![image.png](/.attachments/image-d5cf0dea-71cf-4466-9dd9-600e48dfcd3a.png)
 
+4. update authentication settings
+
+![image.png](/.attachments/image-12f99054-967d-478c-b174-1983027c2a3e.png)
+
+![image.png](/.attachments/image-822d7542-7963-4383-92e1-12e89b5ac1bb.png)
+
 
 

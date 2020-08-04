@@ -1,3 +1,5 @@
+_[Need help with Markdown syntax for wikis?](https://docs.microsoft.com/en-us/azure/devops/project/wiki/wiki-markdown-guidance?view=azure-devops)_
+
 # [Migration Strategies](/Knowledge-Base/Migration-Strategies)
 
 # [tenants](/Knowledge-Base/tenants)

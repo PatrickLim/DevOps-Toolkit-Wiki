@@ -14,20 +14,21 @@ Need link to recent install document
 
 ![image.png](/.attachments/image-d5cf0dea-71cf-4466-9dd9-600e48dfcd3a.png)
 
-4. update authentication settings
+4. Update web.config of backend
+
+![image.png](/.attachments/image-ca29bbdc-ac12-4c1b-9c2d-5ad3a22cf7e0.png)
+
+5. update authentication settings
 
 ![image.png](/.attachments/image-12f99054-967d-478c-b174-1983027c2a3e.png)
 
 ![image.png](/.attachments/image-822d7542-7963-4383-92e1-12e89b5ac1bb.png)
 
-5. Update web.config of backend
-
-![image.png](/.attachments/image-ca29bbdc-ac12-4c1b-9c2d-5ad3a22cf7e0.png)
+![image.png](/.attachments/image-d8abc902-75de-4a10-9eaf-eaa5c729bcf6.png)
 
 6. AAT Maint Prod link in AAT Portal (just for fun)
 
 ![image.png](/.attachments/image-7f89a6d6-561e-4170-bc5f-fa608f5ac058.png)
-
 
 ![image.png](/.attachments/image-f9887e34-285b-46df-8345-0a3b370ee9ae.png)
 

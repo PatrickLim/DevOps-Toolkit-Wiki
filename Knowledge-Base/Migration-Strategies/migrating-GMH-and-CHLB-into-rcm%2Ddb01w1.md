@@ -17,3 +17,15 @@ select * from REPORTING_REPORT_PROPERTIES
 
 /GMH/gmh-rcm/InsightCS Application/ABTJournalReceipt
 /GMH/gmh-rcm/Accounts Receivable/AccountsOnARHoldByCollector
+
+
+--in addition to running the update paths, GMH needs the following:
+
+select * from GLOBAL_REGISTRY where REGISTRY_KEY = 'REPORT_SERVER_URL'
+update GLOBAL_REGISTRY set VALUE2 = 'https://rcm-db01w1.openvista.net/ReportServer' where REGISTRY_KEY = 'REPORT_SERVER_URL'
+
+update report_mstr set report_definition = replace (report_definition, '/Insight/', '/GMH/')
+update report_mstr set report_definition = replace (report_definition, '/InsightCS/', '/GMH/gmh-rcm/')
+
+UPDATE REPORTING_REPORT_PROPERTIES SET DATA_PATH = REPLACE(DATA_PATH, '/Insight/', '/GMH/')
+UPDATE REPORTING_REPORT_PROPERTIES SET DATA_PATH = REPLACE(DATA_PATH, '/InsightCS/', '/GMH/gmh-rcm/')

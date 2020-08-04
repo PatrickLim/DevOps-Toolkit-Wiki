@@ -22,6 +22,22 @@ Need link to recent install document
 
 ![image.png](/.attachments/image-12f99054-967d-478c-b174-1983027c2a3e.png)
 
+
+**IMPORTANT** the front end site does not come with a Web.config so it inherits its settings from the top site. However, some customers have the top site set up as Impersonate = true, so in those cases we have to override by putting a Web.config in the front end physical location. This is what it should look like:
+
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <system.web>
+		<identity impersonate="false" />
+		<authentication mode="Windows"></authentication>
+    </system.web>
+</configuration>
+```
+
+
+
 ![image.png](/.attachments/image-822d7542-7963-4383-92e1-12e89b5ac1bb.png)
 
 ![image.png](/.attachments/image-d8abc902-75de-4a10-9eaf-eaa5c729bcf6.png)

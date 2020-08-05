@@ -16,6 +16,25 @@ had to recreate view Rpt_ChargeMstrView because it relies on the above view._
 
 ### _VERY IMPORTANT! ANYTHING that says_ **SqlQueryNotificationService!**
 
+for some reason the scalar function **FormatPostalCode needs inline=off**
+
+could just delete the sprocs above:
+
+
+```
+drop procedure [dbo].[EDI_270_CONVERT_WORK_V2013_Q1_V1]
+drop procedure [dbo].[GE_UPD_PRINTER]
+drop procedure [dbo].[MR_VISIT_SEARCH_ON_ROOM_BED_V2015_Q2_V1]
+drop procedure [dbo].[MR_VISIT_SEARCH_ON_URN_V2015_Q2_V1]
+drop procedure [dbo].[MR_VISIT_SEARCH_ON_SSN_V2015_Q2_V1]
+drop procedure [dbo].[MR_VISIT_SEARCH_ON_VISIT_V2015_Q2_V1]
+drop procedure [dbo].[MR_VISIT_SEARCH_ON_MEDREC_V2015_Q2_V1]
+drop procedure [dbo].[PATDETAIL_RETRIEVE_VISITS_BY_MRN_V2011]
+drop procedure [dbo].[PATIENT_SEARCH_V2015_Q2_V1]
+drop procedure [dbo].[Rpt_MAMMO_REMINDERS_V2019_Q1_V1]
+```
+
+
 from AAT:
 [FMA_SF_PAYER_MIX]
 

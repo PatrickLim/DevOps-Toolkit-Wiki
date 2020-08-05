@@ -1,5 +1,5 @@
 
-_Quick summary of development session on 8/5/2020 resulting in a new way to launch RCM web services and LEADTOOLS web scanning features via Parallels portal links._
+_Quick summary of development session on 8/5/2020 resulting in a **temporary fix** to launch RCM web services and LEADTOOLS web scanning features via Parallels portal links._
 
 
 - launch webscanhost

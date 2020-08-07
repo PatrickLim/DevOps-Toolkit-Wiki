@@ -41,3 +41,6 @@ update report_mstr set report_definition = replace (report_definition, '/Insight
 
 UPDATE REPORTING_REPORT_PROPERTIES SET DATA_PATH = REPLACE(DATA_PATH, '/chlb-rcm/', '/CHLB/chlb-rcm/')
 UPDATE REPORTING_REPORT_PROPERTIES SET DATA_PATH = REPLACE(DATA_PATH, '/InsightCS/', '/CHLB/chlb-rcm/')
+
+--replicating db01w1-chlb to rcm-db01w1\chlb
+remote distributor Admin Link Password: QWEasd123!

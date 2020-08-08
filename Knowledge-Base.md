@@ -14,9 +14,9 @@
 [RCM: Deploy Chrome Registry Edits via Group Policy](/Knowledge-Base/web/RCM:-Deploy-Chrome-Registry-Edits-via-Group-Policy)
 
 # [application](/Knowledge-Base/application)
+[RCM Classic Tips & Tricks](/Knowledge-Base/RCM-Classic-Tips-&-Tricks)
 [dbserver installed things](/Knowledge-Base/application/dbserver-installed-things)
 [appserver installed things](/Knowledge-Base/application/appserver-installed-things)
-[RCM Classic Tips & Tricks](/Knowledge-Base/RCM-Classic-Tips-&-Tricks)
 
 # [data](/Knowledge-Base/data)
 [service broker](/Knowledge-Base/data/service-broker)

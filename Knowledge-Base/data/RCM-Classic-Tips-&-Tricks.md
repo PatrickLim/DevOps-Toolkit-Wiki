@@ -1,4 +1,4 @@
-While the RCM Classic application (Insight.exe) is approaching EOL next year, it is currently the primary application used to configure master tables, features, and services. So, thought it best to highlight some tips and tricks here.
+While the RCM Classic application (**Insight.exe**) is approaching EOL next year, it is currently the best way to safely configure master tables, features, and services; no SQL knowledge needed. So, thought it best to highlight some tips and tricks here.
 
 ![image.png](/.attachments/image-448a7025-91de-4f7d-a6bb-65b789d76ccc.png)
 

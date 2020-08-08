@@ -10,3 +10,8 @@ this is very helpful for testing scenarios to quickly get a list of records or w
 
 ![image.png](/.attachments/image-cf478c8d-f8da-480f-b6c3-03b6f6e63e7d.png)
 
+# 3. Don't forget about Help!
+Simply clicking **Help -> Help With This Application** via the main window menu will launch a local copy of the RCM Classic documentation; trust me, it's worth it!
+
+![image.png](/.attachments/image-0f3c9afe-8770-4259-a66a-548a84cf704d.png)
+

@@ -6,7 +6,7 @@
 the TAB key is the best way to **quickly navigate fields or confirm a selection and move on to the next step**.. when in doubt, hit TAB!
 
 # 2. Use %% when you want a quick list of results
-Essentially a **wildcard value for text fields**; quickly get a list of records, or helpful when you're simply not sure what to search for.
+Essentially a **wildcard value for text fields**; helpful when you're simply not sure what to search for.
 
 ![image.png](/.attachments/image-cf478c8d-f8da-480f-b6c3-03b6f6e63e7d.png)
 

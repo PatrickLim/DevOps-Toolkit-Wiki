@@ -144,3 +144,5 @@ ALTER ROLE [SQLUsers] ADD MEMBER IcsBckFreqProc
 ALTER ROLE [SQLUsers] ADD MEMBER IcsPayProc
 ALTER ROLE [SQLUsers] ADD MEMBER IcsServices
 ALTER ROLE [SQLUsers] ADD MEMBER IcsNotif
+
+https://help.genesys.com/pureconnect/mergedprojects/wh_tr/mergedprojects/wh_tr_active_directory_sql/desktop/run_sql_server_script_to_add_ad_accounts.htm

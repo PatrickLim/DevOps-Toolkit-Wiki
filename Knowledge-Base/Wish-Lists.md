@@ -1,0 +1,3 @@
+# 1. Power Query Training Dry Run Feedback
+CareVue EPI = RCM URN - unfortunately, the data types do not match and can make cross-product analytics more difficult.
+[Link to MSC PBIX Teams Channel conversation](https://teams.microsoft.com/l/message/19:f427c4c31bc445be9cb53082c5307030@thread.skype/1597162816664?tenantId=c4f36ff1-f16e-4d33-a798-19261dec740a&groupId=51c86c27-c1ed-40dd-ab44-34964ca7d50f&parentMessageId=1597162816664&teamName=MSC%20PBIX&channelName=General&createdTime=1597162816664)

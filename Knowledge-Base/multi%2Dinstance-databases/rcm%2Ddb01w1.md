@@ -17,6 +17,7 @@ smg-rcm-test
 smg-rcm-collector
 smg-rcm-collector-test
 smg-rcm-sislnk
+smg-rcm-dw
 
 ap01w1-smg
 wb01w1-smg

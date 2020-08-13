@@ -17,6 +17,7 @@ had to recreate view Rpt_ChargeMstrView because it relies on the above view._
 ### _VERY IMPORTANT! ANYTHING that says_ **SqlQueryNotificationService!**
 
 for some reason the scalar function **FormatPostalCode needs inline=off**
+**RETURNS varchar(12) with inline=off**
 
 could just delete the sprocs above:
 

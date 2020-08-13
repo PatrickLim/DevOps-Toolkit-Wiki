@@ -25,3 +25,5 @@ this is for the Report Server Power BI website:
 
 setspn -u -s http/rcm-db01w1.openvista.net openvista\rcmdb01w1defaultsql
 setspn -u -s http/rcm-db01w1 openvista\rcmdb01w1defaultsql
+
+replication is centralized. admin QWEasd123!

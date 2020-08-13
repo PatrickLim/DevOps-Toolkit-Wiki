@@ -20,3 +20,5 @@ smg-rcm-sislnk
 
 ap01w1-smg
 wb01w1-smg
+
+SMGProd and SMGTest

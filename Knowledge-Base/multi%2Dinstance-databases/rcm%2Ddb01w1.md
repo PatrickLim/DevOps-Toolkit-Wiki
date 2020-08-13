@@ -7,3 +7,10 @@ Instance Setup
 Configuration File Path
 
 C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20200813_143238\ConfigurationFile.ini
+
+smg-rcm
+smg-rcm-test
+smg-rcm-collector
+smg-rcm-collector-test
+smg-rcm-sislnk
+

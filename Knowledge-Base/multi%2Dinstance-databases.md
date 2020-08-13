@@ -9,3 +9,19 @@ update report_mstr set report_definition = replace (report_definition, '/Insight
 UPDATE REPORTING_REPORT_PROPERTIES SET DATA_PATH = REPLACE(DATA_PATH, '/Insight/', '/SMG/')
 UPDATE REPORTING_REPORT_PROPERTIES SET DATA_PATH = REPLACE(DATA_PATH, '/InsightCS/', '/SMG/smg-rcm/')
 
+
+SPN's are centralized.
+
+These are for the SQL Engines (they all have to belong to the same service account):
+
+setspn -u -s MSSQLSvc/rcm-db01w1.openvista.net:1433 openvista\chlbrcmsql
+setspn -u -s MSSQLSvc/rcm-db01w1.openvista.net openvista\chlbrcmsql
+setspn -u -s MSSQLSvc/rcm-db01w1.openvista.net:50088 openvista\chlbrcmsql
+setspn -u -s MSSQLSvc/rcm-db01w1.openvista.net:CHLB openvista\chlbrcmsql
+setspn -u -s MSSQLSvc/rcm-db01w1.openvista.net:63694 openvista\chlbrcmsql
+setspn -u -s MSSQLSvc/rcm-db01w1.openvista.net:SMG openvista\chlbrcmsql
+
+this is for the Report Server Power BI website:
+
+setspn -u -s http/rcm-db01w1.openvista.net openvista\rcmdb01w1defaultsql
+setspn -u -s http/rcm-db01w1 openvista\rcmdb01w1defaultsql

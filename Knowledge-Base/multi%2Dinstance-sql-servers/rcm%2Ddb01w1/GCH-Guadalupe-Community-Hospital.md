@@ -12,6 +12,8 @@ wb01w1-gch
 
 GCHProd and GCHTest
 
-Configuration File Path:
+Configuration File Path
 
 C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20200814_211200\ConfigurationFile.ini
+
+Summary Log File

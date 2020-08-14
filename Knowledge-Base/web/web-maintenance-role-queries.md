@@ -1,0 +1,25 @@
+select * from ROLE_USERS where USERNAME = 'brian.stockell'
+
+select * from WEB_ROLE_RIGHT where APP_AREA_CD = 'SCHEDULING'
+
+select * from WEB_ROLE_RIGHT where ROLE_ID = 232
+
+select * from WEB_RIGHT_MSTR where APP_AREA_CD = 'SCHEDULING'
+
+SELECT * FROM ROLE_MSTR
+
+select * from WEB_APP_AREA_MSTR
+select * from WEB_APP_MENU_MSTR
+
+insert into WEB_ROLE_RIGHT (ROLE_ID,APP_AREA_CD,SEC_RIGHT_ID)
+select 232,APP_AREA_CD,SEC_RIGHT_ID from WEB_RIGHT_MSTR where APP_AREA_CD = 'SCHEDULING'
+
+insert into WEB_ROLE_RIGHT (ROLE_ID,APP_AREA_CD,SEC_RIGHT_ID) values (236,'SA','MENU')
+
+exec dbo.GET_USER_LOCATIONS
+
+exec dbo.WEB_GET_USER_SECURITIES_V2015_Q2_V1
+
+select * from WEB_MAINT_TABLE_MSTR
+select * from WEB_MAINT_TABLE_GROUP
+select * from WEB_MAINT_TABLE_COLUMNS

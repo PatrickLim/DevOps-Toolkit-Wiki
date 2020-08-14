@@ -9,3 +9,5 @@ gch-rcm-dev
 
 ap01w1-gch
 wb01w1-gch
+
+GCHProd and GCHTest

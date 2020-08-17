@@ -1,0 +1,1 @@
+https://admin-west-a01.openvista.net/nagios/

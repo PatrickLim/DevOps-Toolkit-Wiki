@@ -1,3 +1,5 @@
+
+```
 $acronym = Read-Host "Acronym"
 $proddsn = Read-Host "Prod DSN (example abc-rcm)"
 $testdsn = Read-Host "Test DSN (example abc-rcm-test)"
@@ -33,3 +35,5 @@ Foreach-Object {
 
 Get-ChildItem -Filter *_Main* | Rename-Item -NewName {$_.name -replace '_Main', $suffixprod }
 Get-ChildItem -Filter *_Test* | Rename-Item -NewName {$_.name -replace '_Test', $suffixtest }
+```
+

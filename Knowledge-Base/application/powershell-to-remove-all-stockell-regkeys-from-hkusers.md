@@ -1,3 +1,5 @@
+
+```
 # Regex pattern for SIDs
 $PatternSID = 'S-1-5-21-\d+-\d+\-\d+\-\d+$'
  
@@ -32,3 +34,4 @@ Foreach ($item in $ProfileList) {
         reg unload HKU\$($Item.SID) | Out-Null
     }
 }
+```

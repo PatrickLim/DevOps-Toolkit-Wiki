@@ -9,20 +9,20 @@ RCM Cloud is installed using WebDeploy, which is a prerequisite that is download
 RCM Maintenance and SignalR are installed simply as folder copies and editing their web.config and javascript files.
  
 # Application Server Install
-ODBC Connections
+## ODBC Connections
 Both Insight Classic and the Interface Services rely on the ODBC connections so these must be created first.
-Folder Structure and Shared Folders
+## Folder Structure and Shared Folders
 
-Insight Classic
+## Insight Classic
 .NET Framework 2 is a prerequisite for Insight Classic.
 Insight Classic must launch and connect to at least one ODBC connection.
 Create an Insight Classic user and give his/her account full privileges.
 Install Report Viewer, both the msi and the exe. Report Viewer needs CLR Types for SQL Server 2012.
-Interface Services
+## Interface Services
 Interface Services must launch as Automatic Windows Services. Each service should have a Windows Registry entry in HKLM\SYSTEM\CurrentControlSet\Services that detail several settings including its DSN, credentials, and executable.
 Collector table should have REGISTRY tables updated. The idea is, these rows tell the Interface Services which server hosts the shared folders that contain the Operations, Log, and Bin folders. The value for the rows whose KEY_ID = ‘HostName’ can all be fully-qualified EXCEPT for where SYSTEM_ID = ‘Collector’. For that one row, the value must just be the unqualified Host Name.
 Monitor App is launched as Administrator and must show all Interface Services running.
-Scheduled Tasks
+## Scheduled Tasks
 The Scheduled Tasks need environment variables that are set using a reg file.
 Install SQL Server Management Studio.
 Domain Firewall check browser connectivity.

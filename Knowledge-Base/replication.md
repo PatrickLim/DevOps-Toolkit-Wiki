@@ -2,7 +2,7 @@ sites where plim installed replication
 
 CHLB
 CRMC
-ASH
+ASH ash-rcm-sql M:\data L:\Log F:\backup
 
 time table
 CHLB

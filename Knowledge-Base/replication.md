@@ -10,7 +10,7 @@ GMH rcm-db01w1\gmh (gmh instance is its own replication distributor, must change
 
 SMG rcm-db01w1 M:\smg L:\smg L:\backup
 
-GCH rcm-db01w1 M:\gch L:\gch L:\backup (pending migration)
+GCH rcm-db01w1 M:\gch L:\gch L:\backup (will set up replication pending migration)
 
 time table
 CHLB

@@ -8,7 +8,7 @@ Better yet, update the Web.config so it has the <windowsAuthentication useAppPoo
 
 In the first screenshot, you can see the settings for Web.config instead of ApplicationHost.config but you may need to Unlock Section first -- look at the Action pane on the right of the screenshot.
 
-With some IIS configurations the Maintenance Sites (both Backend and Frontend) also need the App Pool Credentials explicitly set. Their web.configs should look something like:
+With some IIS configurations the Maintenance Sites (both Backend and Frontend) also need the App Pool Credentials **explicitly** set. Their web.configs should look something like:
 
 
 ```

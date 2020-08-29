@@ -1,0 +1,3 @@
+after installing the dotnet hosting component, verify that it works in powershell with dotnet .\InsightWebMain.dll in the maint-backend folder.
+
+If IIS still cannot start the maint-backend site, if it gives a 502 error, check the Event Viewer logs. You may need to **reboot the server** so that the dotnet path gets recognized by IIS. Restarting the IIS service is not enough for it to recognize the dotnet path.

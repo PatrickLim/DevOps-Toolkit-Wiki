@@ -1,1 +1,53 @@
 make sure the domain account has Log On As a Service right.
+
+this is the powershell:
+
+
+```
+$suser = 'openvista\smgrcmapp'
+$spwd = '4h4xqEKox2FSP4dlEv7S'
+
+Function fnChangeServiceCredential($sservice) {
+
+    $oService = Get-WmiObject -Query "SELECT * FROM Win32_Service WHERE Name = '$sservice'"
+    $oService.Change($null,$null,$null,$null,$null,$null,"$suser","$spwd")
+
+}
+
+fnChangeServiceCredential SislnkHL7ToIcsDb_SMGProd
+fnChangeServiceCredential SislnkHL7ToEngineHL7_SMGProd
+fnChangeServiceCredential SislnkEventToSislnkHL7_SMGProd
+fnChangeServiceCredential OEPrintProc_SMGProd
+fnChangeServiceCredential OEChargeProc_SMGProd
+fnChangeServiceCredential IcsTrigToSislnkEvent_SMGProd
+fnChangeServiceCredential IcsTransService_SMGProd
+fnChangeServiceCredential IcsStmToIcsTrig_SMGProd
+fnChangeServiceCredential IcsPrintService_SMGProd
+fnChangeServiceCredential IcsNotificationService_SMGProd
+fnChangeServiceCredential EngineHL7ToSislnkHL7_SMGProd
+fnChangeServiceCredential Collector_SMGProd
+fnChangeServiceCredential CDRProcessor_SMGProd
+fnChangeServiceCredential BillingService_SMGProd
+fnChangeServiceCredential BckgrndFreqProc_SMGProd
+fnChangeServiceCredential ARPayProc_SMGProd
+fnChangeServiceCredential DBSnapshotService_SMGProd
+
+fnChangeServiceCredential SislnkHL7ToIcsDb_SMGTest
+fnChangeServiceCredential SislnkHL7ToEngineHL7_SMGTest
+fnChangeServiceCredential SislnkEventToSislnkHL7_SMGTest
+fnChangeServiceCredential OEPrintProc_SMGTest
+fnChangeServiceCredential OEChargeProc_SMGTest
+fnChangeServiceCredential IcsTrigToSislnkEvent_SMGTest
+fnChangeServiceCredential IcsTransService_SMGTest
+fnChangeServiceCredential IcsStmToIcsTrig_SMGTest
+fnChangeServiceCredential IcsPrintService_SMGTest
+fnChangeServiceCredential IcsNotificationService_SMGTest
+fnChangeServiceCredential EngineHL7ToSislnkHL7_SMGTest
+fnChangeServiceCredential Collector_SMGTest
+fnChangeServiceCredential CDRProcessor_SMGTest
+fnChangeServiceCredential BillingService_SMGTest
+fnChangeServiceCredential BckgrndFreqProc_SMGTest
+fnChangeServiceCredential ARPayProc_SMGTest
+fnChangeServiceCredential DBSnapshotService_SMGTest
+```
+

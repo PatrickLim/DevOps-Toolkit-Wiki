@@ -21,7 +21,7 @@ I:\2019\2019.2\RCM Cloud\Patches\Patch 7\ICS2019.2.7.66.includables.zip
 ---
 
 # ASH Tenant RD Node Configuration
-Reference directory based on ASH deployment
+Reference directory based on ASH deployments
 ![image.png](/.attachments/image-8962c785-64ad-4e5c-807f-e383c89325ae.png)
 
 

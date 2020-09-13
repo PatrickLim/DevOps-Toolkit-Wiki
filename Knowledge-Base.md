@@ -1,6 +1,6 @@
 # Tenant Services
 
-[AAT: SPNs & SQL Instances](/Knowledge-Base/AAT:-SPNs-&-SQL-Instances)
+[AAT: SPNs & SQL Instances](/Tenant-Services/AAT:-SPNs-&-SQL-Instances)
 [AAT: Extract RDLs](/Tenant-Services/AAT:-Extract-RDLs)
 [AAT: 2019.3 Web Services](/Knowledge-Base/AAT:-2019.3-Web-Services)
 [CRMC: sql agent job history](/Knowledge-Base/CRMC:-sql-agent-job-history)

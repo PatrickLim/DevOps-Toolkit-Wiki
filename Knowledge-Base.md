@@ -12,7 +12,7 @@
 ---
 
 # [domain](/Knowledge-Base/domain)
-[kerberos](/Knowledge-Base/domain/kerberos)
+[kerberos](/Knowledge-Base/kerberos)
 
 
 # [web](/Knowledge-Base/web)

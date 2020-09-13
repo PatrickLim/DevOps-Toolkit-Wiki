@@ -35,7 +35,7 @@
 
 ---
 
-# [RCM Support KB Links](http://stlvmonlinehelp/KB/article.php?id=164)
+# [RCM Support Knowledge Base](http://stlvmonlinehelp/KB/index.php)
 
 - [Configuring a Report as Signature Background Image](http://stlvmonlinehelp/KB/article.php?id=164)
 - [How to Update Imaging Directories](http://stlvmonlinehelp/KB/article.php?id=36)

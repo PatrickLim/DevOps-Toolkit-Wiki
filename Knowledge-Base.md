@@ -4,7 +4,7 @@
 
 # [tenants](/Knowledge-Base/tenants)
 
-[AAT: SPNs & SQL Instances](/Knowledge-Base/tenants/AAT:-SPNs-&-SQL-Instances)
+[AAT: SPNs & SQL Instances](/Knowledge-Base/AAT:-SPNs-&-SQL-Instances)
 [AAT: Extract RDLs](/Knowledge-Base/tenants/AAT:-Extract-RDLs)
 [AAT: 2019.3 Web Services](/Knowledge-Base/tenants/AAT:-2019.3-Web-Services)
 [CRMC: sql agent job history](/Knowledge-Base/tenants/CRMC:-sql-agent-job-history)

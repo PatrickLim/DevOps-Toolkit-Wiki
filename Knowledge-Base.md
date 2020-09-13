@@ -24,15 +24,15 @@
 # Application Services
 
 [RCM Classic Tips & Tricks](/Knowledge-Base/RCM-Classic-Tips-&-Tricks)
-[dbserver installed things](/Application-Services/dbserver-installed-things)
-[appserver installed things](/Application-Services/appserver-installed-things)
+[dbserver installed things](/Knowledge-Base/Application-Services/dbserver-installed-things)
+[appserver installed things](/Knowledge-Base/Application-Services/appserver-installed-things)
 
 
 # [web](/Knowledge-Base/Web-Services)
 [RCM: Deploy Chrome Registry Edits via Group Policy](/Knowledge-Base/Web-Services/RCM:-Deploy-Chrome-Registry-Edits-via-Group-Policy)
 
 
-# [application](/Application-Services)
+# [application](/Knowledge-Base/Application-Services)
 
 
 

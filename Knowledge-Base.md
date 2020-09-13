@@ -1,4 +1,4 @@
-# Database Services
+# [Database Services](/Knowledge-Base/Database-Services)
 
 [service broker](/Knowledge-Base/Database-Services/service-broker)
 [replication instructions](/Knowledge-Base/Database-Services/replication-instructions)

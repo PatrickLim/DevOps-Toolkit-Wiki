@@ -15,12 +15,12 @@
 
 ---
 
-# Web Services
+# [Web Services](/Knowledge-Base/Web-Services)
 [RCM: Deploy Chrome Registry Edits via Group Policy](/Knowledge-Base/Web-Services/RCM:-Deploy-Chrome-Registry-Edits-via-Group-Policy)
 
 ---
 
-# Tenant Services
+# [Tenant Services](/Knowledge-Base/Tenant-Services)
 
 [AAT: SPNs & SQL Instances](/Knowledge-Base/Tenant-Services/AAT:-SPNs-&-SQL-Instances)
 [AAT: Extract RDLs](/Knowledge-Base/Tenant-Services/AAT:-Extract-RDLs)
@@ -30,7 +30,7 @@
 
 ---
 
-# Migration Strategies
+# [Migration Strategies](/Knowledge-Base/Migration-Strategies)
 
 ---
 

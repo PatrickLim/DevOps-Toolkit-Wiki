@@ -28,8 +28,8 @@
 [appserver installed things](/Application-Services/appserver-installed-things)
 
 
-# [web](/Knowledge-Base/web)
-[RCM: Deploy Chrome Registry Edits via Group Policy](/Knowledge-Base/web/RCM:-Deploy-Chrome-Registry-Edits-via-Group-Policy)
+# [web](/Knowledge-Base/Web-Services)
+[RCM: Deploy Chrome Registry Edits via Group Policy](/Knowledge-Base/Web-Services/RCM:-Deploy-Chrome-Registry-Edits-via-Group-Policy)
 
 
 # [application](/Application-Services)

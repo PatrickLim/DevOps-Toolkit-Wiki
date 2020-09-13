@@ -8,7 +8,7 @@
 
 ## Migration Strategies
 
-[Migration Strategies](/Migration-Strategies)
+[Migration Strategies](/Knowledge-Base/Migration-Strategies)
 
 ---
 

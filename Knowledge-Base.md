@@ -1,18 +1,30 @@
-# [Migration Strategies](/Knowledge-Base/Migration-Strategies)
-
----
-
-# Tenant Specific
+# Tenant Services
 
 [AAT: SPNs & SQL Instances](/Knowledge-Base/AAT:-SPNs-&-SQL-Instances)
 [AAT: Extract RDLs](/Knowledge-Base/AAT:-Extract-RDLs)
 [AAT: 2019.3 Web Services](/Knowledge-Base/AAT:-2019.3-Web-Services)
 [CRMC: sql agent job history](/Knowledge-Base/CRMC:-sql-agent-job-history)
 
+## Migration Strategies
+
+[Migration Strategies](/Knowledge-Base/Migration-Strategies)
+
 ---
 
-# [domain](/Knowledge-Base/domain)
-[kerberos](/Knowledge-Base/kerberos)
+# Database Services
+
+[service broker](/Knowledge-Base/data/service-broker)
+[replication instructions](/Knowledge-Base/data/replication-instructions)
+[replication exclude sprocs](/Knowledge-Base/data/replication-exclude-sprocs)
+[collector table path updates](/Knowledge-Base/data/collector-table-path-updates)
+
+---
+
+# Application Services
+
+[RCM Classic Tips & Tricks](/Knowledge-Base/RCM-Classic-Tips-&-Tricks)
+[dbserver installed things](/Knowledge-Base/application/dbserver-installed-things)
+[appserver installed things](/Knowledge-Base/application/appserver-installed-things)
 
 
 # [web](/Knowledge-Base/web)
@@ -20,16 +32,8 @@
 
 
 # [application](/Knowledge-Base/application)
-[RCM Classic Tips & Tricks](/Knowledge-Base/RCM-Classic-Tips-&-Tricks)
-[dbserver installed things](/Knowledge-Base/application/dbserver-installed-things)
-[appserver installed things](/Knowledge-Base/application/appserver-installed-things)
 
 
-# [data](/Knowledge-Base/data)
-[service broker](/Knowledge-Base/data/service-broker)
-[replication instructions](/Knowledge-Base/data/replication-instructions)
-[replication exclude sprocs](/Knowledge-Base/data/replication-exclude-sprocs)
-[collector table path updates](/Knowledge-Base/data/collector-table-path-updates)
 
 ---
 

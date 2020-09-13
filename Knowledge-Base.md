@@ -14,10 +14,10 @@
 
 # Database Services
 
-[service broker](/Knowledge-Base/Database-Services/service-broker)
-[replication instructions](/Knowledge-Base/Database-Services/replication-instructions)
-[replication exclude sprocs](/Knowledge-Base/Database-Services/replication-exclude-sprocs)
-[collector table path updates](/Knowledge-Base/Database-Services/collector-table-path-updates)
+[service broker](/Database-Services/service-broker)
+[replication instructions](/Database-Services/replication-instructions)
+[replication exclude sprocs](/Database-Services/replication-exclude-sprocs)
+[collector table path updates](/Database-Services/collector-table-path-updates)
 
 ---
 

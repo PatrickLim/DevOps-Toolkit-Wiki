@@ -1,32 +1,33 @@
 # [Database Services](/Knowledge-Base/Database-Services)
 
-[service broker](/Knowledge-Base/Database-Services/service-broker)
-[replication instructions](/Knowledge-Base/Database-Services/replication-instructions)
-[replication exclude sprocs](/Knowledge-Base/Database-Services/replication-exclude-sprocs)
-[collector table path updates](/Knowledge-Base/Database-Services/collector-table-path-updates)
+- [service broker](/Knowledge-Base/Database-Services/service-broker)
+- [replication instructions](/Knowledge-Base/Database-Services/replication-instructions)
+- [replication exclude sprocs](/Knowledge-Base/Database-Services/replication-exclude-sprocs)
+- [collector table path updates](/Knowledge-Base/Database-Services/collector-table-path-updates)
 
 ---
 
 # [Application Services](/Knowledge-Base/Application-Services)
 
-[RCM Classic Tips & Tricks](/Knowledge-Base/RCM-Classic-Tips-&-Tricks)
-[dbserver installed things](/Knowledge-Base/Application-Services/dbserver-installed-things)
-[appserver installed things](/Knowledge-Base/Application-Services/appserver-installed-things)
+- [RCM Classic Tips & Tricks](/Knowledge-Base/RCM-Classic-Tips-&-Tricks)
+- [dbserver installed things](/Knowledge-Base/Application-Services/dbserver-installed-things)
+- [appserver installed things](/Knowledge-Base/Application-Services/appserver-installed-things)
 
 ---
 
 # [Web Services](/Knowledge-Base/Web-Services)
-[RCM: Deploy Chrome Registry Edits via Group Policy](/Knowledge-Base/Web-Services/RCM:-Deploy-Chrome-Registry-Edits-via-Group-Policy)
+
+- [RCM: Deploy Chrome Registry Edits via Group Policy](/Knowledge-Base/Web-Services/RCM:-Deploy-Chrome-Registry-Edits-via-Group-Policy)
 
 ---
 
 # [Tenant Services](/Knowledge-Base/Tenant-Services)
 
-[AAT: SPNs & SQL Instances](/Knowledge-Base/Tenant-Services/AAT:-SPNs-&-SQL-Instances)
-[AAT: Extract RDLs](/Knowledge-Base/Tenant-Services/AAT:-Extract-RDLs)
-[AAT: 2019.3 Web Services](/Knowledge-Base/Tenant-Services/AAT:-2019.3-Web-Services)
-[CRMC: sql agent job history](/Knowledge-Base/Tenant-Services/CRMC:-sql-agent-job-history)
-[OHH: Reporting Services SPNs & Kerberos Delegation](/Knowledge-Base/Tenant-Services/OHH:-Reporting-Services-SPNs-&-Kerberos-Delegation)
+- [AAT: SPNs & SQL Instances](/Knowledge-Base/Tenant-Services/AAT:-SPNs-&-SQL-Instances)
+- [AAT: Extract RDLs](/Knowledge-Base/Tenant-Services/AAT:-Extract-RDLs)
+- [AAT: 2019.3 Web Services](/Knowledge-Base/Tenant-Services/AAT:-2019.3-Web-Services)
+- [CRMC: sql agent job history](/Knowledge-Base/Tenant-Services/CRMC:-sql-agent-job-history)
+- [OHH: Reporting Services SPNs & Kerberos Delegation](/Knowledge-Base/Tenant-Services/OHH:-Reporting-Services-SPNs-&-Kerberos-Delegation)
 
 ---
 

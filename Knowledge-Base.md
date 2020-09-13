@@ -4,7 +4,7 @@
 [AAT: Extract RDLs](/Tenant-Services/AAT:-Extract-RDLs)
 [AAT: 2019.3 Web Services](/Tenant-Services/AAT:-2019.3-Web-Services)
 [CRMC: sql agent job history](/Tenant-Services/CRMC:-sql-agent-job-history)
-[OHH: Reporting Services SPNs & Kerberos Delegation](/Knowledge-Base/OHH:-Reporting-Services-SPNs-&-Kerberos-Delegation)
+[OHH: Reporting Services SPNs & Kerberos Delegation](/Tenant-Services/OHH:-Reporting-Services-SPNs-&-Kerberos-Delegation)
 
 ## Migration Strategies
 

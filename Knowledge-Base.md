@@ -9,7 +9,7 @@
 
 # [Application Services](/Knowledge-Base/Application-Services)
 
-- [RCM Classic Tips & Tricks](/Knowledge-Base/RCM-Classic-Tips-&-Tricks)
+- [RCM Classic Tips & Tricks](/Knowledge-Base/Application-Services/RCM-Classic-Tips-&-Tricks)
 - [dbserver installed things](/Knowledge-Base/Application-Services/dbserver-installed-things)
 - [appserver installed things](/Knowledge-Base/Application-Services/appserver-installed-things)
 

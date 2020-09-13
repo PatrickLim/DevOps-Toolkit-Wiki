@@ -6,7 +6,7 @@
 
 [AAT: SPNs & SQL Instances](/Knowledge-Base/AAT:-SPNs-&-SQL-Instances)
 [AAT: Extract RDLs](/Knowledge-Base/AAT/AAT:-Extract-RDLs)
-[AAT: 2019.3 Web Services](/Knowledge-Base/AAT/AAT:-2019.3-Web-Services)
+[AAT: 2019.3 Web Services](/Knowledge-Base/AAT:-2019.3-Web-Services)
 [CRMC: sql agent job history](/Knowledge-Base/AAT/CRMC:-sql-agent-job-history)
 
 

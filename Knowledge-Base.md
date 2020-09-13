@@ -4,6 +4,7 @@
 [AAT: Extract RDLs](/Knowledge-Base/AAT:-Extract-RDLs)
 [AAT: 2019.3 Web Services](/Knowledge-Base/AAT:-2019.3-Web-Services)
 [CRMC: sql agent job history](/Knowledge-Base/CRMC:-sql-agent-job-history)
+[OHH: Reporting Services SPNs & Kerberos Delegation](/Knowledge-Base/OHH:-Reporting-Services-SPNs-&-Kerberos-Delegation)
 
 ## Migration Strategies
 

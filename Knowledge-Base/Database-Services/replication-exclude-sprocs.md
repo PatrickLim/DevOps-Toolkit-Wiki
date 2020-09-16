@@ -55,3 +55,41 @@ from sys.databases
 SELECT name,OBJECT_ID(name+'.dbo.MSreplication_objects')
 FROM sys.databases
 WHERE OBJECT_ID(name+'.dbo.MSreplication_objects') IS NOT NULL
+
+from Brian Dietz:
+
+[2:51 PM] Brian Dietz
+
+During process, you will need to remove various articles
+
+STORED PROCEDURES
+	
+ARCHIVE_
+			BUILD_CHART_DEFICIENCY_
+			CSC_
+			EDI_270_CONVERT_WORK_
+			GE_
+			MR_VISIT_SEARCH_ (anything prior to 2019)
+			NIGHTLY_PROCESSING_WEB_QUEUE_ACTIIVITY_
+			NIGHTLY_PROCESSING_WEB_QUEUE_FILE_
+			NIGHTLY_PROCESSING_WEB_QUEUE_
+			OK_
+			SqlQueryNotificationStoredProcedure (this will only exist if Broker is enabled for SignalR already)
+
+VIEWS
+		
+UNMATCHED_USERNAME_WEB_QUEUE_ACTIVITY_SNAPSHOT
+				
+May need to remove this SP from the production database
+
+Use following for Step 4 Create Subscription
+
+
+CREATE TYPE [dbo].[AGESTRING] FROM [varchar](32) null
+GO
+CREATE TYPE [dbo].[NARRATIVE] FROM [varchar](255) null
+GO
+CREATE TYPE [dbo].[FACILITY_CD] FROM [varchar](24) null
+GO
+CREATE TYPE [dbo].[FACILITY_ORDER_NO] FROM [varchar](255) null
+GO

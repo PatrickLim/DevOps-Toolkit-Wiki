@@ -1,0 +1,1 @@
+https://wiki.jenkins.io/display/JENKINS/Launch+Java+Web+Start+slave+agent+via+Windows+Scheduler

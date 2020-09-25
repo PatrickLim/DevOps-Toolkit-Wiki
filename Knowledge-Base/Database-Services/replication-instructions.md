@@ -1,1 +1,1 @@
-http://stkl-onlinehelp/KB/article.php?id=39
+http://stlvmonlinehelp/KB/article.php?id=39

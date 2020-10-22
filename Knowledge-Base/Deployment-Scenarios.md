@@ -29,7 +29,9 @@ PS M:\RCM\2015\2015.1\InsightCS\Setup> .\Insight2015.1.msi
 
 PS M:\RCM\2015\2015.1\InsightCS\Setup>
 ```
- 
+![image.png](/.attachments/image-3ff57e6b-5316-43a0-9384-3e38a2818b62.png)
+
+
 
 2. ODBC Modifications
 

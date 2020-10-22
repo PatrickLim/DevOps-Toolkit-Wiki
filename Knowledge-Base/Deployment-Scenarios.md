@@ -28,7 +28,11 @@ PS M:\RCM\2015\2015.1\InsightCS\Setup> .\Insight2015.1.msi
 
 PS M:\RCM\2015\2015.1\InsightCS\Setup>
 ```
-![image.png](/.attachments/image-3ff57e6b-5316-43a0-9384-3e38a2818b62.png)
+> ![image.png](/.attachments/image-3ff57e6b-5316-43a0-9384-3e38a2818b62.png)
+
+> ![image.png](/.attachments/image-a806b3eb-a9c5-4ae0-a619-a8227bcbb80e.png)
+
+
 
 ## Insight2017.4.msi
 

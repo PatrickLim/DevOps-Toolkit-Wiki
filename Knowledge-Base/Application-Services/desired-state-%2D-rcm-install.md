@@ -18,6 +18,18 @@ Both Insight Classic and the Interface Services rely on the ODBC connections so 
 Insight Classic must launch and connect to at least one ODBC connection.
 Create an Insight Classic user and give his/her account full privileges.
 Install Report Viewer, both the msi and the exe. Report Viewer needs CLR Types for SQL Server 2012.
+
+## Install multiple versions on single VM
+While it is not recommended to install more than one version of the InsightCS application suite on a single VM, it is technically possible.  The following section outlines the steps taken to install InsightCS 2019.2 and InsightCS 2019.3 on `rcm-spidey.openvista.net` for DevOps scenario testing.
+
+1. Custom Installation Directory
+
+2. ODBC Configuration Modifications
+
+3. FAQs
+
+ 
+
 ## Interface Services
 Interface Services must launch as Automatic Windows Services. Each service should have a Windows Registry entry in HKLM\SYSTEM\CurrentControlSet\Services that detail several settings including its DSN, credentials, and executable.
 Collector table should have REGISTRY tables updated. The idea is, these rows tell the Interface Services which server hosts the shared folders that contain the Operations, Log, and Bin folders. The value for the rows whose KEY_ID = ‘HostName’ can all be fully-qualified EXCEPT for where SYSTEM_ID = ‘Collector’. For that one row, the value must just be the unqualified Host Name.

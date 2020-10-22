@@ -90,11 +90,6 @@ PS M:\RCM\2019\2019.3\Insight\Setup> .\Insight2019.3.msi
 
 > ![image.png](/.attachments/image-62580455-ccdf-464d-8122-e90840adb91f.png)
 
-
-3. Considerations
-
-4. FAQs
-
 ---
 
 

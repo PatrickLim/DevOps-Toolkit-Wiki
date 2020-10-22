@@ -5,7 +5,7 @@ _The following scenarios explore the technical limitations of MSC products/servi
 ---
 
 # Install multiple versions of InsightCS on single VM
-While it's not recommended to install more than one version of the InsightCS application suite on a single VM, it is technically possible.  The following outlines the steps taken to install InsightCS 2015.1.3 and 2019.3.0 on `rcm-spidey.openvista.net` for DevOps scenario testing.
+While it's not recommended to install more than one version of the InsightCS application suite on a single VM, it is technically possible.  The following outlines the steps taken to install InsightCS 2015.1, 2017.4, and 2019.3 on `rcm-spidey.openvista.net` for DevOps scenario testing.
 
 ## Insight2015.1.msi
 > ProductKey: M3B78-37BC2-BF16A-7B9F1
@@ -30,7 +30,7 @@ PS M:\RCM\2015\2015.1\InsightCS\Setup>
 ```
 ![image.png](/.attachments/image-3ff57e6b-5316-43a0-9384-3e38a2818b62.png)
 
-## Insight2017.1.msi
+## Insight2017.4.msi
 
 > ProductKey: M3B78-37BC2-BF16A-7B9F1
 ```

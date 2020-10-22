@@ -65,11 +65,24 @@ PS M:\RCM\2017\InsightCS\Setup>
 
 > ProductKey: C1D9B-49F98-FE75D-5D216
 ```
-PS M:\RCM\2017\InsightCS\Setup>
-```
-> ![image.png](/.attachments/image-5b913253-d953-4923-9158-63be8222be48.png)
+PS M:\RCM\2019\2019.3\Insight\Setup> dir
 
-> ![image.png](/.attachments/image-1f97ac2b-b860-43ac-931d-a0f540ffc1c2.png)
+
+    Directory: M:\RCM\2019\2019.3\Insight\Setup
+
+
+Mode                LastWriteTime         Length Name                                                                       
+----                -------------         ------ ----                                                                       
+-a----        5/20/2020  12:46 PM      190011392 Insight2019.3.msi                                                          
+-a----        1/20/2020  11:07 AM             85 ProductKey.txt                                                             
+
+
+
+PS M:\RCM\2019\2019.3\Insight\Setup> .\Insight2019.3.msi
+```
+> ![image.png](/.attachments/image-c044e145-b8a3-4980-a5b5-28cb19bee20a.png)
+
+> ![image.png](/.attachments/image-28c945a2-8859-49c5-9653-4cdab2a293aa.png)
 
 
 

@@ -47,7 +47,7 @@ Five databases must have this naming convention and restored from backup:
 •	XYZ-rcm-test
 •	XYZ-collector
 •	XYZ-collector-test
-•	XYZ-syslnk
+•	XYZ-sislnk
 Check each database for VERSION consistency, especially if XYC-rcm-dev is later included.
 The controlwks user may already exist in the restored database, so delete him first. If you cannot delete controlwks because he owns a schema, then change that schema’s owner to dbo. After controlwks no longer owns any schemas then you can delete him.
 ## Maintenance Plan

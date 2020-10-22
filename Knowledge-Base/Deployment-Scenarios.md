@@ -1,12 +1,10 @@
-# Deployment Scenarios
-
 This page highlights deployment scnenarios evaluated by DevOps Teams targeting the Medsphere Cloud Services Platform (MCSP) and focused on scalablility and automation.
 
 _The following scenarios explore the technical limitations of MSC products/services; legacy best practices and recommendations are intentionally ignored._
 
 ---
 
-## Install multiple versions of InsightCS on single VM
+# Install multiple versions of InsightCS on single VM
 While it's not recommended to install more than one version of the InsightCS application suite on a single VM, it is technically possible.  The following outlines the steps taken to install InsightCS 2015.1.3 and 2019.3.0 on `rcm-spidey.openvista.net` for DevOps scenario testing.
 
 1. Custom Installations

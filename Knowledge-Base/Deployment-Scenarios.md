@@ -1,6 +1,6 @@
 This page highlights deployment scnenarios evaluated by DevOps Teams targeting the Medsphere Cloud Services Platform (MCSP) and focused on scalablility and automation.
 
-_The following scenarios explore the technical limitations of MSC products/services; legacy best practices and recommendations are intentionally ignored._
+_The following scenarios explore the technical limitations of MSC products/services; legacy best practices and recommendations intentionally ignored._
 
 ---
 

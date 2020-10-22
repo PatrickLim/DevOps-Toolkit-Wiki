@@ -55,7 +55,21 @@ PS M:\RCM\2017\InsightCS\Setup> .\Insight2017.4.msi
 
 PS M:\RCM\2017\InsightCS\Setup>
 ```
+> ![image.png](/.attachments/image-5b913253-d953-4923-9158-63be8222be48.png)
 
+> ![image.png](/.attachments/image-1f97ac2b-b860-43ac-931d-a0f540ffc1c2.png)
+
+
+
+## Insight2019.3.msi
+
+> ProductKey: FE954-96E48-6C5E3-37F25
+```
+PS M:\RCM\2017\InsightCS\Setup>
+```
+> ![image.png](/.attachments/image-5b913253-d953-4923-9158-63be8222be48.png)
+
+> ![image.png](/.attachments/image-1f97ac2b-b860-43ac-931d-a0f540ffc1c2.png)
 
 
 

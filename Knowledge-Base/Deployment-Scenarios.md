@@ -36,9 +36,24 @@ PS M:\RCM\2015\2015.1\InsightCS\Setup>
 
 ## Insight2017.4.msi
 
-> ProductKey: M3B78-37BC2-BF16A-7B9F1
+> ProductKey: FE954-96E48-6C5E3-37F25
 ```
-PS M:\RCM\2017\2017.1\InsightCS\Setup>
+PS M:\RCM\2017\InsightCS\Setup> dir
+
+
+    Directory: M:\RCM\2017\InsightCS\Setup
+
+
+Mode                LastWriteTime         Length Name                                                                       
+----                -------------         ------ ----                                                                       
+-a----        6/27/2018   4:31 PM      211068416 Insight2017.4.msi                                                          
+-a----         4/2/2018   9:38 PM             71 ProductKey.txt                                                             
+
+
+
+PS M:\RCM\2017\InsightCS\Setup> .\Insight2017.4.msi
+
+PS M:\RCM\2017\InsightCS\Setup>
 ```
 
 

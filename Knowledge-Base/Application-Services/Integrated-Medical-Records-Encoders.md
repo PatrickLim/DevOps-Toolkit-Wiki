@@ -47,8 +47,8 @@ end user expertise and skills sets include (examples)
 - Assists with the interpretation of codes and other information requested for accurate billing and reimbursement.
 - Possesses knowledge and understanding of failed bill parameters. Performs Outpatient charge reconciliation to ensure all submitted charges are posted timely and balance with total submitted charges. Assigns charges as applicable.
 
+
 Please reference the KB articles highlighted in the following screen-clip for documenation on integrating 3M and TruCode external encoder applications with InsightCS/RCM
----
 
 
 ![image.png](/.attachments/image-ea48b93a-4607-4c2f-bbf4-4b57cec72830.png)

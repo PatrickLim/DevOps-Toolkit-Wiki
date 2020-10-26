@@ -10,7 +10,7 @@ user experience and skills sets include
 
 ---
 
-# TruCode
+# 3M
 a;lsdrlasdjfl asdlfjaslkdfj;alkjsdj asdlfkjasldfiasdfas  slfjas;ll l dsfjlasj  dlfljdu;smasiojdad l alsdj kf
 
 > server-side
@@ -32,16 +32,6 @@ a;lsdrlasdjfl asdlfjaslkdfj;alkjsdj asdlfkjasldfiasdfas  slfjas;ll l dsfjlasj  d
 
 ---
 
-# TruCode
-a;lsdrlasdjfl asdlfjaslkdfj;alkjsdj asdlfkjasldfiasdfas  slfjas;ll l dsfjlasj  dlfljdu;smasiojdad l alsdj kf
-
-> server-side
-
-![image.png](/.attachments/image-ea48b93a-4607-4c2f-bbf4-4b57cec72830.png)
-
-> client-side
-
----
 # User Experience
 end user expertise and skills sets include (examples)
 

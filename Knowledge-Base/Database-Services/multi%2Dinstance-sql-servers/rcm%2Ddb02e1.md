@@ -9,6 +9,9 @@ setspn -u -s MSSQLSvc/rcm-db02e1.openvista.net:CRMC openvista\crmcsql
 setspn -u -s MSSQLSvc/rcm-db02e1.openvista.net:56783 openvista\crmcsql
 setspn -u -s MSSQLSvc/rcm-db02e1.openvista.net:SOM openvista\crmcsql
 
+setspn -u -s MSOLAPSvc.3/rcm-db02e1.openvista.net:SOM openvista\crmcsql
+setspn -u -s MSOLAPSvc.3/rcm-db02e1:SOM openvista\crmcsql
+
 this is for the Report Server Power BI website:
 
 setspn -u -s http/rcm-db02e1.openvista.net openvista\rcmdb01w1defaultsql

@@ -15,8 +15,9 @@ a;lsdrlasdjfl asdlfjaslkdfj;alkjsdj asdlfkjasldfiasdfas  slfjas;ll l dsfjlasj  d
 
 > server-side
 
+![image.png](/.attachments/image-ea48b93a-4607-4c2f-bbf4-4b57cec72830.png)
+
 > client-side
----
 
 ---
 
@@ -25,8 +26,9 @@ a;lsdrlasdjfl asdlfjaslkdfj;alkjsdj asdlfkjasldfiasdfas  slfjas;ll l dsfjlasj  d
 
 > server-side
 
+![image.png](/.attachments/image-ea48b93a-4607-4c2f-bbf4-4b57cec72830.png)
+
 > client-side
----
 
 ---
 
@@ -35,7 +37,10 @@ a;lsdrlasdjfl asdlfjaslkdfj;alkjsdj asdlfkjasldfiasdfas  slfjas;ll l dsfjlasj  d
 
 > server-side
 
+![image.png](/.attachments/image-ea48b93a-4607-4c2f-bbf4-4b57cec72830.png)
+
 > client-side
+
 ---
 # User Experience
 end user expertise and skills sets include (examples)
@@ -49,7 +54,3 @@ end user expertise and skills sets include (examples)
 
 
 Please reference the KB articles highlighted in the following screen-clip for documenation on integrating 3M and TruCode external encoder applications with InsightCS/RCM
-
-
-![image.png](/.attachments/image-ea48b93a-4607-4c2f-bbf4-4b57cec72830.png)
-

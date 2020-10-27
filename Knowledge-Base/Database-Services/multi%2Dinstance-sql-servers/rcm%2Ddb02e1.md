@@ -14,5 +14,5 @@ setspn -u -s MSOLAPSvc.3/rcm-db02e1:SOM openvista\crmcsql
 
 this is for the Report Server Power BI website:
 
-setspn -u -s http/rcm-db02e1.openvista.net openvista\rcmdb01w1defaultsql
-setspn -u -s http/rcm-db02e1 openvista\rcmdb01w1defaultsql
+setspn -u -s http/rcm-db02e1.openvista.net openvista\aatrcmpbi
+setspn -u -s http/rcm-db02e1 openvista\aatrcmpci

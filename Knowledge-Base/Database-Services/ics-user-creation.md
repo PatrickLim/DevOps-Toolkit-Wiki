@@ -41,7 +41,7 @@ drop login IcsNotif
 
 --2. then recreate in MASTER for the server level
 
-CREATE LOGIN controlwks WITH PASSWORD='St0ck3!!'
+CREATE LOGIN controlwks WITH PASSWORD='favre'
 CREATE LOGIN IcsAutoRoom WITH PASSWORD='St0ck3!!'
 CREATE LOGIN IcsAutoDisch WITH PASSWORD='St0ck3!!'
 CREATE LOGIN IcsPrintSrv WITH PASSWORD='St0ck3!!'

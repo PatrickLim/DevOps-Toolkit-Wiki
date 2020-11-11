@@ -1,0 +1,1 @@
+if you cannot start the interfaces with a service account but it starts with Local System, add the service account to the appserver's Administrator group in Computer Management.

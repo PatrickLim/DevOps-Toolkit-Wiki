@@ -8,8 +8,10 @@ During the installation of InsightCS, the following folder is created and used b
 
 You will need to adjust the IcsPrintService to point to the correct directory. The correct directory, created during the Nightly Processes installation, is depending on the database (main or test) being used:
 
+```
 C:\InsightCS\<DATABASE_NAME>\Reports\
 _Where <DATABASE_NAME> is equal to either IcsMain or IcsTest_
+```
 
 ## To reconfigure the IcsPrintService, do one of the following:
 

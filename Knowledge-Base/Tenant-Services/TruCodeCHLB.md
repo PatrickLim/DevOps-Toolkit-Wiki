@@ -8,3 +8,5 @@ SQL Server Product Key 2C9JR-K3RNG-QD4M4-JQ2HR-8468J
 
 sa JRS7kngOQNJB9D1fjmWE
 
+![image.png](/.attachments/image-baeb5aad-46b6-436f-9adb-0488bfe4e69a.png)
+

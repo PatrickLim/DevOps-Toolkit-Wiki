@@ -10,3 +10,10 @@ sa JRS7kngOQNJB9D1fjmWE
 
 ![image.png](/.attachments/image-baeb5aad-46b6-436f-9adb-0488bfe4e69a.png)
 
+Configuration File Path:
+
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20210127_193329\ConfigurationFile.ini
+
+Summary Log Path:
+
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20210127_193329\Summary_rcm-db01w1_20210127_193329.txt

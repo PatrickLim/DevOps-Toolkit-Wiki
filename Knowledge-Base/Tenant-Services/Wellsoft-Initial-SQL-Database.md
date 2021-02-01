@@ -4,6 +4,6 @@ wellsoft-sandbox.database.windows.net
 admin = wsadmin
 QAZwsx123!
 
-VM = sm-wellsoft-sandbox
+VM = vm-wellsoft-sandbox
 wsadmin QAZwsx12345!
 

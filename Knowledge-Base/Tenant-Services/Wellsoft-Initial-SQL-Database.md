@@ -7,3 +7,7 @@ QAZwsx123!
 VM = vm-wellsoft-sandbox
 wsadmin QAZwsx12345!
 
+created a second VM in Medsphere subscription
+msc-corp resource group
+vm-wellsoft-sandbox
+wsadmin QAZwsx12345!

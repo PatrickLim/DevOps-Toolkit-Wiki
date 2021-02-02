@@ -11,3 +11,4 @@ created a second VM in Medsphere subscription
 msc-corp resource group
 vm-wellsoft-sandbox
 wsadmin QAZwsx12345!
+msc-wus-vnet/msc-wus-vnet-dev-subnet1

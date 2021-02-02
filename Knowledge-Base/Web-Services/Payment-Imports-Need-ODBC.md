@@ -1,0 +1,1 @@
+for RCM Cloud, the Payment Imports feature relies on Classic functionality. So it needs the ODBC entries.

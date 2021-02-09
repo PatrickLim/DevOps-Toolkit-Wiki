@@ -19,3 +19,14 @@ From Matt:
     completely different paradigm
 ​
     oh, and modify the server name in /etc/nginx/conf.d/leadtools_ssl.conf
+
+Turns out that the CORS error thrown by the RCM Cloud webapp was not a leadtools issue but rather an NGINX issue.
+
+In the /etc/nginx/nginx.conf file set the max allowable file size:
+
+http {
+    ...
+    client_max_body_size 100M;
+}
+
+https://www.tecmint.com/limit-file-upload-size-in-nginx/

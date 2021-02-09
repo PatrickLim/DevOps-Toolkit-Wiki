@@ -8,3 +8,14 @@ Changing the values in this method (programmatically or manually) will allow fin
 all origins are allowed via allowedOrigins.add("*");
 
 https://www.leadtools.com/support/forum/posts/t12154-
+
+From Matt:
+
+
+    all an on-prem customer needs to do is symlink or copy their cert and key to /etc/nginx/leadtools.pem and /etc/nginx/leadtools.key and restart nginx
+
+    in AWS we use ELB TLS listeners and ACM certs
+
+    completely different paradigm
+​
+    oh, and modify the server name in /etc/nginx/conf.d/leadtools_ssl.conf

@@ -14,3 +14,4 @@ C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20210212_220416\Co
 
 Summary Log File:
 
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20210212_220416\Summary_rcm-db01c1_20210212_220416

@@ -11,3 +11,6 @@ SQL Server sa QWEasd12345!
 Configuration File Path:
 
 C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20210212_220416\ConfigurationFile.ini
+
+Summary Log File:
+

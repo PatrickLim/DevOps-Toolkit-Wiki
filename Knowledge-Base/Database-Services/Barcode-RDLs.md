@@ -16,3 +16,5 @@ Kyle Maasen
 Revenue Cycle Manager
 636.764.5069 | Office
 www.medsphere.com
+
+[Barcode Installation and Implemenation.docx](/.attachments/Barcode%20Installation%20and%20Implemenation-b84b1e40-362e-4f7a-bf61-1708335fc20e.docx)

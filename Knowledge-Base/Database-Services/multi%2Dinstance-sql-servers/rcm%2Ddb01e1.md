@@ -30,9 +30,11 @@ setspn -u -s http/rcm-db02e1.openvista.net openvista\aatrcmpbi
 setspn -u -s http/rcm-db02e1 openvista\aatrcmpbi
 
 
-# Review SPNs on rcm-db01e1.openvista.net
+# Review SPNs _configured_ on rcm-db01e1.openvista.net
 
-## openvista\aatrcmpbi
+- SQL Default Instance _rcm-db01e1_ : openvista\aatrcmpbi
+- SQL Named Instance _rcm-db01e1\aat_ : openvista\aatrcmpbi
+- SSRS Service: openvista\aatrcmpbi
 
 ```
 PS C:\windows\system32> setspn -L openvista\aatrcmpbi
@@ -88,9 +90,13 @@ Registered ServicePrincipalNames for CN=rcm-db02e1,OU=SQL Servers East US,OU=SQL
 	RestrictedKrbHost/rcm-db02e1.openvista.net
 	HOST/rcm-db02e1.openvista.net
 ```
+
 # RESOLUTION
+---
 
-looks like the 'http/' service class is already registered to 'rcm-db02e1' for the 'aatrcmpbi' service account!!
+**_looks like the 'http/' service class is already registered to 'rcm-db02e1' for the 'aatrcmpbi' service account!!_**
 
-Sooo... let's fix that!
+---
+
+# Sooo... let's fix that tonight!!!
 

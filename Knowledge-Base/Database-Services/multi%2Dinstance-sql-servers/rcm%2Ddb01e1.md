@@ -94,9 +94,12 @@ Registered ServicePrincipalNames for CN=rcm-db02e1,OU=SQL Servers East US,OU=SQL
 # RESOLUTION
 ---
 
-**_looks like the 'http/' service class is already registered to 'rcm-db02e1' for the 'aatrcmpbi' service account!!_**
+**_looks like the 'http/' service class needs to be registered to 'rcm-db01e1' for the 'aatrcmpbi' service account!!_**
 
 ---
 
-# Sooo... let's fix that tonight!!!
+```
+setspn -u -s http/rcm-db01e1.openvista.net openvista\aatrcmpbi
+setspn -u -s http/rcm-db01e1 openvista\aatrcmpbi
 
+```

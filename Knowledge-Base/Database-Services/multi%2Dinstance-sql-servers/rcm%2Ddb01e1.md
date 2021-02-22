@@ -91,7 +91,28 @@ Registered ServicePrincipalNames for CN=rcm-db02e1,OU=SQL Servers East US,OU=SQL
 	HOST/rcm-db02e1.openvista.net
 ```
 
+# Create SPNs for rcmdb01e1defaultsql
+
+```
+
+setspn -u -s MSSQLSvc/rcm-db01e1 openvista\rcmdb01e1defaultsql
+setspn -u -s MSSQLSvc/rcm-db01e1.openvista.net openvista\rcmdb01e1defaultsql
+setspn -u -s MSSQLSvc/rcm-db01e1:1433 openvista\rcmdb01e1defaultsql
+setspn -u -s MSSQLSvc/rcm-db01e1.openvista.net:1433 openvista\rcmdb01e1defaultsql
+
+setspn -u -s http/rcm-db01e1 openvista\rcmdb01e1defaultsql
+setspn -u -s http/rcm-db01e1.openvista.net openvista\rcmdb01e1defaultsql
+
+setspn -L openvista\rcmdb01e1defaultsql
+
+```
+
+## Kerberos Configuration Manager
+
+![image.png](https://dev.azure.com/limlab/bb0e22cd-eff0-4e63-82dc-2e54a075d32a/_apis/wiki/wikis/d8c97a3d-4543-4bca-8575-e841adf3416e/pages/224/comments/attachments/64e84e9d-2ae4-4bbe-b2a6-16e64c73ff32)
+
+![image.png](https://dev.azure.com/limlab/bb0e22cd-eff0-4e63-82dc-2e54a075d32a/_apis/wiki/wikis/d8c97a3d-4543-4bca-8575-e841adf3416e/pages/224/comments/attachments/21b91e39-d370-4355-8e18-b8a9071dcbc1) 
+
+
 # RESOLUTION (pending...)
-
-
 **See comments section for recent updates**

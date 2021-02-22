@@ -7,7 +7,7 @@ encryption key
 S:\ssrs encryption keys\feb-18-2021\ssrs-aatrcmpbi-encrypt-key-feb-18-2021.snk
 M3dsph3r3!2019
 
-
+---
 # Copied the following from the rcm-db02e1 page
 
 SPN's are centralized.
@@ -29,7 +29,7 @@ this is for the Report Server Power BI website:
 setspn -u -s http/rcm-db02e1.openvista.net openvista\aatrcmpbi
 setspn -u -s http/rcm-db02e1 openvista\aatrcmpbi
 
-
+---
 # Review SPNs _configured_ on rcm-db01e1.openvista.net
 
 - SQL Default Instance _rcm-db01e1_ : openvista\aatrcmpbi
@@ -91,6 +91,7 @@ Registered ServicePrincipalNames for CN=rcm-db02e1,OU=SQL Servers East US,OU=SQL
 	HOST/rcm-db02e1.openvista.net
 ```
 
+---
 # Create SPNs for rcmdb01e1defaultsql
 
 ```

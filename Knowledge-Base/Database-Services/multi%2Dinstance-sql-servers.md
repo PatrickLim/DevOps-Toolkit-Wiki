@@ -1,4 +1,5 @@
 # rcm-db01w1
+[rcm-db01w1.openvista.net](/Knowledge-Base/Database-Services/multi%2Dinstance-sql-servers/rcm%2Ddb01w1.openvista.net)
 
 CHLB Community Hospital of Long Beach
 GMH Guam Medical Hospital

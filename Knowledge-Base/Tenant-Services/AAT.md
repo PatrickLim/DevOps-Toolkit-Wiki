@@ -1,6 +1,6 @@
 [[_TOC_]]
 
-# **A**shley **A**ddiction **T**reatment
+# Ashley Addiction Treatment
 
 ## AAT: Extract RDLs
 

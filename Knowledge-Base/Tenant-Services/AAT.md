@@ -2,6 +2,7 @@
 
 # Ashley Addiction Treatment
 
+---
 ## AAT: Extract RDLs
 
 _Thursday, January 2, 2020 9:03 PM_
@@ -97,7 +98,6 @@ END
 ```
 
 ---
-
 ## AAT: SPNs & SQL Instances
 
 _Wednesday, January 8, 2020 5:54 PM_
@@ -109,7 +109,6 @@ _Wednesday, January 8, 2020 5:54 PM_
 - [install-standalone-ca-certificate-authority-on-windows-server-2012-r2-for-use-with-operations-manager](https://docs.microsoft.com/en-us/archive/blogs/tysonpaul/install-standalone-ca-certificate-authority-on-windows-server-2012-r2-for-use-with-operations-manager)
 
 ---
-
 ## AAT: 2019.3 Web Services
 
 _Monday, June 1, 2020 11:36 PM_

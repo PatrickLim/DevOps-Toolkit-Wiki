@@ -115,4 +115,11 @@ setspn -L openvista\rcmdb01e1defaultsql
 
 
 # RESOLUTION (pending...)
-**See comments section for recent updates**
+
+# Applied latest SQL 2019 CU to RCM-DB01E1
+
+Please reference the following link for details
+
+- [Apply SQL 2019 CU](/Knowledge-Base/Database-Services/multi%2Dinstance-sql-servers/rcm%2Ddb01e1/Apply-SQL-2019-CU)
+
+

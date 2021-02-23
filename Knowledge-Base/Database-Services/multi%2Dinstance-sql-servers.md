@@ -7,6 +7,7 @@ GCH Guadalupe Community Hospital
 SMG Sana Medical Group
 
 # rcm-db02e1
+[rcm-db02e1.openvista.net](/Knowledge-Base/Database-Services/multi%2Dinstance-sql-servers/rcm%2Ddb02e1.openvista.net)
 
 CRMC Carrollton Regional Medical Center
 SOM Sacred Oak

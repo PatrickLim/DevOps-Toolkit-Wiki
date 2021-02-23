@@ -9,7 +9,6 @@ sp_replcmds-cannot-execute-because-the-principal-does-not-exist
 replication
 Collector-Database-Hostnames-Cannot-be-Fully-Qualified!
 SQLWMI-Gotcha
-multi-instance-db-kerberos
 Client-found-response-content-type-blank-expecting-text-xml
 Configure-Kerberos-for-Power-BI-reports-in-Reporting-Services-Configure-Kerberos-for-Power-BI-reports-in-Reporting-Services
 multi%2Dinstance-sql-servers

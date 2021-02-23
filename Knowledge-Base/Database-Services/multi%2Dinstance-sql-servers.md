@@ -19,6 +19,6 @@
 
 # script examples
 
-- [Example: KCM Autofix Script](/Knowledge-Base/Database-Services/multi%2Dinstance-sql-servers/Example:-KCM-Autofix-Script)
+- [Example: KCM Autofix Script](/Knowledge-Base/Database-Services/multi%2Dinstance-sql-servers/KCM-Autofix-Script)
 
 - [Example: Add Delegated Service Account to SQL Instance](/Knowledge-Base/Database-Services/multi%2Dinstance-sql-servers/Example:-Add-Delegated-Service-Account-to-SQL-Instance)

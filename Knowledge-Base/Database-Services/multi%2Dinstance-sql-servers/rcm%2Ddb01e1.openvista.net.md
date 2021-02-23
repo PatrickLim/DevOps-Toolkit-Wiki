@@ -113,7 +113,7 @@ setspn -L openvista\rcmdb01e1defaultsql
 
 ![image.png](https://dev.azure.com/limlab/bb0e22cd-eff0-4e63-82dc-2e54a075d32a/_apis/wiki/wikis/d8c97a3d-4543-4bca-8575-e841adf3416e/pages/224/comments/attachments/21b91e39-d370-4355-8e18-b8a9071dcbc1) 
 
-
+---
 # RESOLUTION (pending...)
 
 # Applied latest SQL 2019 CU to RCM-DB01E1

@@ -1,6 +1,6 @@
 # [Database Services](/Knowledge-Base/Database-Services)
 
-- [multi-instance sql servers](/Knowledge-Base/Database-Services/multi%2Dinstance-sql-servers) _**(updated)**_
+- [multi-instance sql servers](/Knowledge-Base/Database-Services/multi%2Dinstance-sql-servers) **(updated)**
 - [service broker](/Knowledge-Base/Database-Services/service-broker)
 - [replication instructions](/Knowledge-Base/Database-Services/replication-instructions)
 - [replication exclude sprocs](/Knowledge-Base/Database-Services/replication-exclude-sprocs)

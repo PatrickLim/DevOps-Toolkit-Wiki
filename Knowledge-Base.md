@@ -24,7 +24,7 @@
 
 # [Tenant Services](/Knowledge-Base/Tenant-Services)
 
-- [AAT: SPNs & SQL Instances](/Knowledge-Base/Tenant-Services/AAT)
+- [AAT: SPNs & SQL Instances](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/235/AAT?anchor=aat%3A-spns-%26-sql-instances)
 - [AAT: Extract RDLs](/Knowledge-Base/Tenant-Services/AAT)
 - [AAT: 2019.3 Web Services](/Knowledge-Base/Tenant-Services/AAT)
 - [CRMC: sql agent job history](/Knowledge-Base/Tenant-Services/CRMC:-sql-agent-job-history)

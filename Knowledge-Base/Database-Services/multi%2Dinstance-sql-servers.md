@@ -12,5 +12,8 @@ SOM Sacred Oak
 
 # Example Scripts
 
+[Example: KCM Autofix Script](/Knowledge-Base/Database-Services/multi%2Dinstance-sql-servers/Example:-KCM-Autofix-Script)
+
+
 
 

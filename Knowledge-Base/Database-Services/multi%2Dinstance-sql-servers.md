@@ -12,6 +12,11 @@ SMG Sana Medical Group
 CRMC Carrollton Regional Medical Center
 SOM Sacred Oak
 
+# rcm-db01e1
+
+CRMC Carrollton Regional Medical Center
+SOM Sacred Oak
+
 # Example Scripts
 
 - [Example: KCM Autofix Script](/Knowledge-Base/Database-Services/multi%2Dinstance-sql-servers/Example:-KCM-Autofix-Script)

@@ -110,3 +110,12 @@ _Wednesday, January 8, 2020 5:54 PM_
 
 ---
 
+## AAT: 2019.3 Web Services
+
+_Monday, June 1, 2020 11:36 PM_
+
+1. Release Directory: `\\wb01e1-aat.openvista.net\m$\release`
+1. Deploy Directory: `\\wb01e1-aat.openvista.net\m$\deploy`
+
+---
+

@@ -14,3 +14,4 @@ SELECT CONVERT(VARCHAR(MAX), CONVERT(VARBINARY(MAX), DATA)) , * FROM TRANSACTION
 
 Important Tables
 syslnk.record_type
+syslnk.record_routing

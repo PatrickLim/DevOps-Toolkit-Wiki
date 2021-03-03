@@ -1,3 +1,13 @@
+# How to add Outbound Interface for Images
+
+1. Powershell script create service shell
+2. Run RegEdit file to update OS Registry entries
+3. Make sure the cfg & config files are in the `operations` folder
+4. Run update scripts for Collector and Sislnk databases
+
+---
+
+
 used SislnkHL7ToEngineHL7_Q193Prod as a template to create a new service called "Patrick310"
 
 used the installer msi to create the service

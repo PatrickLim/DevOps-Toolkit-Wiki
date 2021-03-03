@@ -7,6 +7,7 @@
 
 ---
 
+this was Patrick Lim's first attempt (scroll down for the proper "Matt Garber Way")
 
 used SislnkHL7ToEngineHL7_Q193Prod as a template to create a new service called "Patrick310"
 
@@ -34,3 +35,17 @@ inside the OPERATIONS folder (in this example in \\ap-rcmqa20193\IcsInterface\Op
 
 copied SislnkEventToSislnkHL7_Q193Prod.config into Patrick310.config
 make sure the cfg file contains the correct service name too!
+
+---
+
+The Proper Matt Garber Way
+
+1. use the "sc create" and "sc delete" commands in cmd or powershell to create a placeholder service.
+
+sc create "ImageHL7ToEngineHL7" binpath= "C:\IcsInterface\Bin\GenericService.exe ImageHL7ToEngineHL7" start= demand
+
+sc delete "ImageHL7ToEngineHL7"
+
+2. double-click the EDITED reg file to fill in the "meat" of the registry key.
+
+![image.png](/.attachments/image-bc88a730-0a56-4b20-991b-59e69c69705d.png)

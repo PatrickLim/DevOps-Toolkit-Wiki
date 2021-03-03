@@ -40,7 +40,7 @@ make sure the cfg file contains the correct service name too!
 
 The Proper Matt Garber Way
 
-1. use the "sc create" and "sc delete" commands in cmd or powershell to create a placeholder service.
+1. use the "sc create" and "sc delete" commands in cmd (powershell will NOT work) to create a placeholder service.
 
 sc create "ImageHL7ToEngineHL7" binpath= "C:\IcsInterface\Bin\GenericService.exe ImageHL7ToEngineHL7" start= demand
 

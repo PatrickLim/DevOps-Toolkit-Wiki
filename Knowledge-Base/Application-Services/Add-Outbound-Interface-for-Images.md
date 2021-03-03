@@ -49,3 +49,10 @@ sc delete "ImageHL7ToEngineHL7"
 2. double-click the EDITED reg file to fill in the "meat" of the registry key.
 
 ![image.png](/.attachments/image-bc88a730-0a56-4b20-991b-59e69c69705d.png)
+
+3. use the following queries to fill in the appropriate tables in the Sislnk and Collector databases:
+
+[ADD_SERVICE_TO_COLLECTOR_DB.sql](/.attachments/ADD_SERVICE_TO_COLLECTOR_DB-f7a320ad-7fff-4740-b9e1-a099f944fd77.sql)
+[ADD_SERVICE_TO_SISLNK_DB.sql](/.attachments/ADD_SERVICE_TO_SISLNK_DB-d30efba2-4398-4d89-860c-c5c103144fa7.sql)
+
+4. make sure the EDITED config and cfg files are in the OPERATIONS folder.

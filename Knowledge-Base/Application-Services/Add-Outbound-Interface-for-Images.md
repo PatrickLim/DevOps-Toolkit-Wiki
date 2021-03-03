@@ -50,6 +50,10 @@ sc delete "ImageHL7ToEngineHL7"
 
 ![image.png](/.attachments/image-bc88a730-0a56-4b20-991b-59e69c69705d.png)
 
+the above screenshot is not representative of this sample .reg file:
+
+[Patrick310.reg.txt](/.attachments/Patrick310.reg-30f89b6c-0a2b-45ef-a2c6-966ec22fac6c.txt)
+
 3. use the following queries to fill in the appropriate tables in the Sislnk and Collector databases:
 
 [ADD_SERVICE_TO_COLLECTOR_DB.sql](/.attachments/ADD_SERVICE_TO_COLLECTOR_DB-626b53e9-0049-489b-8c9e-66625571e0c1.sql)

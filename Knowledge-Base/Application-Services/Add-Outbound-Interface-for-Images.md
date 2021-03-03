@@ -28,8 +28,9 @@ from REGISTRY where SUBSYSTEM_ID = 'SislnkHL7ToEngineHL7_Q193Prod'
 update REGISTRY set VALUE = 'Patrick310.cfg' where SUBSYSTEM_ID = 'Patrick310' and KEY_ID = 'CfgName'
 update REGISTRY set VALUE = 'Patrick310.config' where SUBSYSTEM_ID = 'Patrick310' and KEY_ID = 'ConfName'
 update REGISTRY set VALUE = 'Patrick310.log' where SUBSYSTEM_ID = 'Patrick310' and KEY_ID = 'LogName'
+update REGISTRY set VALUE = '310' where SUBSYSTEM_ID = 'Patrick310' and KEY_ID = 'SislnkClientNum'
 
 inside the OPERATIONS folder (in this example in \\ap-rcmqa20193\IcsInterface\Operations\)
 
 copied SislnkEventToSislnkHL7_Q193Prod.config into Patrick310.config
-
+make sure the cfg file contains the correct service name too!

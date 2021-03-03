@@ -52,7 +52,7 @@ sc delete "ImageHL7ToEngineHL7"
 
 3. use the following queries to fill in the appropriate tables in the Sislnk and Collector databases:
 
-[ADD_SERVICE_TO_COLLECTOR_DB.sql](/.attachments/ADD_SERVICE_TO_COLLECTOR_DB-f7a320ad-7fff-4740-b9e1-a099f944fd77.sql)
-[ADD_SERVICE_TO_SISLNK_DB.sql](/.attachments/ADD_SERVICE_TO_SISLNK_DB-d30efba2-4398-4d89-860c-c5c103144fa7.sql)
+[ADD_SERVICE_TO_COLLECTOR_DB.sql](/.attachments/ADD_SERVICE_TO_COLLECTOR_DB-626b53e9-0049-489b-8c9e-66625571e0c1.sql)
+[ADD_SERVICE_TO_SISLNK_DB.sql](/.attachments/ADD_SERVICE_TO_SISLNK_DB-081f0e8b-3239-4eed-aac0-1f6a43fb5f97.sql)
 
 4. make sure the EDITED config and cfg files are in the OPERATIONS folder.

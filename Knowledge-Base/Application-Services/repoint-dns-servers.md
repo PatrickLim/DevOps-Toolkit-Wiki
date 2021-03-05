@@ -1,0 +1,1 @@
+Get-NetAdapter | Where-Object InterfaceDescription -eq "Microsoft Hyper-V Network Adapter" | Set-DnsClientServerAddress -ServerAddresses ("10.7.11.7","10.252.252.99","10.251.251.252")

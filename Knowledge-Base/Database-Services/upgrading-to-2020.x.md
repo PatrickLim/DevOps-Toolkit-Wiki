@@ -4,6 +4,10 @@
 
 [sqlscripts.zip](/.attachments/sqlscripts-63f7c730-35e7-4cbd-ab5e-856dd5dd6372.zip)
 
-This is what I ran at Ashley Addiction Test environment for the MigrationAssistant:
+This is what I ran at Ashley Addiction AAT Test environment for the MigrationAssistant:
 
 .\migraterole.bat rcm-db01e1\aat aat-rcm-test
+
+For Arkansas ASH it should be:
+
+.\migraterole.bat ash-rcm-sql ash_rcm_test

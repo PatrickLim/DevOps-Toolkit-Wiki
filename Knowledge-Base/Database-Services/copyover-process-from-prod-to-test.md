@@ -2,8 +2,15 @@
 2. restore prod to test
 3. SERVICE BROKER!!!
 4. run Update Paths Test from Prod script (and verify results table by table)
+5. depending on the client, scrub the data using GO LIVE INIT script
+
+Update Paths Test from Prod
 
 https://medsphere.sharepoint.com/:u:/g/Implementation%20Services/ERAuxsM7ETNNrLfGeQgPze8B98qlIPknY51fF2DPESif9A?e=sOLfB3
+
+GO LIVE INIT
+
+https://medsphere.sharepoint.com/:u:/g/Implementation%20Services/EXdop7NpV_FIulbjPqXCfsIB0vkWg0PXwmAHbgynK6ocOg?e=mcL08P
 
 Update Paths Test from Prod script (edit the four variables up top):
 

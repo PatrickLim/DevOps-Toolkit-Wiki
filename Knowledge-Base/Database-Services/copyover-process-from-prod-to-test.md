@@ -3,6 +3,8 @@
 3. SERVICE BROKER!!!
 4. run Update Paths Test from Prod script (and verify results table by table)
 
+https://medsphere.sharepoint.com/:u:/g/Implementation%20Services/ERAuxsM7ETNNrLfGeQgPze8B98qlIPknY51fF2DPESif9A?e=sOLfB3
+
 Update Paths Test from Prod script (edit the four variables up top):
 
 -- The following script changes paths from production to test.

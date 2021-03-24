@@ -13,10 +13,15 @@ insert into REPORTING_REPORT_PROPERTIES (REPORTING_ID, SHOW_PARAMETERS, SHOW_TOO
 insert into WEB_AREA_REPORTS (APP_AREA_CD, REPORTING_ID) values ('SCHEDULING', 811)
 insert into WEB_AREA_REPORTS (APP_AREA_CD, REPORTING_ID) values ('SCHEDULING', 812)
 
-4. Last, for security get the ROLE_ID that your user has and add it to WEB_ROLE_REPORTS 
+4. For security get the ROLE_ID that your user has and add it to WEB_ROLE_REPORTS 
 
 insert into WEB_ROLE_REPORTS (ROLE_ID, REPORTING_ID) values (2,811)
 insert into WEB_ROLE_REPORTS (ROLE_ID, REPORTING_ID) values (2,812)
+
+5. Last, ROLE_REPORTING should have the same entries as WEB_ROLE_REPORTS otherwise the job "Web Report Updates" may delete the entries.
+
+insert into ROLE_REPORTING (ROLE_ID, REPORTING_ID) values (2,811)
+insert into ROLE_REPORTING (ROLE_ID, REPORTING_ID) values (2,812)
 
 
 ![image.png](/.attachments/image-431d902a-0e08-4ab2-a746-ed2c0cca99cc.png)

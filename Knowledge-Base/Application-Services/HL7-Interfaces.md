@@ -1,6 +1,6 @@
 this first doc is 688 pages!
 
-https://medsphere.sharepoint.com/:w:/r/STL/Development/_layouts/15/Doc.aspx?sourcedoc=%7B9C3752A2-EB3E-4D23-8486-D19C437DEA7E%7D&file=Interfaces.doc&action=default&mobileredirect=true
+https://medsphere.sharepoint.com/:w:/r/STL/Development/_layouts/15/Doc.aspx?sourcedoc=%7B9C3752A2-EB3E-4D23-8486-D19C437DEA7E%7D&file=Interfaces.doc&action=default&mobileredirect=true&CID=93DD7356-DE3C-4C0D-A780-9290CB9BFE0C&wdLOR=cCDF24AAF-C598-45B4-9E48-2DBEA9CEFB9D
 
 this one is only 19 pages:
 

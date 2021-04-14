@@ -42,3 +42,5 @@ Dan
 (here is Dan's attachment)
 
 [MR Test to Production Update.sql](/.attachments/MR%20Test%20to%20Production%20Update-ea2725b9-7d7e-4795-86ab-6894db561677.sql)
+
+The relevant table is ENCODER_CONFIG_MSTR

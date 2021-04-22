@@ -8,6 +8,10 @@ Update Paths Test from Prod
 
 https://medsphere.sharepoint.com/:u:/g/Implementation%20Services/ERAuxsM7ETNNrLfGeQgPze8B98qlIPknY51fF2DPESif9A?e=sOLfB3
 
+This is for Ashley AAT specifically:
+
+[aat update paths prod to test.txt](/.attachments/aat%20update%20paths%20prod%20to%20test-9fc0ac88-9f48-43ff-91c7-e66b95531358.txt)
+
 GO LIVE INIT
 
 https://medsphere.sharepoint.com/:u:/g/Implementation%20Services/EXdop7NpV_FIulbjPqXCfsIB0vkWg0PXwmAHbgynK6ocOg?e=mcL08P

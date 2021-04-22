@@ -1,0 +1,73 @@
+declare @DatabaseFolder varchar(30)
+set @DatabaseFolder = 'aat-rcm-test'
+declare @AppSrv varchar(30)
+set @AppSrv = 'aat-rcm'
+
+UPDATE SYSTEM_MSTR SET BILLING_DIR = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Billing\'
+--SELECT * FROM SYSTEM_MSTR
+
+--UPDATE PROFILE SET IMAGE_FORM_DIR = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Image\Forms\' -- TBD
+UPDATE PROFILE SET BILLING_DIR = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Billing\'
+UPDATE PROFILE SET POSTING_DIR = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Posting\'
+--SELECT * FROM PROFILE
+
+UPDATE LOCATION_MSTR SET ADT_ROUTING_DIRECTORY = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Printouts\'
+--SELECT * FROM LOCATION_MSTR
+
+
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\NightlyProcesses\' WHERE REGISTRY_KEY = 'AUTO_DISCHARGE_LOG_PATH'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Billing\Claims\1500\' WHERE REGISTRY_KEY = 'BILLING_1500_PRINT_FOLDER'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Billing\Claims\Demand\' WHERE REGISTRY_KEY = 'BILLING_DEMAND_PRINT_FOLDER'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Billing\Claims\Detail\' WHERE REGISTRY_KEY = 'BILLING_DETAIL_PRINT_FOLDER'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Billing\Reports\' WHERE REGISTRY_KEY = 'BILLING_REPORT_PRINT_FOLDER'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Billing\Claims\UB04\' WHERE REGISTRY_KEY = 'BILLING_UB04_PRINT_FOLDER'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Billing\Claims\UB92\' WHERE REGISTRY_KEY = 'BILLING_UB92_PRINT_FOLDER'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\NightlyProcesses\' WHERE REGISTRY_KEY = 'CONADJ_LOG_PATH'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\NightlyProcesses\' WHERE REGISTRY_KEY = 'CONTRACT_REIMB_CALC_LOG_PATH'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\NightlyProcesses\' WHERE REGISTRY_KEY = 'DMXTRACT_LOG_PATH'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\ERA\ERA.cfg' WHERE REGISTRY_KEY = 'ERA_LOG_CONFIG_FILE'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\ERA\' WHERE REGISTRY_KEY = 'ERA_OUTPUT_DIR'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\ERA\RPTS' WHERE REGISTRY_KEY = 'ERA_REPORT_DIR'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\NightlyProcesses\' WHERE REGISTRY_KEY = 'EXTERNAL_MEDREC_APP_PATH'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '1', VALUE2 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\GL Summary Report\' WHERE REGISTRY_KEY = 'GL_SUMMARY_REPORT_TYPE'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\NightlyProcesses\' WHERE REGISTRY_KEY = 'LXTRACT_LOG_PATH'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\NightlyProcesses\' WHERE REGISTRY_KEY = 'ROOM_CHARGE_ERROR_LOG_PATH'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\NightlyProcesses\' WHERE REGISTRY_KEY = 'ROOM_CHARGE_LOG_PATH'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\NightlyProcesses\' WHERE REGISTRY_KEY = 'SBWRTOFF_LOG_PATH'
+UPDATE GLOBAL_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\NightlyProcesses\' WHERE REGISTRY_KEY = 'STEP_UPDATE_LOG_PATH'
+--SELECT * FROM GLOBAL_REGISTRY WHERE VALUE1 LIKE '%\%' OR VALUE2 LIKE '%\%'
+
+UPDATE SYSTEM_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Billing\Claims\1500\' WHERE REGISTRY_KEY = 'BILLING_1500_PRINT_FOLDER'
+UPDATE SYSTEM_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Billing\Claims\Demand\' WHERE REGISTRY_KEY = 'BILLING_DEMAND_PRINT_FOLDER'
+UPDATE SYSTEM_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Billing\Claims\Detail\' WHERE REGISTRY_KEY = 'BILLING_DETAIL_PRINT_FOLDER'
+UPDATE SYSTEM_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Billing\Reports\' WHERE REGISTRY_KEY = 'BILLING_REPORT_PRINT_FOLDER'
+UPDATE SYSTEM_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Billing\Claims\UB04\' WHERE REGISTRY_KEY = 'BILLING_UB04_PRINT_FOLDER'
+UPDATE SYSTEM_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Billing\Claims\UB92\' WHERE REGISTRY_KEY = 'BILLING_UB92_PRINT_FOLDER'
+UPDATE SYSTEM_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\GLInterface\' WHERE REGISTRY_KEY = 'GL_INTERFACE_DIRECTORY'
+UPDATE SYSTEM_REGISTRY SET VALUE1 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\Refunds\' WHERE REGISTRY_KEY = 'REFUND_OUTPUT'
+UPDATE SYSTEM_REGISTRY SET VALUE1 = '1', VALUE2 = '\\' + @AppSrv + '\InsightCS\' + @DatabaseFolder + '\GL Summary Report\' WHERE REGISTRY_KEY = 'GL_SUMMARY_REPORT_TYPE'
+--SELECT * FROM SYSTEM_REGISTRY WHERE VALUE1 LIKE '%\%' OR VALUE2 LIKE '%\%'
+
+UPDATE LOCATION_REGISTRY SET VALUE1 = 'http://rcm-db01e1.openvista.net/reportserver-pbi//Pages/ReportViewer.aspx?/AAT/' + @DatabaseFolder + '/Scheduling/abn' WHERE REGISTRY_KEY = 'ABN_REPORT_URL'
+UPDATE LOCATION_REGISTRY SET VALUE1 = 'http://rcm-db01e1.openvista.net/reportserver-pbi//Pages/ReportViewer.aspx?/AAT/' + @DatabaseFolder + '/InsightCS Application/WebPaymentReceipt' WHERE REGISTRY_KEY = 'PAYMENT_ENTRY_RCPT_REPORT_URL'
+UPDATE LOCATION_REGISTRY SET VALUE1 = 'http://rcm-db01e1.openvista.net/reportserver-pbi//Pages/ReportViewer.aspx?/AAT/' + @DatabaseFolder + '/InsightCS Application/WebPosPaymentReceipt' WHERE REGISTRY_KEY = 'POS_PAYMENTS_RCPT_REPORT_URL'
+--SELECT * FROM LOCATION_REGISTRY WHERE VALUE1 LIKE '%/%' OR VALUE2 LIKE '%/%'
+
+UPDATE SERVICES_MSTR SET HOST_NAME = @AppSrv
+UPDATE SERVICES_MSTR SET URI = 'net.tcp://' + @AppSrv + ':9697/BillingService/2013.3' WHERE URI IS NOT NULL
+
+update SERVICES_MSTR set SERVICE_NAME = 'DBSnapshotService_Test' where ROW_NO = 1
+update SERVICES_MSTR set SERVICE_NAME = 'BillingService_Test' where ROW_NO = 2
+update SERVICES_MSTR set SERVICE_NAME = 'CDRProcessor_Test' where ROW_NO = 3
+update SERVICES_MSTR set SERVICE_NAME = 'IcsNotificationService_Test' where ROW_NO = 4
+
+--SELECT * FROM SERVICES_MSTR
+
+UPDATE EDI_MSTR SET INBOUND_PATH = '\\' + @AppSrv + '\\InsightCS\\' + @DatabaseFolder + '\\BILLING\\CLAIMS\\CDR_Inbound\\', OUTBOUND_PATH = '\\' + @AppSrv + '\\InsightCS\\' + @DatabaseFolder + '\\BILLING\\CLAIMS\\EDI_Outbound\\' WHERE EDI_ID = 'ZIRMEDAP'
+SELECT * FROM EDI_MSTR
+
+delete from SERVICES_MSTR where row_no in (4, 5, 7)
+
+UPDATE REPORT_MSTR SET REPORT_DEFINITION = REPLACE(REPORT_DEFINITION, 'aat-rcm','aat-rcm-test')
+UPDATE REPORTING_REPORT_PROPERTIES SET DATA_PATH = REPLACE(DATA_PATH, 'aat-rcm','aat-rcm-test')
+UPDATE IMAGE_DIRS SET DIRECTORY = REPLACE(DIRECTORY, 'aat-rcm','aat-rcm-test')

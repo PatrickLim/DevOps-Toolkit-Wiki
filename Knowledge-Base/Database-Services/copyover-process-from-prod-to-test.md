@@ -1,3 +1,9 @@
+VERY IMPORTANT!!! make sure HL7 INTERFACES are working at the end of the process!
+--
+
+May need to bug Terri to verify that connectivity is there before signing off on the all-clear.
+
+
 1. backup test database (even if nightly backup was taken previously, just in case)
 2. restore prod to test
 3. SERVICE BROKER!!!

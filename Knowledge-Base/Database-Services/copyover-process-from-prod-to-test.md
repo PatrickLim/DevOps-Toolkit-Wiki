@@ -9,6 +9,7 @@ May need to bug Terri to verify that connectivity is there before signing off on
 3. SERVICE BROKER!!!
 4. run Update Paths Test from Prod script (and verify results table by table)
 5. depending on the client, scrub the data using GO LIVE INIT script
+6. copy Image Folders from prod to test
 
 Update Paths Test from Prod
 

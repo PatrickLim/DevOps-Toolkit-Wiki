@@ -17,6 +17,10 @@ https://medsphere.sharepoint.com/:u:/g/Implementation%20Services/ERAuxsM7ETNNrLf
 
 This is for Ashley AAT specifically:
 
+use Kyle's sharepoint instead of the txt!
+
+https://medsphere.sharepoint.com/:u:/g/Implementation%20Services/EcsMI9Sp82VIupTohS5tSUIBUAgumL-sFaaNd3CtXOTI7A?e=DuWif9
+
 [aat update paths prod to test.txt](/.attachments/aat%20update%20paths%20prod%20to%20test-9fc0ac88-9f48-43ff-91c7-e66b95531358.txt)
 
 GO LIVE INIT

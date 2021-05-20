@@ -27,6 +27,11 @@ GO LIVE INIT
 
 https://medsphere.sharepoint.com/:u:/g/Implementation%20Services/EXdop7NpV_FIulbjPqXCfsIB0vkWg0PXwmAHbgynK6ocOg?e=mcL08P
 
+
+PHI SCRUBBER script
+
+(ask Kyle for SharePoint link)
+
 Update Paths Test from Prod script (edit the four variables up top):
 
 -- The following script changes paths from production to test.
@@ -107,3 +112,10 @@ UPDATE EDI_MSTR SET INBOUND_PATH = REPLACE(INBOUND_PATH, @ProdDatabase, @TestDat
 UPDATE EDI_MSTR SET OUTBOUND_PATH = REPLACE(OUTBOUND_PATH, @ProdAppSrv, @TestAppSrv)
 UPDATE EDI_MSTR SET OUTBOUND_PATH = REPLACE(OUTBOUND_PATH, @ProdDatabase, @TestDatabase)
 
+------------------------------
+
+Here is the script that will need to be run after the INIT.  This will set the starting visit number to 2000001 and the starting MRN/URN to 700000 . CC’ing Tina to ensure I have the correct values.
+
+UPDATE NEXT_VISIT_NO SET NEXT_VISIT_NO = '2000001'
+UPDATE NEXT_URN SET URN = '700000'
+UPDATE NEXT_MEDREC_NO SET NEXT_MEDREC_NO = '700000'

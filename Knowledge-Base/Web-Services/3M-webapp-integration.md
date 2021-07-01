@@ -1,3 +1,5 @@
+
+```
 select * from LOCATION_REGISTRY where REGISTRY_KEY = 'EXTERNAL_CODER'
 select * from GLOBAL_REGISTRY where REGISTRY_KEY = '3M_CRS_URL'
 select * from ENCODER_CONFIG_MSTR where SECTION_NAME = 'out_tags' and TAG_NAME = 'authorization'
@@ -8,18 +10,24 @@ select * from WEB_MAINT_TABLE_COLUMNS where TABLE_NAME = 'ENCODER_CONFIG_MSTR'
 
 select * from WEB_RIGHT_MSTR where SEC_RIGHT_ID = 'EXT-CODER-QA'
 select * from WEB_ROLE_RIGHT where SEC_RIGHT_ID = 'EXT-CODER-QA'
+```
+
 
 EXTERNAL_CODER should be "3M"
 3M_CRS_URL should be the URL of the webapp that 3M installed at the client. For CRMC it is https://3mcsr.crmc.health and for GACH it is gch3msrv.cottagehospital.com
 TAG_NAME should be "HGWDNL900Q7LTobC"
 
+
+```
 update LOCATION_REGISTRY set VALUE1 = '3M' where REGISTRY_KEY = 'EXTERNAL_CODER'
 update GLOBAL_REGISTRY set VALUE2 = 'http://gch3msrv.cottagehospital.com' where REGISTRY_KEY = '3M_CRS_URL'
 update ENCODER_CONFIG_MSTR set CUSTOM_VAL2 = 'HGWDNL900Q7LTobC' where SECTION_NAME = 'out_tags' and TAG_NAME = 'authorization'
+```
+
 
 The disposition code from RCM has leading zeroes as it should have. But, 3M sends back to RCM without leading zero causing import to fail. During my testing, I could not see where user is allowed to update this field. So, I disable this element in the in-tags configuration. And problem was solved.
 
-update ENCODER_CONFIG_MSTR set ENABLE_FLG = 0 where SECTION_NAME = 'in_tags' and TAG_NAME = 'DISPOSITION_CD'
+`update ENCODER_CONFIG_MSTR set ENABLE_FLG = 0 where SECTION_NAME = 'in_tags' and TAG_NAME = 'DISPOSITION_CD'`
 
 Tony Rogers testing:
 

@@ -1,8 +1,17 @@
 select * from LOCATION_REGISTRY where REGISTRY_KEY = 'EXTERNAL_CODER'
 select * from GLOBAL_REGISTRY where REGISTRY_KEY = '3M_CRS_URL'
+select * from ENCODER_CONFIG_MSTR where SECTION_NAME = 'out_tags' and TAG_NAME = 'authorization'
+
+select * from WEB_MAINT_TABLE_MSTR where TABLE_GROUP_CD = 'ENCODER_CONFIG_MSTR'
+select * from WEB_MAINT_TABLE_GROUP where TABLE_GROUP_CD = 'ENCODER_CONFIG_MSTR'
+select * from WEB_MAINT_TABLE_COLUMNS where TABLE_NAME = 'ENCODER_CONFIG_MSTR'
+
+select * from WEB_RIGHT_MSTR where SEC_RIGHT_ID = 'EXT-CODER-QA'
+select * from WEB_ROLE_RIGHT where SEC_RIGHT_ID = 'EXT-CODER-QA'
 
 EXTERNAL_CODER should be "3M"
 3M_CRS_URL should be the URL of the webapp that 3M installed at the client. For CRMC it is https://3mcsr.crmc.health and for GACH it is gch3msrv.cottagehospital.com
+TAG_NAME should be "HGWDNL900Q7LTobC"
 
 Tony Rogers testing:
 

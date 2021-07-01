@@ -13,6 +13,10 @@ EXTERNAL_CODER should be "3M"
 3M_CRS_URL should be the URL of the webapp that 3M installed at the client. For CRMC it is https://3mcsr.crmc.health and for GACH it is gch3msrv.cottagehospital.com
 TAG_NAME should be "HGWDNL900Q7LTobC"
 
+update LOCATION_REGISTRY set VALUE1 = '3M' where REGISTRY_KEY = 'EXTERNAL_CODER'
+update GLOBAL_REGISTRY set VALUE2 = 'http://gch3msrv.cottagehospital.com' where REGISTRY_KEY = '3M_CRS_URL'
+update ENCODER_CONFIG_MSTR set CUSTOM_VAL2 = 'HGWDNL900Q7LTobC' where SECTION_NAME = 'out_tags' and TAG_NAME = 'authorization'
+
 Tony Rogers testing:
 
 https://medsphere.sharepoint.com/:w:/g/STL/QA/ES665PwxztJBtsJ964UHi0gB3C9tH2Me1wVQcVH9zs8OqQ?e=2GJx7Z

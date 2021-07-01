@@ -32,7 +32,7 @@ Registry
       "SchUseStrongCrypto" = dword:00000001
 ```
 
-Adding "SchUseStrongCrypto" in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 and HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319was sufficient for mscstlqa.medsphere.com:
+Adding "SchUseStrongCrypto" in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 and HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319 was sufficient for mscstlqa.medsphere.com:
 
 ![image.png](/.attachments/image-45f0805a-a016-44f2-9afa-afd3dcc951dc.png)
 

@@ -10,6 +10,23 @@ I have made the following registry entries (adding the TLS 1.1 and TLS 1.2 entri
 
 ![image.png](/.attachments/image-2c489a50-3c31-4076-a8dd-44541d8a58ab.png)
 
+
+```
+Invoke-RestMethod `
+    -Uri https://qalinuxgtm03.medsphere.com:19599 `
+    -Method Get ;
+```
+
+
+
+```
+[Net.ServicePointManager]::SecurityProtocol = `
+    [Net.SecurityProtocolType]::Tls12,
+    [Net.SecurityProtocolType]::Tls11 ;
+```
+
+
+
 Protocols regedit:
 
 

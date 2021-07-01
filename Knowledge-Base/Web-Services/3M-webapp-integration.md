@@ -17,6 +17,10 @@ update LOCATION_REGISTRY set VALUE1 = '3M' where REGISTRY_KEY = 'EXTERNAL_CODER'
 update GLOBAL_REGISTRY set VALUE2 = 'http://gch3msrv.cottagehospital.com' where REGISTRY_KEY = '3M_CRS_URL'
 update ENCODER_CONFIG_MSTR set CUSTOM_VAL2 = 'HGWDNL900Q7LTobC' where SECTION_NAME = 'out_tags' and TAG_NAME = 'authorization'
 
+The disposition code from RCM has leading zeroes as it should have. But, 3M sends back to RCM without leading zero causing import to fail. During my testing, I could not see where user is allowed to update this field. So, I disable this element in the in-tags configuration. And problem was solved.
+
+update ENCODER_CONFIG_MSTR set ENABLE_FLG = 0 where SECTION_NAME = 'in_tags' and TAG_NAME = 'DISPOSITION_CD'
+
 Tony Rogers testing:
 
 https://medsphere.sharepoint.com/:w:/g/STL/QA/ES665PwxztJBtsJ964UHi0gB3C9tH2Me1wVQcVH9zs8OqQ?e=2GJx7Z

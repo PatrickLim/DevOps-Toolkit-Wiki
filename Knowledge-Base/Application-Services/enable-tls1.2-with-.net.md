@@ -1,3 +1,45 @@
+https://docs.microsoft.com/en-us/mem/configmgr/core/plan-design/security/enable-tls-1-2-client
+
+Windows 8.1, Windows Server 2012 R2, Windows 10, Windows Server 2016, and later versions of Windows natively support TLS 1.2 for client-server communications over WinHTTP.
+
+Configure .NET Framework to support strong cryptography. Set the SchUseStrongCrypto registry setting to DWORD:00000001.
+
+For 32-bit applications that are running on 32-bit OSs and for 64-bit applications that are running on 64-bit OSs, update the following subkey values:
+
+Registry
+
+
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727]
+      "SystemDefaultTlsVersions" = dword:00000001
+      "SchUseStrongCrypto" = dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]
+      "SystemDefaultTlsVersions" = dword:00000001
+      "SchUseStrongCrypto" = dword:00000001
+```
+
+For 32-bit applications that are running on 64-bit OSs, update the following subkey values:
+
+Registry
+
+
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v2.0.50727]
+      "SystemDefaultTlsVersions" = dword:00000001
+      "SchUseStrongCrypto" = dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319]
+      "SystemDefaultTlsVersions" = dword:00000001
+      "SchUseStrongCrypto" = dword:00000001
+```
+
+Adding "SchUseStrongCrypto" in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319 and xxx was sufficient for mscstlqa.medsphere.com:
+
+![image.png](/.attachments/image-45f0805a-a016-44f2-9afa-afd3dcc951dc.png)
+
+(Begin email to Amanda Cromwell at Oklahoma Heart OHH)
+
+=====================================================
+
 Hi Amanda,
 
 I have been researching the Upload Image error with my Dev team, and it seems the web server at ohs-rcmwebdev1 does not have TLS 1.2 enabled:

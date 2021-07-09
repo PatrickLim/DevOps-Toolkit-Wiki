@@ -1,0 +1,1 @@
+\\openvista.net\profiles$

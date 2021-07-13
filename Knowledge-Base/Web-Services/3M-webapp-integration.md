@@ -63,7 +63,7 @@ Sent: Thursday, July 8, 2021 12:20 PM
 To: Charles Musgrave <charles.musgrave@medsphere.com>
 Subject: RE: 3M Integration Findings and Other Notes
 
-It more had to do with my understanding of the VISIT table, with PAYER_CD foreign-keying into PAYER_MSTR and PAT_TYPE_CD foreign-keying into PAYER_MSTR (which in turn keys into CLASSIFICATION_MSTR).
+It more had to do with my understanding of the VISIT table, with PAYER_CD foreign-keying into PAYER_MSTR and PAT_TYPE_CD foreign-keying into PAT_TYPE_MSTR (which in turn keys into CLASSIFICATION_MSTR).
 
 Once you explained to me what CUSTOM_VAL1 and CUSTOM_VAL2 were in ENCODER_CONFIG_MSTR, then it was simply a matter of finding the right VISIT records to use as test records to launch Ext Coder from the webapp.
 

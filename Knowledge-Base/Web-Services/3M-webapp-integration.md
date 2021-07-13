@@ -36,3 +36,23 @@ https://medsphere.sharepoint.com/:w:/g/STL/QA/ES665PwxztJBtsJ964UHi0gB3C9tH2Me1w
 Chuck Musgrave tech spec:
 
 https://medsphere.sharepoint.com/:w:/r/STL/Development/_layouts/15/Doc.aspx?sourcedoc=%7B34A940DF-10F1-452B-B54B-EFCBEFF5376B%7D&file=Case%20103960%20STKL%20ENH%20Design%20-%20RCM%203M%20External%20Coder%20Integration.docx&action=default&mobileredirect=true&DefaultItemOpen=1&cid=30cf8f57-1196-4138-a582-984e80c16dc0
+
+From: Charles Musgrave <charles.musgrave@medsphere.com> 
+Sent: Thursday, July 8, 2021 9:16 AM
+To: Patrick Lim <patrick.lim@medsphere.com>
+Subject: RE: 3M Integration Findings and Other Notes
+
+Dan’s notes are correct. 
+•	For the main application to launch (APPLICATION_SETTINGS, CF_APPLICATION) you setup CUSTOM_VAL1 for the product you’ll generally use (Dan set his to 13)
+•	When wanting to launch a different 3M product looking at the following fields for the APPLICATION_BY_CLASS_PAYER:
+o	CUSTOM_VAL1 = Patient’s classification code (these are “I” in all of Dan’s examples)
+o	CUSTOM_VAL2 = Patient’s payer code (MC, XX, 1, BB, etc…)
+o	CUSTOM_VAL3 = 3M Application (05 for all in Dan’s example)
+o	CUSTOM_VAL4 = 3M Payer code (all zero except for payer code XX, uses 150)
+
+According to what you said, you want to do this for a Patient Type. This configuration is more on the patient’s payer code, not the patient type. The patient’s classification code is derived from the patient type, so there is some flexibility there but we only have 4-5 classifications…we usually have a bunch of patient types for which this configuration really isn’t configured for.
+
+Thank you,
+Charles Musgrave
+Director of RCM Operations
+(636) 764-5043 ext. 5043 | Office

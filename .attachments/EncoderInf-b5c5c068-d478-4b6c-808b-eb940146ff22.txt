@@ -1,0 +1,243 @@
+;Outbound Tags Format
+; Interface tag name|Tag Name/Value[|Codify][|Default Value][|Force Override]
+
+;Inbound Tag Format
+; Interface tag name|Tag Name[|Coded][|Default Value][|Force Override][|Required][|Custom (see tag or documentation)]
+
+; This module is used to set global settings for the interface.
+[APPLICATION_SETTINGS]
+; debug flag, displays data sent and received.
+DEBUG|0
+; codefinder ini dll path tag
+CF_DLL_PATH_TAG|Cfint32DLLPath
+; codefinder ini filename
+CF_INI|Codefind.ini
+; codefinder command
+CF_CMD|0
+; codefinder application to launch
+CF_APPLICATION|13
+; indicator for how to set the abstract complete flag once coded
+INBOUND_COMPLETE_MVF_OP|4
+INBOUND_COMPLETE_MVF_IP|3
+; Main code tag
+CODE|COD:
+; Determine which characters we need to strip off of codified fields
+STRIP_CHARACTERS|*|#|@|%
+
+
+
+; Codefinder application to launch based on Classification and Payer
+[APPLICATION_BY_CLASS_PAYER]
+; O|ST|13|14
+I|CM|05|
+I|DQ|05|
+I|G|05|
+I|MC|05|
+I|SI|05|
+I|SM|05|
+I|SP|05|
+I|SR|05|
+I|WC|05|
+I|XX|05|
+
+; Outbound interface tags
+[OUT_TAGS]
+APPLICATION|CMD:
+SYS_CD|SYS:||0
+AGE|AGE:
+VISIT_NO|VISITNUM:
+PAT_ID|PID:
+ADMIT_DATE|ADT:
+DISCH_DATE|DDT:
+SEX_CD|SEX:
+PAYER_CD|PAY:||-1|
+DISPOSITION_CD|DSP:
+CHARGES_TOTAL|CHG:
+TXT_SETTING|TXT:||5
+TXI_SETTING|TXI:||5
+DRG|R.|1
+REIMBURSEMENT|RCS:||ON
+EOR|EOR:
+AUTHORIZATION|AUTH:||cfpcsb214inegXlg
+FACILITY_ID|FACID:|1|1
+CODER_NAME|CODER:
+;HOS|HOS:||0
+HOS|BILL.|1|131
+PRIMARY_CODE_SET|PRIMCS:
+MULTIPLE_CODE_SETS|MULTCS:||0
+EOR|EOR:
+
+
+; Procedure data
+[PX_OUT]
+PRINCIPAL_PX|S.|1
+SECONDARY_PX|S.|1
+PX_MD|PHYS:
+PX_DATE|DATE:
+
+; Diagnosis data
+[DX_OUT]
+ADMIT_DX|AI.|1
+ADMIT_RFVON_DX|VI.|1
+ADMIT_POA|POA:|0
+PRINCIPAL_DX|I.|1
+PRINCIPAL_RFVON_DX|VI.|1
+PRINCIPAL_POA|POA:|0
+SECONDARY_DX|I.|1
+SECONDARY_RFVON_DX|VI.|1
+SECONDARY_POA|POA:|0
+
+; Apc/CPT info...
+[APC_OUT]
+APC_CPT_ID|C.|1
+APC_HCPCS_MOD1|MOD:
+APC_HCPCS_MOD2|MOD:
+APC_HCPCS_MOD3|MOD:
+APC_HCPCS_MOD4|MOD:
+APC_REV|REVCOD:
+;APC_DATE|DATE:
+APC_QUANTITY|UNITS:
+;APC_TOTAL_AMT|LCHG:
+
+; Hcpcs/CPT info...
+[CPT_OUT]
+CPT_HCPCS_ID|C.|1|||1
+CPT_HCPCS_MD|PHYS:
+CPT_HCPCS_MOD1|MOD:
+CPT_HCPCS_MOD2|MOD:
+CPT_HCPCS_MOD3|MOD:
+CPT_HCPCS_MOD4|MOD:
+CPT_HCPCS_REV|REVCOD:
+CPT_HCPCS_DATE|DATE:
+; Indicator that CPT is charge-related
+; CDIN|CHARGE:
+
+; Hcpcs/CPT info...
+[HCPCS_OUT]
+HCPCS_ID|H.|1|||1
+HCPCS_MD|PHYS:
+HCPCS_MOD1|MOD:
+HCPCS_MOD2|MOD:
+HCPCS_MOD3|MOD:
+HCPCS_MOD4|MOD:
+HCPCS_REV|REVCOD:
+HCPCS_DATE|DATE:
+; Indicator that HCPCS is charge-related
+; CDIN|CHARGE:
+
+[PROGRAM_LOGIC_OUT]
+GENERIC_PATIENT
+GENERIC_DX|3
+GENERIC_PX|3
+;GENERIC_APC|3
+GENERIC_CPT|3
+GENERIC_HCPCS|3
+; Use to send HCPCS/CPT on charges
+GENERIC_CHARGE_HCPCS
+
+; Inbound interface tags
+[IN_TAGS]
+ERROR|ERR:||||1
+ERROR_TEXT|ETX:||||0
+VISIT_NO|VISITNUM:||||1
+EOR|EOR:||||1
+DRG|I9R0.|1
+SEX_CD|SEX:
+VENDOR_AUTHORIZATION|VENDORAUTH:1
+
+[IN_TAGS_10]
+ERROR|ERR:||||1
+ERROR_TEXT|ETX:||||0
+VISIT_NO|VisitNum:||||1
+EOR|EOR:||||1
+DRG|I10R0.|1
+SEX_CD|SEX:
+VENDOR_AUTHORIZATION|VENDORAUTH:
+
+; Diagnosis data
+[DX_IN]
+; Diagnosis, e-codes, v-codes data
+ADMIT_DX|AI.|1|||0
+; The seventh value indicates that if more than one principal is found, it/they 
+; should be added as secondary.
+PRINCIPAL_DX|I.|1|||0|1
+; The seventh value indicates that if no principal is found, the first secondary 
+; should be added as principal.
+;SECONDARY_DX|I.|1|||0|0
+ADMIT_RFVON_DX|VI.|1|||0|1
+ADMIT_POA|POA:|0|||0
+PRINCIPAL_RFVON_DX|VI.|1|||0|1
+PRINCIPAL_POA|POA:|0|||0
+;SECONDARY_RFVON_DX|VI.|1|||0|0
+;SECONDARY_POA|POA:|0|||0
+
+; Diagnosis data
+[DX_IN_10]
+; Diagnosis, e-codes, v-codes data
+ADMIT_DX|AT.|1|||0
+; The seventh value indicates that if more than one principal is found, it/they 
+; should be added as secondary.
+PRINCIPAL_DX|T.|1|||0|1
+; The seventh value indicates that if no principal is found, the first secondary 
+; should be added as principal.
+;SECONDARY_DX|T.|1|||0|0
+ADMIT_RFVON_DX|VT.|1|||0|1
+ADMIT_POA|POA:|0|||0
+PRINCIPAL_RFVON_DX|VT.|1|||0|1
+PRINCIPAL_POA|POA:|0|||0
+;SECONDARY_RFVON_DX|VT.|1|||0|0
+;SECONDARY_POA|POA:|0|||0
+
+; Procedure data
+[PX_IN]
+PX_ID|S.|1|1
+PX_MD|PHYS:
+PX_DATE|DATE:|1
+
+; Procedure data
+[PX_IN_10]
+PX_ID|PCS.|1|1
+PX_MD|PHYS:
+PX_DATE|DATE:|1
+
+; Apc/CPT info...
+[APC_IN]
+APC_ID|C.|1|||1
+APC_REIMB_AMT|
+;APC_REIMB_PCT|
+APC_COPAY_AMT|
+APC_CPT_TOTAL_REIMB|LCHG
+
+; Hcpcs/CPT info...
+[CPT_IN]
+;CPT_HCPCS_ID|C.|1|||1
+;CPT_HCPCS_MD|PHYS:
+;CPT_HCPCS_MOD1|MOD:
+;CPT_HCPCS_MOD2|MOD:
+;CPT_HCPCS_MOD3|MOD:
+;CPT_HCPCS_MOD4|MOD:
+;CPT_HCPCS_REV|REVCOD:
+;CPT_HCPCS_DATE|DATE:
+; Indicator that CPT is charge-related
+; CDIN|CHARGE:
+
+; Hcpcs/CPT info...
+[HCPCS_IN]
+;HCPCS_ID|H.|1|||1
+;HCPCS_MD|PHYS:
+;HCPCS_MOD1|MOD:
+;HCPCS_MOD2|MOD:
+;HCPCS_MOD3|MOD:
+;HCPCS_MOD4|MOD:
+;HCPCS_REV|REVCOD:
+;HCPCS_DATE|DATE:
+; Indicator that HCPCS is charge-related
+; CDIN|CHARGE:
+
+[PROGRAM_LOGIC_IN]
+GENERIC_PATIENT
+GENERIC_DX|3
+GENERIC_PX|3
+;GENERIC_APC|3
+;GENERIC_CPT|3
+;GENERIC_HCPCS|3

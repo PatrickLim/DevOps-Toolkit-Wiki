@@ -13,5 +13,7 @@ GLOBAL_REGISTRY key had to be http://3mcsr.crmc.health not http://3mcsr.crmc.hea
 
 ENCODER_CONFIG_MSTR table authorization value is HGWDNL900Q7LTobC
 
-In our QA environment, the url is https://crs.3M.com and the credentials are Medsphere *@$+RQMpY8ku
+In our QA environment, the url is https://crs.3M.com and the credentials are Medsphere *@$+RQMpY8ku 
+
+( Sam Ellison had since changed to r$}A=6d:_9G8 )
 

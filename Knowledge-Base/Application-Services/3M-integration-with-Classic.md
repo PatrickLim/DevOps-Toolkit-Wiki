@@ -6,6 +6,10 @@ extract then run the msi and enter these values:
 
 ![image.png](/.attachments/image-5978d545-04f3-45c2-bf88-1cfb0e101bdb.png)
 
+User Instance Folder = %USERPROFILE%\connections
+URL = https://crs.3m.com/
+Connections/Interface Bits = 1
+
 drop the EncoderInf.ini file inside C:\Program Files (x86)\Insight\BIN here is a sample file from Guadalupe GCH (just remember to rename the extension from txt to ini):
 
 [EncoderInf.txt](/.attachments/EncoderInf-b5c5c068-d478-4b6c-808b-eb940146ff22.txt)

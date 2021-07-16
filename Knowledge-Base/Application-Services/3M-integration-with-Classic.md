@@ -1,3 +1,9 @@
+Very import first step is to obtain the on-prem URL of the 3M instance installed PER CUSTOMER. Every WinAppLink is configured specifically for a customer. For example, Guadalupe GCH's url is http://192.168.1.233:8080
+
+Obtain the WinAppLink installer from that url append /winapplink, for example for GCH use http://192.168.1.233:8080/winapplink
+
+-----------------------------------------
+
 install the WinAppLink msi:
 
 [WinAppLink.zip](/.attachments/WinAppLink-34414c84-fdb8-4e55-a947-4b9cecb524c2.zip)

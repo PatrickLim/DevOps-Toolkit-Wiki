@@ -54,6 +54,9 @@ sudo firewall-cmd --reload
 curl http://rcm-lt01c1.dhsrcm.local:19600/api/Test/Ping
 
 {"userData":null,"message":"Ready","time":"2021-04-22T17:33:05","isLicenseChecked":true,"isLicenseExpired":false,"kernelType":"RELEASE","isCacheAccessible":true,"ocrEngineStatus":2,"serviceVersion":"1.1.2.5","kernelVersion":"20.0.0.50","multiplatformSupportStatus":"Ready"}
+
+plim@10.88.48.70 QAZwsx12345!
+
 Patrick Lim | Systems Engineer | 310.418.0721
 
 From: Lauren Lamb <lauren.lamb@medsphere.com> 

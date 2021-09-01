@@ -1,3 +1,23 @@
+Make sure the ps1 files (AutoBilling_Main and _Test) are edited for:
+
+
+```
+$connectionString = "Data Source=rcmdb;Initial Catalog=chcc-rcm;Persist Security Info=True;User ID=IcsBillSvc;Password=St0ck3!!"
+$userName = "IcsBillSvc"
+$dllDirectory = "C:\Program Files (x86)\Insight\BIN\"
+$logFile = "C:\InsightCS\chcc-rcm\NightlyProcesses\AutoBilling_Main.log"
+```
+
+ProdDB_AutoBilling.bat references these System Variables:
+
+ICSMAINTLOC
+ICSPRODDB
+ICSPRODDSN
+ICSTESTDB
+ICSTESTDSN
+
+Make sure you set them in Control Panel -> System and Security -> System -> Advanced System Settings -> Environment Variables
+
 
 ```
 [6:55 AM] Kyle Maasen

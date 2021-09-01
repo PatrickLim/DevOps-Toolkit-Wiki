@@ -18,6 +18,14 @@ ICSTESTDSN
 
 Make sure you set them in Control Panel -> System and Security -> System -> Advanced System Settings -> Environment Variables
 
+Also edit SERVICES_MSTR table (example at Saipan CHCC):
+
+
+```
+update SERVICES_MSTR set HOST_NAME = 'rcmapp'
+update SERVICES_MSTR set URI = 'net.tcp://RCMAPP:9697/BillingService/2014.1' where ROW_NO = 2
+```
+
 
 ```
 [6:55 AM] Kyle Maasen

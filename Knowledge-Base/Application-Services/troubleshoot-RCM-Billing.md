@@ -42,3 +42,27 @@ From that point, it could error out due to any number of reasons.  In this parti
     BILLING_TRACKING will give you more detailed info.  If you ever just want to know what step billing is currently on, I always go to System Maintenance.
 ```
   
+
+```
+[10:34 AM] Patrick Lim
+    sorry Kyle Maasen one more question, when I check the BILLING_TRACKING table i see this on STEP_NO = 11
+​[10:34 AM] Patrick Lim
+    Error: Unable to determine Image Directory
+​[10:34 AM] Patrick Lim
+    step 11 is UB92 Print
+​[10:35 AM] Patrick Lim
+    and GLOBAL_REGISTRY has this: BILLING_UB92_PRINT_FOLDER  =  \\rcmapp\InsightCS\chcc-rcm\Billing\Claims\UB92\
+​[10:36 AM] Patrick Lim
+    which exists
+```
+
+​
+```
+[11:22 AM] Kyle Maasen
+    We don't support claim images in Web.  I turned that off with the following:
+​[11:22 AM] Kyle Maasen
+    
+update GLOBAL_REGISTRY set VALUE1 = '0' where REGISTRY_KEY in ('IMAGE_1500_ENABLED', 'IMAGE_UB92_ENABLED')
+update SYSTEM_REGISTRY set VALUE1 = '0' where REGISTRY_KEY in ('IMAGE_1500_ENABLED', 'IMAGE_UB92_ENABLED')
+```
+

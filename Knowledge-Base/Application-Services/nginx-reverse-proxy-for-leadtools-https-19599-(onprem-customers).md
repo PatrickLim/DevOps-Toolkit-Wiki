@@ -109,6 +109,15 @@ If 19599 is not listed, add it with this command:
 sudo semanage port -a -t http_port_t  -p tcp 19599
 ```
 
+Just in case you get "semanage command not found" you can install it with yum (the first line merely locates the package that provides semanage, which is most probably policycoreutils-python-utils anyway, so you may as well just go straight to running the second line):
+
+
+```
+sudo yum provides /usr/sbin/semanage
+sudo yum install policycoreutils-python-utils
+```
+
+
 Also make sure that you flip this SE boolean variable to true:
 
 ```

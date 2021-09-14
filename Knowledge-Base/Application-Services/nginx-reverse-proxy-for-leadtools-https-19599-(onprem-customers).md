@@ -47,7 +47,7 @@ recommend put key file in **/etc/pki/nginx/private/**
 
 6. Add modular config file (this is **the whole point** -- telling nginx to proxy https 19599 to http://localhost:19600)
 
-place file in /etc/nginx/conf.d/
+place file in **/etc/nginx/conf.d/**
 
 file contents:
 
@@ -129,3 +129,13 @@ For additional troubleshooting, you may want to see the last few lines of the ng
 ```
 sudo tail -30 /var/log/nginx/error.log
 ```
+
+10. Once nginx starts successfully, verify that you can get to leadtools using 19599
+
+Change the address between https and 19599 to your correct server name. The --insecure tag is used to ignore warnings from untrusted certificates:
+
+```
+curl https://rcm-lt02c1.dhsrcm.local:19599/api/Test/Ping
+curl --insecure https://rcm-lt02c1.dhsrcm.local:19599/api/Test/Ping
+```
+

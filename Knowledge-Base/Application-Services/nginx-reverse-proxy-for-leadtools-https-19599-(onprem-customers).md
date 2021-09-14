@@ -94,7 +94,7 @@ sudo systemctl status nginx
 Restarting nginx with the modular config may result in this error (as shown by the "sudo systemctl status nginx" statement):
 
 ```
-bind() to 0.0.0.0:8090 failed (13: Permission denied)
+bind() to 0.0.0.0:19599 failed (13: Permission denied)
 ```
 
 If so, find the list of ports that SELinux allows to bind to http with this command:

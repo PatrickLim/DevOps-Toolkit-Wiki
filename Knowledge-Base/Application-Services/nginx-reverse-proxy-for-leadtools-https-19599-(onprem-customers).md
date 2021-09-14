@@ -6,25 +6,39 @@ Pre-requisites
 
 1. Install nginx
 
-`sudo dnf install nginx`
+```
+sudo dnf install nginx
+```
 
 2. Enable and start nginx
 
+
+```
 sudo systemctl enable nginx
 sudo systemctl start nginx
+```
+
 
 3. Adjust firewall rules
 
+
+```
 sudo firewall-cmd --permanent --add-service=http
 sudo firewall-cmd --permanent --list-all
 sudo firewall-cmd --reload
 sudo systemctl stop firewalld
 sudo systemctl start firewalld
+```
+
 
 4. Verify nginx is running
 
+
+```
 sudo systemctl status nginx
 curl http://localhost
+```
+
 
 5. Place the crt file and the key file in appropriate folders
 

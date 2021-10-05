@@ -7,6 +7,7 @@
 This is what I ran at Ashley Addiction AAT Test environment for the MigrationAssistant:
 
 .\migraterole.bat rcm-db01e1\aat aat-rcm-test
+.\MigrateGenderAndSexualOrientation.bat rcm-db01e1\aat aat-rcm-test
 
 For Arkansas ASH it should be:
 

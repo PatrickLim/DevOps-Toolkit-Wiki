@@ -4,7 +4,8 @@ Medsphere Basic
 TZXKMS-88AZ-336BK62A
 
 CHLB-specific license
-TZXKMS-Z8AR-382NH57F
+TZXKMS-Z8AR-382NH57F allows APR only
+TZXKMS-SYR8-382NH57F allows both APR and Psych
 
 CHLB Remote Service Code
 TC_DT_JKDXCPME

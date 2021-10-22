@@ -16,4 +16,6 @@ C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20211022_144200\Co
 
 Summary Log File:
 
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20211022_144200
+
 openvista\rcmdb01w1defaultsql tmkqOdiQlfsSHh2NCAdL

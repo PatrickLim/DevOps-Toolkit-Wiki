@@ -5,3 +5,7 @@ Installed SQLEngine, SQLEngine\Replication, AS
 SQL Server sa QWEasd12345!
 
 ![image.png](/.attachments/image-6eb2b1a1-4955-4f96-bb28-aae03a21104a.png)
+
+Analysis Services MULTIDIMENSIONAL
+
+![image.png](/.attachments/image-50e999e3-f318-4b4d-93a5-204d89314f16.png)

@@ -1,16 +1,35 @@
 # Project Notes (10/27/2021)
 
-SPN updates made to Medsphere.com domain for WS-DEV01.MEDSPHERE.COM
+Deploy RCM Cloud 2019.3.7 to the Wellsoft Development environment on `ws-dev01.medsphere.com`
 
 ---
-## POWERSHELL commands
+## SQL Databases
+- stlvmsql.dbo.IcsMedsphereWS
+- stlvmsql.dbo.CollectorWS
+- stlvmsql.dbo.SislnkWS
+
+---
+## Application Services
+asldjflaksdjfl;asdjfl;jasdl;fjl;asdjf
+
+---
+## Web Services
+
+- RCM Cloud 2019.1
+  - https://ws-dev01.medsphere.com:20191/Shell/#/workspaces/Scheduling
+- RCM Cloud 2019.3.7
+  - https://ws-dev01.medsphere.com:20193/Shell/#/workspaces/Scheduling
+- Reporting Services
+  - http://stlvmsql.medsphere.com/reports/browse/IcsMedsphereWS
+
+---
+## POWERSHELL commands to update SPNs in `medsphere.com` domain
 
 ```
 setspn -L medsphere\mscferrari
 
 setspn -u -s http/ws-dev01 medsphere\mscferrari
 setspn -u -s http/ws-dev01.medsphere.com medsphere\mscferrari
-
 ```
 
 ## Console Results

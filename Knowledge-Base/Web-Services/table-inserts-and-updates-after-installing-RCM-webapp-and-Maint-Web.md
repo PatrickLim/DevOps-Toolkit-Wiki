@@ -1,3 +1,8 @@
+IMAGING_LICENSE_JS
+IMAGING_LICENSE_NET
+HELP_URL_RCM
+RCM_SCAN_HOST_VERSION
+
 Hi Adam and Darrell,
 
 When I install or upgrade the RCM webapp and Web Maint, these are the following changes I make to the GLOBAL_REGISTRY table:

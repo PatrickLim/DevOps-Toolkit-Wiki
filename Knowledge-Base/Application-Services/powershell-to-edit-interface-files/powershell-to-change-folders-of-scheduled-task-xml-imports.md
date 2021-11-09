@@ -1,3 +1,5 @@
+
+```
 $prod = Read-Host "Prod Folder"
 $test = Read-Host "Test Folder"
 
@@ -11,3 +13,4 @@ $content | Set-Content $_
 
 Get-ChildItem -Filter *.xml | Rename-Item -NewName {$_.name -replace 'erh-rcm-test', $test }
 Get-ChildItem -Filter *.xml | Rename-Item -NewName {$_.name -replace 'erh-rcm', $prod }
+```

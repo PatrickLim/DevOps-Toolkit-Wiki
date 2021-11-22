@@ -21,7 +21,8 @@ This stored procedure is the main data gathering stored procedure for the report
 This temp table holds the following fields:
 
 - **ENVIRONMENT\_CD** - Indicates if production or test
-- **PRODUCT\_AREA** - Used to indicated which product area the note is going to be for.  Effectively used for one of the expandable headers. **CATEGORY** - The next expandable header.
+- **PRODUCT\_AREA** - Used to indicated which product area the note is going to be for.  Effectively used for one of the expandable headers.
+- **CATEGORY** - The next expandable header.
 - **HEADER\_ONE, HEADER\_TWO, HEADER\_THREE** - The headers under Category
 - **FIELD\_ONE, FIELD\_TWO, FIELD\_THREE** - The fields under the above headers
 - **SUB\_CATEGORY** - The next expandable header.

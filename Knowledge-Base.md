@@ -39,6 +39,7 @@
 
 # [RCM Support Knowledge Base](http://stlvmonlinehelp/KB/index.php)
 
+- [Support Client Guide Report](/Knowledge-Base/Database-Services/Support-Client-Guide-Report)
 - [Configuring a Report as Signature Background Image](http://stlvmonlinehelp/KB/article.php?id=164)
 - [How to Update Imaging Directories](http://stlvmonlinehelp/KB/article.php?id=36)
 - [Admit Form Images Are Not Being Created After Moving/Upgrading Services](http://stlvmonlinehelp/KB/article.php?id=92)

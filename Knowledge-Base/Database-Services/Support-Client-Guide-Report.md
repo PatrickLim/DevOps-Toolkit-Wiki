@@ -20,13 +20,14 @@ This stored procedure is the main data gathering stored procedure for the report
 
 This temp table holds the following fields:
 
-- **ENVIRONMENT\_CD** - Indicates if production or test
-- **PRODUCT\_AREA** - Used to indicated which product area the note is going to be for.  Effectively used for one of the expandable headers.
-- **CATEGORY** - The next expandable header.
-- **HEADER\_ONE, HEADER\_TWO, HEADER\_THREE** - The headers under Category
-- **FIELD\_ONE, FIELD\_TWO, FIELD\_THREE** - The fields under the above headers
-- **SUB\_CATEGORY** - The next expandable header.
-- **SUB\_HEADER\_ONE, SUB\_HEADER\_TWO, SUB\_HEADER\_THREE** - The headers under the SUB\_CATEGORY **SUB\_FIELD\_ONE, SUB\_FIELD\_TWO, **SUB\_FIELD\_THREE** - The fields under the SUB\_HEADER&#39;s
+- ENVIRONMENT\_CD - Indicates if production or test
+- PRODUCT\_AREA - Used to indicated which product area the note is going to be for.  Effectively used for one of the expandable headers.
+- CATEGORY - The next expandable header.
+- HEADER\_ONE, HEADER\_TWO, HEADER\_THREE - The headers under Category
+- FIELD\_ONE, FIELD\_TWO, FIELD\_THREE - The fields under the above headers
+- SUB\_CATEGORY - The next expandable header.
+- SUB\_HEADER\_ONE, SUB\_HEADER\_TWO, SUB\_HEADER\_THREE - The headers under the SUB\_CATEGORY
+- SUB\_FIELD\_ONE, SUB\_FIELD\_TWO, SUB\_FIELD\_THREE - The fields under the SUB\_HEADER&#39;s
 
 Looking at the report you can see how each of these fields are used.   ![](http://stkl-onlinehelp/KB/assets/img_58ffc4ad7022a.png)
 

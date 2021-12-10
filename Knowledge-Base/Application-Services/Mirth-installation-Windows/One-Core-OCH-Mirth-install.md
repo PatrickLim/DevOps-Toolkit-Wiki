@@ -21,3 +21,7 @@ right click the tray icon then Show Manager
 ![image.png](/.attachments/image-4c6310e5-aaea-4d15-9b0d-c0da63eb66fa.png)
 
 ![image.png](/.attachments/image-7e143b1f-2e93-4473-9305-e6c14e5613e8.png)
+
+change jdbc:derby:${dir.appdata}/mirthdb;create=true
+
+to jdbc:jtds:sqlserver://rcm-db02e1;instance=och;DatabaseName=mirthdb

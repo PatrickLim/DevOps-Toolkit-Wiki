@@ -24,4 +24,8 @@ right click the tray icon then Show Manager
 
 change jdbc:derby:${dir.appdata}/mirthdb;create=true
 
+change the Type to sqlserver
+
+![image.png](/.attachments/image-1c697ab4-a3c0-491e-ba6e-badeec9f2155.png)
+
 to jdbc:jtds:sqlserver://rcm-db02e1;instance=och;DatabaseName=mirthdb

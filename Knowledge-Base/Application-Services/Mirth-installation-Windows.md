@@ -1,10 +1,12 @@
-first install jre by going to \\openvista\adm$\Software\Oracle\Java
+1. first install jre by going to `\\openvista\adm$\Software\Oracle\Java`
 
-install jre-8u111-windows-x64.exe
+2. install jre-8u111-windows-x64.exe
 
-then go to http://downloads.mirthcorp.com/archive/connect/3.5.1.b194/
+3. then go to http://downloads.mirthcorp.com/archive/connect/3.5.1.b194/
 
-download and install mirthconnect-3.5.1.b194-windows-x64.exe
+4. download and install mirthconnect-3.5.1.b194-windows-x64.exe
+
+5. note that the default Mirth installation uses a Derby database -- DO NOT start Mirth until you have created a more robust database! (see next Wiki.)
 
 ![Mirth Connect Install Capture 1.PNG](/.attachments/Mirth%20Connect%20Install%20Capture%201-cab9e92e-e439-412c-9984-3e129dfb32f7.PNG)
 

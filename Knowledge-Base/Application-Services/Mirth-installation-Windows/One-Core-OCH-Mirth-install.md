@@ -1,6 +1,6 @@
 1. created mirthdb database in rcm-db02e1\och
 
-2. created sql auth login mirthadmin QWEasd123!
+2. created sql auth login mirthadmin (password hidden)
 
 3. updated jre from Java 8 update 111 to 311 and uninstalled previous version
 

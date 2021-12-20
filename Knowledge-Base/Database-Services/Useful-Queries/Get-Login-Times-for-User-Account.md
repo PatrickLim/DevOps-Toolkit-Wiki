@@ -15,6 +15,6 @@ set @enddate = '2022-01-01'
 -- Query USER_LOG table for results and order by most recent LOGIN_TIME
 SELECT * FROM USER_LOG
 WHERE USERNAME = @user_name
-AND LOGIN_TIME > @StartDate
-AND LOGOUT_TIME < @EndDate
+AND LOGIN_TIME > @startdate
+AND LOGOUT_TIME < @enddate
 ORDER BY LOGIN_TIME DESC

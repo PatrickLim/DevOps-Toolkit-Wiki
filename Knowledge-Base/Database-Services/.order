@@ -10,7 +10,6 @@ sizes-of-all-db-objects
 copyover-process-from-prod-to-test
 upgrading-to-2020.x
 sislnk-point-transactions-to-different-destination
-Useful-Queries
 Update-Master-Table-UNC-Paths-(replace-servername)
 rebuild-indexes
 Report-Server-Scheduled-Refresh-SQL-Agent-Not-Running

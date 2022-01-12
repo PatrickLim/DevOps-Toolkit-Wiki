@@ -32,3 +32,7 @@ $x.'msDS-AllowedToActOnBehalfOfOtherIdentity'.Access
 `Get-ADComputer -Identity $ServerC -Properties PrincipalsAllowedToDelegateToAccount`
 
 https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/configure-kerberos-delegation-group-managed-service-accounts
+
+https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/configure-kerberos-delegation-group-managed-service-accounts
+
+https://4sysops.com/archives/how-to-configure-computer-delegation-with-powershell/

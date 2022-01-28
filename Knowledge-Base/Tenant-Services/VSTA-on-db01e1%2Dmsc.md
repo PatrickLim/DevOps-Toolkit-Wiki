@@ -9,3 +9,11 @@ SQL Server sa QWEasd12345!
 Analysis Services MULTIDIMENSIONAL
 
 ![image.png](/.attachments/image-10df1b79-b048-499a-9338-4e6d471a128c.png)
+
+Configuration File Path:
+
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220128_122049\ConfigurationFile.ini
+
+Summary Log File:
+
+openvista\vstasql dgZuDQEmQF4mtdRBEGvE

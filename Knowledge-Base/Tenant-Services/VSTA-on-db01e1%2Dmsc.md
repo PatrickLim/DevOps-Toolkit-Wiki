@@ -2,6 +2,8 @@ PMBDC-FXVM3-T777P-N4FY8-PKFF4
 
 Installed SQLEngine, SQLEngine\Replication, AS
 
+(Matt Boswell disabled the sa account in sql server)
+
 ![image.png](/.attachments/image-67558d00-6369-4360-b4c3-c2d44c6e6744.png)
 
 Analysis Services MULTIDIMENSIONAL

@@ -16,6 +16,6 @@ C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220207_102734\Co
 
 Summary Log File:
 
-C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220207_102734\
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220207_102734\Summary_db01e1-msc_20220207_102734.txt
 
 (originally had to use openvista\rcmdb01e1defaultsql because Matt had not yet created the OU for GNLD hence did not have gnldsql.)

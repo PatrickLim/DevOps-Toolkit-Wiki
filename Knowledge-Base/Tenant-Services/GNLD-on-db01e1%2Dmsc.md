@@ -13,3 +13,9 @@ Analysis Services MULTIDIMENSIONAL
 Configuration File Path:
 
 C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220207_102734\ConfigurationFile.ini
+
+Summary Log File:
+
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220207_102734\
+
+(originally had to use openvista\rcmdb01e1defaultsql because Matt had not yet created the OU for GNLD hence did not have gnldsql.)

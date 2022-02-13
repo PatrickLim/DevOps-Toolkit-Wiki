@@ -15,7 +15,7 @@ $ServerC = Get-ADComputer -Identity ServerC
 ```
 
 
-`Set-ADComputer -Identity $ServerC -PrincipalsAllowedToDelegateToAccount $null`
+`Set-ADUser -Identity $ServerC -PrincipalsAllowedToDelegateToAccount $null`
 
 # Grant resource-based Kerberos constrained delegation
 `Set-ADComputer -Identity $ServerC -PrincipalsAllowedToDelegateToAccount $ServerB`

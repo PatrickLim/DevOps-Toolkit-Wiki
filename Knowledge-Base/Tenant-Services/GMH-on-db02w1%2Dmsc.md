@@ -16,4 +16,6 @@ C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220223_022942\Co
 
 Summary Log File:
 
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220223_022942\Summary_db02w1-msc_20220223_022942.txt
+
 openvista\gmhrcmsql tmkqOdiQlfsSHh2NCAdL

@@ -8,3 +8,8 @@ SQL Server sa QWEasd12345!
 
 Analysis Services MULTIDIMENSIONAL
 
+![image.png](/.attachments/image-c7f3665f-19e6-426a-8135-73339cfeb1fb.png)
+
+Configuration File Path:
+
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220223_022942\ConfigurationFile.ini

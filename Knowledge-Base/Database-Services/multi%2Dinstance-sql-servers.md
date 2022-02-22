@@ -33,6 +33,7 @@
 - GMH Guam Medical Hospital
 - GCH Guadalupe Community Hospital
 - SMG Sana Medical Group
+- ERH Red Rock Vegas
 
 ---
 # Script examples

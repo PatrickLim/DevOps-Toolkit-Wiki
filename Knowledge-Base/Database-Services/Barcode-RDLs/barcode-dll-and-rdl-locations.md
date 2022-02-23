@@ -10,3 +10,6 @@ C:\Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\bin\
 •	PatientLabelsAvery5160 (installed under ADT – Registration)
 •	PatientStatement_PayPlan (installed under Letters and Statements)
 •	PatientStatement_PayPlanPastDue (installed under Letters and Statements)
+
+IMPORTANT!
+the seven files above need their Data Source property changed manually

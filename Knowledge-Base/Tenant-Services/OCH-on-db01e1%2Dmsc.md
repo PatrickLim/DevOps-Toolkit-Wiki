@@ -10,3 +10,10 @@ Analysis Services MULTIDIMENSIONAL
 
 ![image.png](/.attachments/image-cd54835e-b4f4-4c94-9ad1-37dd626ef527.png)
 
+Configuration File Path:
+
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220228_172924\ConfigurationFile.ini
+
+Summary Log File:
+
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220228_172924\Summary_db01e1-msc_20220228_172924.txt

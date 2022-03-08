@@ -16,3 +16,5 @@ C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220308_074339\Co
 
 Summary Log File:
 
+
+openvista\erhsql 1rv9PFwtDr0qxcfAndWu

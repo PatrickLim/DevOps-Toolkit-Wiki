@@ -35,7 +35,7 @@ INNER JOIN sys.schemas S on T.schema_id = S.schema_id
 INNER JOIN sys.indexes I ON I.object_id = DDIPS.object_id
 AND DDIPS.index_id = I.index_id
 WHERE DDIPS.database_id = DB_ID()
-and t.name = 'inf_trigger'
-and I.name is not null
+--and t.name = 'inf_trigger'
+--and I.name is not null
 AND DDIPS.avg_fragmentation_in_percent > 0
 ORDER BY DDIPS.avg_fragmentation_in_percent desc

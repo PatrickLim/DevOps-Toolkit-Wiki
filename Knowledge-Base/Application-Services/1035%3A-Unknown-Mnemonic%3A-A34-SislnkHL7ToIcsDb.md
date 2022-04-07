@@ -6,4 +6,8 @@ Then change the STRAT file: EventStoreIcsDb_X.strat
 
 first line:
 
-ADT_HANDLER 			InbndEventProc.dll 		ExtADTEventHandler
+ADT_HANDLER 			InbndEventProc.dll 		SpecialADTEventHandler
+
+change SpecialADTEventHandler to ExtADTEventHandler
+
+and restart the interface

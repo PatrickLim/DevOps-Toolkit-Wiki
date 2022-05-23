@@ -1,7 +1,7 @@
 VERY IMPORTANT!!! make sure HL7 INTERFACES are working at the end of the process!
 --
 
-May need to bug Terri to verify that connectivity is there before signing off on the all-clear.
+May need to bug Terri/Joy to verify that connectivity is there before signing off on the all-clear.
 
 
 1. backup test database (even if nightly backup was taken previously, just in case)

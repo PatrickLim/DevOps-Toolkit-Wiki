@@ -19,3 +19,5 @@ To check which accounts are allowed to delegate to any account, run the followin
 
 1. $x = Get-ADUser -Identity $sqlguy -Properties msDS-AllowedToActOnBehalfOfOtherIdentity
 2. $x.'msDS-AllowedToActOnBehalfOfOtherIdentity'.Access
+
+For the Proxy Appliance to work, ABCWEB also needs to delegate to the MACHINE account that hosts the proxy appliance service.

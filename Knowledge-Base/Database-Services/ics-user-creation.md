@@ -150,3 +150,22 @@ https://help.genesys.com/pureconnect/mergedprojects/wh_tr/mergedprojects/wh_tr_a
 ***** Alternatively, handle ORPHANED users this way *****
 
 ALTER USER controlwks WITH LOGIN = controlwks
+
+alter user controlwks with login = controlwks
+alter user IcsAutoRoom with login = IcsAutoRoom
+alter user IcsAutoDisch with login = IcsAutoDisch
+alter user IcsPrintSrv with login = IcsPrintSrv
+alter user IcsStepUpd with login = IcsStepUpd
+alter user IcsSysBal with login = IcsSysBal
+alter user IcsInf with login = IcsInf
+alter user IcsBillSvc with login = IcsBillSvc
+alter user IcsGLSum with login = IcsGLSum
+alter user IcsSmBalWrtOff with login = IcsSmBalWrtOff
+alter user IcsContrReimb with login = IcsContrReimb
+alter user IcsOEPrint with login = IcsOEPrint
+alter user IcsOEChg with login = IcsOEChg
+alter user IcsTranSvc with login = IcsTranSvc
+alter user IcsBckFreqProc with login = IcsBckFreqProc
+alter user IcsPayProc with login = IcsPayProc
+alter user IcsServices with login = IcsServices
+alter user IcsNotif with login = IcsNotif

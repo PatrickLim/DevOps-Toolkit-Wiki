@@ -1,3 +1,7 @@
+1. add Custom Domain to the Azure Tenant
+2. install and configure AD Connect on a vm joined to the traditional AD
+3. chrome regedit to whitelist the Azure url
+
 medspherecsp.onmicrosoft.com
 mcsplab.cloud
 Medsphere Cloud Services Platform

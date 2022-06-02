@@ -12,6 +12,8 @@ https://app.powerbi.com/home?tenant=e586e685-e831-4e2b-a4bc-027b1a57f061
 
 https://app.powerbi.com/home?tenant=e586e685-e831-4e2b-a4bc-027b1a57f061&UPN=patrick.lim@openvista.net
 
+get UPN from $env.username
+
 https://app.powerbi.com/groups/me/reports/e74e84a4-0efc-41a8-a8e0-506d5077f003/ReportSection5802b254838fd7c26148
 
 az01w1-msc

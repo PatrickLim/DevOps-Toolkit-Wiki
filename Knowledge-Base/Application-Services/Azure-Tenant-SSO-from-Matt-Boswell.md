@@ -23,3 +23,24 @@ start-adsyncsynccycle -policytype delta
 admgmt repo in CVC Project of medsphere ADO Organization
 
 ![image.png](/.attachments/image-1edece6c-ec64-496e-b5ef-1babe3179e49.png)
+
+
+```
+param($groupname)
+$group = Get-AdGroup -Filter {Name -eq $groupname}
+$members = Get-AdGroupMember -Identity $group.ObjectGUID
+$syncedobjects = Get-AdGroupMember -Identity "Azure AD Synced Accounts"
+if ($groupname -notin $syncedobjects.name)
+#add group so it too will sync
+{
+    Add-ADGroupMember -Identity "Azure AD Synced Accounts" -Members $group
+}
+foreach ($member in $members)
+{
+    if ($member.name -notin $syncedobjects.name)
+    {
+       Add-ADGroupMember -Identity "Azure AD Synced Accounts" -Members $member
+    }
+}
+```
+

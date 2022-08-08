@@ -21,3 +21,9 @@ To check which accounts are allowed to delegate to any account, run the followin
 2. $x.'msDS-AllowedToActOnBehalfOfOtherIdentity'.Access
 
 For the Proxy Appliance to work, ABCWEB also needs to delegate to the MACHINE account that hosts the proxy appliance service.
+
+If using the Proxy Appliance, ABCWEB unfortunately cannot delegate to both ABCWEB and the MACHINE account (Kerberos limitation -- cannot have a mix of user and machine accounts). So ABCWEB should delegate to two MACHINE accounts -- the one that hosts the proxy appliance service and the one that hosts the SSRS service. For example, if the proxy appliance service is running on rcmlab-iis and the SSRS service is running on rcmlab-ssrs:
+
+1. $iisvm = get-adcomputer -identity rcmlab-iis
+2. $ssrsvm = get-adcomputer -identity rcmlab-ssrs
+3. Set-ADUser -Identity $webguy -PrincipalsAllowedToDelegateToAccount $iisvm, $ssrsvm

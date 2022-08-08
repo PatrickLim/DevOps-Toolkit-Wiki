@@ -27,3 +27,7 @@ If using the Proxy Appliance, ABCWEB unfortunately cannot delegate to both ABCWE
 1. $iisvm = get-adcomputer -identity rcmlab-iis
 2. $ssrsvm = get-adcomputer -identity rcmlab-ssrs
 3. Set-ADUser -Identity $webguy -PrincipalsAllowedToDelegateToAccount $iisvm, $ssrsvm
+
+Add-WindowsFeature RSAT-AD-PowerShell
+Import-Module ActiveDirectory
+Get-Command -ParameterName PrincipalsAllowedToDelegateToAccount

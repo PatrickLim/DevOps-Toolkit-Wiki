@@ -16,6 +16,6 @@ C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220809_124748\Co
 
 Summary Log File:
 
-C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220207_102734\Summary_db01e1-msc_20220207_102734.txt
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220809_124748\Summary_db01e1-msc_20220809_124748.txt
 
 openvista\sbcsql m=@t7f1ms#4dI01JPFq#

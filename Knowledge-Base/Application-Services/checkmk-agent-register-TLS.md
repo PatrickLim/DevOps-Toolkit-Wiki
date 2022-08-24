@@ -13,3 +13,7 @@ need to use the original automation user!
 automation --password YCNQBAUNVUGMAKUCRBIF
 
 need port 8000 available!
+
+also, to activate a plugin copy it (such as mssql.vbs) 
+from `C:\Program Files (x86)\checkmk\service\plugins` 
+to `C:\ProgramData\checkmk\agent\plugins`

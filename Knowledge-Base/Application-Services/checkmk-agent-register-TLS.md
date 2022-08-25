@@ -1,3 +1,7 @@
+Version 2.1.0p10 is here:
+
+https://checkmk.openvista.net/msc/check_mk/agents/windows/check_mk_agent.msi
+
 after upgrading to Version: 2.1.0p10 the Dashboard will show a WARN that says you have to REGISTER the host again with the mother ship.
 
 to do so:

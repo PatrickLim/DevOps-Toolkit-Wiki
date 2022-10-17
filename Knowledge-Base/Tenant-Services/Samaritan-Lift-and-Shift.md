@@ -39,7 +39,7 @@ on i.FORM_TYPE_CD = x.FORM_TYPE_CD and i.SEQ_NUM = x.SEQ_NUM
 1. add a "near midnight" schedule
 2. Claim Reconciliation is emailed near midnight
 3. Census by Nursing Station is emailed twice a day
-4. Census by Nursing Station is filed every ten minutes
+4. Census by Nursing Station is filed every ten minutes (see subpage to this Wiki for fileshare details)
 5. restore report server data sources
 - shared data source
 - Claim Reconciliation uses controlwks

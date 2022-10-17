@@ -35,7 +35,7 @@ on i.FORM_TYPE_CD = x.FORM_TYPE_CD and i.SEQ_NUM = x.SEQ_NUM
 7. enable Windows Scheduled Tasks
 - finish the PBIRS Restoration below before enabling Nightly Autobilling because it relies on BillingSelection and Billing Exception reports
 - verify the Waystar upload/download tasks
-
+8. copy Image Deltas
 
 **PBIRS Restoration**
 1. add a "near midnight" schedule

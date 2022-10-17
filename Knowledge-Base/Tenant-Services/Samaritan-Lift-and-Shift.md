@@ -51,7 +51,7 @@ DIRECTORY
 
 **PBIRS Restoration**
 1. add a "near midnight" schedule
-2. Claim Reconciliation is emailed near midnight
+2. Claim Reconciliation is emailed near midnight ssumner@behavioralcenter.com
 3. Census by Nursing Station is emailed twice a day vadodara@bvstranstech.com; manager@bvstranstech.com
 4. Census by Nursing Station is filed every ten minutes (see subpage to this Wiki for fileshare details)
 5. restore report server data sources

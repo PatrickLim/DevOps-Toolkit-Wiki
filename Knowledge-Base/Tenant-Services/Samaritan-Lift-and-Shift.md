@@ -7,7 +7,16 @@ shut down Windows Scheduled Tasks
 grab backups
 grab PBIRS encryption keys
 stage backup files (compress and upload to nextcloud)
-stage image files (determine delta)
+stage image files (determine delta) use this query:
+
+
+```
+select * from IMAGE_DIRS i join
+(select FORM_TYPE_CD, SEQ_NUM,numimages=count(*) from PAT_IMAGE where DATE_SCANNED > '10/4/2022' group by FORM_TYPE_CD, SEQ_NUM) x
+on i.FORM_TYPE_CD = x.FORM_TYPE_CD and i.SEQ_NUM = x.SEQ_NUM
+```
+
+
 
 on target server:
 download backups

@@ -29,10 +29,12 @@ on i.FORM_TYPE_CD = x.FORM_TYPE_CD and i.SEQ_NUM = x.SEQ_NUM
 5. restore sbc-rcm
 - two post-restore scripts
 - crosswalk user_mstr table
-6. restore sbc-rcm-test
+6. restore sbc-rcm-test (can be done next day if pressed for time)
 - two post-restore scripts
 - crosswalk user_mstr table
 7. enable Windows Scheduled Tasks
+- finish the PBIRS Restoration below before enabling Nightly Autobilling because it relies on BillingSelection and Billing Exception reports
+- verify the Waystar upload/download tasks
 
 
 **PBIRS Restoration**

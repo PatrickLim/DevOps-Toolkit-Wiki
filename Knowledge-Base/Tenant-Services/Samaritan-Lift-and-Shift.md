@@ -51,6 +51,8 @@ DIRECTORY
 - verify the Waystar upload/download tasks
 8. copy Image Deltas
 9. change MIRTH ports
+- MIRTH on openvista-sbc.openvista.net is 10.252.1.29 listening on 19100
+- ap01e1-sbc.openvista.net is 10.252.129.10 listening on 7500
 10. restart HL7 and all other interfaces
 
 **PBIRS Restoration**

@@ -50,6 +50,8 @@ DIRECTORY
 - finish the PBIRS Restoration below before enabling Nightly Autobilling because it relies on BillingSelection and Billing Exception reports
 - verify the Waystar upload/download tasks
 8. copy Image Deltas
+9. change MIRTH ports
+10. restart HL7 and all other interfaces
 
 **PBIRS Restoration**
 1. add a "near midnight" schedule

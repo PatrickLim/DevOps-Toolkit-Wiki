@@ -33,7 +33,9 @@ DIRECTORY
 
 **on target server:**
 1. download backups
-2. take report server offline
+2. shut down services
+- take report server offline
+- shut down HL7 and all other interfaces
 3. restore report server databases
 4. restore report server encryption keys
 - restart report server

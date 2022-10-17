@@ -36,6 +36,8 @@ DIRECTORY
 2. take report server offline
 3. restore report server databases
 4. restore report server encryption keys
+- restart report server
+- test with Chrome
 5. restore sbc-rcm
 - two post-restore scripts
 - crosswalk user_mstr table

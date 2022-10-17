@@ -7,7 +7,8 @@ Data Source=db01e1-msc\sbc;Initial Catalog=sbc-rcm
 - shut down Windows Scheduled Tasks
 2. grab backups
 - take final snapshot
-- IcsMain, IcsTest, ReportServer, ReportServerTempDB
+- IcsMain, ReportServer, ReportServerTempDB
+- IcsTest DO LATER in the week!
 3. grab PBIRS encryption keys
 4. stage backup files (compress and upload to nextcloud)
 5. stage image files (determine delta) use this query:
@@ -38,7 +39,7 @@ DIRECTORY
 5. restore sbc-rcm
 - two post-restore scripts
 - crosswalk user_mstr table
-6. restore sbc-rcm-test (can be done next day if pressed for time)
+6. restore sbc-rcm-test (DO LATER in the week!)
 - two post-restore scripts
 - crosswalk user_mstr table
 7. enable Windows Scheduled Tasks

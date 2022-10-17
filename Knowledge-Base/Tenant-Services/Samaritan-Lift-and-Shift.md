@@ -59,7 +59,8 @@ DIRECTORY
 - Claim Reconciliation uses controlwks
 - Census by Nursing Station uses controlwks
 - BillingSelection and BillingException uses controlwks
-6. SBC RCM Cloud Access and SBC RCM Classic Access need access to SSRS (make sure it goes down into the IcsMain folder and subfolders)
+6. SBC RCM Cloud Access and SBC RCM Classic Access need access to SSRS
+- make sure it goes down into the IcsMain folder and subfolders!
 
 Data Source=db01e1-msc\sbc;Initial Catalog=sbc-rcm
 ssumner@behavioralcenter.com

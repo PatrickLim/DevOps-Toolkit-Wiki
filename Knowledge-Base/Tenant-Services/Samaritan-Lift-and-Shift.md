@@ -19,7 +19,16 @@ select * from IMAGE_DIRS i join
 on i.FORM_TYPE_CD = x.FORM_TYPE_CD and i.SEQ_NUM = x.SEQ_NUM
 ```
 
-
+DIRECTORY
+\\sbc-rcm-sql.samaritan.local\images\ICSImages\IcsMain\Billing\2022\10\
+\\sbc-rcm-sql.samaritan.local\images\ICSImages\IcsMain\Mailrcpt\2022\10\
+\\sbc-rcm-sql.samaritan.local\images\ICSImages\IcsMain\INSLETTER\2022\10\
+\\sbc-rcm-sql.samaritan.local\images\ICSImages\IcsMain\INTAKE\2022\10\
+\\sbc-rcm-sql.samaritan.local\images\ICSImages\IcsMain\40\2022\10\
+\\sbc-rcm-sql.samaritan.local\images\ICSImages\IcsMain\EOB_R\2022\10\
+\\sbc-rcm-sql.samaritan.local\images\ICSImages\IcsMain\DRVLIC\2022\10\
+\\sbc-rcm-sql.samaritan.local\images\ICSImages\IcsMain\INSCARD\2022\10\
+\\sbc-rcm-sql.samaritan.local\images\ICSImages\IcsMain\7\2022\10\
 
 **on target server:**
 1. download backups

@@ -54,6 +54,9 @@ DIRECTORY
 2. Claim Reconciliation is emailed near midnight ssumner@behavioralcenter.com
 3. Census by Nursing Station is emailed twice a day vadodara@bvstranstech.com; manager@bvstranstech.com
 4. Census by Nursing Station is filed every ten minutes (see subpage to this Wiki for fileshare details)
+- openvista\sbcapp
+- )AM2};F98$vEM)9(+KVV
+- \\ap01e1-sbc\c$\onPremFileStaging
 5. restore report server data sources
 - shared data source
 - Claim Reconciliation uses controlwks

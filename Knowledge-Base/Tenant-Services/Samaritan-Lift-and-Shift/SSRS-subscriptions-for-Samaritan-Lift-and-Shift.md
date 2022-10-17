@@ -21,6 +21,8 @@ Data Source=db01e1-msc\sbc;Initial Catalog=sbc-rcm
 
 \\ap01e1-sbc\c$\onPremFileStaging
 
+![image.png](/.attachments/image-de8a3510-9a1f-48b1-ad51-153c7298c76b.png)
+
 ![image.png](/.attachments/image-9048d94e-cd41-4834-90d8-0db54ee76ab9.png)
 
 ![image.png](/.attachments/image-026ab991-7c65-4fce-9c84-47c22abde837.png)

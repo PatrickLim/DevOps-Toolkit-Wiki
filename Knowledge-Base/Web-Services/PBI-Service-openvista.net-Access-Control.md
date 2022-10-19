@@ -21,4 +21,5 @@ Setting up Access Control is done in the Azure Portal and in the PBI Service Por
 
 - under Advanced, make sure the License Mode is Embedded (or Premium per capacity):
 
-![image.png](/.attachments/image-44012fd5-4e04-4151-a3d3-398a3594a7b0.png)
+![image.png](/.attachments/image-0b0245fa-5668-4c0d-a855-9837baeb71e1.png)
+

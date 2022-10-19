@@ -12,3 +12,13 @@ Setting up Access Control is done in the Azure Portal and in the PBI Service Por
 - in Azure Active Directory, create the Group you need and assign the Members you want to have access to the PBI Service Workspace
 
 ![image.png](/.attachments/image-826e15cc-731e-4c05-94c1-f84f33887b13.png)
+
+**What needs to happen in PBI Service Portal**
+- log in to https://app.powerbi.com with one of the accounts that is a Power BI Capacity Administrator
+- create a Workspace and just name it, leaving everything else as default
+
+![image.png](/.attachments/image-e74073c2-f775-4e76-a9c8-61e5d115aa84.png)
+
+- under Advanced, make sure the License Mode is Embedded (or Premium per capacity):
+
+![image.png](/.attachments/image-44012fd5-4e04-4151-a3d3-398a3594a7b0.png)

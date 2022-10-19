@@ -23,6 +23,6 @@ Setting up Access Control is done in the Azure Portal and in the PBI Service Por
 
 ![image.png](/.attachments/image-0b0245fa-5668-4c0d-a855-9837baeb71e1.png)
 
-- once the Workgroup is created, change the Access settings and ONLY pick the Azure Group that you created in the Azure Portal.
+- once the Workgroup is created, change the Access settings and pick ONLY the Azure Group that you created in the Azure Portal.
 
 ![image.png](/.attachments/image-3ab3dafe-fdfe-4d88-957e-9a590b4d3a2b.png)

@@ -3,7 +3,7 @@ checkmk-agent-register-TLS
 Scheduled-Task-repeating-trigger
 network-printing
 install-Billing-Service,-CDR-Processor,-etc
-Azure-Tenant-SSO-from-Matt-Boswell
+PBI-Service-Azure-Tenant-SSO-from-Matt-Boswell
 Targeted-Kerberos
 Power-BI-Report-Server-Jan-2022-install-key
 SislnkHL7ToEngineHL7-include-previous-location

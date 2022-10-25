@@ -4,6 +4,12 @@ https://medsphere.zoom.us/rec/share/HHspzuG_rSOqanGeaXibZE5dwOAjOzkCt4XFGHbxoe8P
 
 Passcode: H9eN+ef^
 
+(There are two recordings, just watch the first one under eight minutes, the second recording has nothing to do with pfSense.)
+
+The two pfSense servers are:
+- pf01w1-msc.openvista.net 13.57.91.188
+- pf01e1-msc.openvista.net 52.55.174.134
+
 When the pfSense servers are running again, you have two things on the Azure side -- the Virtual Gateways and the DNS Servers / Domain Controllers.
 
 **The Virtual Network Gateways**

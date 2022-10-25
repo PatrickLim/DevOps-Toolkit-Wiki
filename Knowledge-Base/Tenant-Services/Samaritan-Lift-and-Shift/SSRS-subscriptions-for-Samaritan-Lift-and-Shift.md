@@ -4,7 +4,7 @@
 
 \\10.254.199.205\departments\ICSREPORTING
 
-http://sbc-rcm-sql.samaritan.local/reports
+<http://sbc-rcm-sql.samaritan.local/reports>
 
 vadodara@bvstranstech.com; manager@bvstranstech.com
 

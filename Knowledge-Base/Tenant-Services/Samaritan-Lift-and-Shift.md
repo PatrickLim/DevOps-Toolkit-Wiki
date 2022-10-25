@@ -1,18 +1,22 @@
 Data Source=db01e1-msc\sbc;Initial Catalog=sbc-rcm
 
 **from original server:**
+
 1. shut down processes
+
 - shut down access
 - shut down HL7 and other interfaces
 - shut down Windows Scheduled Tasks
+
 2. grab backups
+
 - take final snapshot
 - IcsMain, ReportServer, ReportServerTempDB
 - IcsTest DO LATER in the week!
+
 3. grab PBIRS encryption keys
 4. stage backup files (compress and upload to nextcloud)
 5. stage image files (determine delta) use this query:
-
 
 ```
 select * from IMAGE_DIRS i join
@@ -32,44 +36,63 @@ DIRECTORY
 \\sbc-rcm-sql.samaritan.local\images\ICSImages\IcsMain\7\2022\10\
 
 **on target server:**
+
 1. download backups
 2. shut down services
+
 - take report server offline
 - shut down HL7 and all other interfaces
+
 3. restore report server databases
 4. restore report server encryption keys
+
 - restart report server
 - test with Chrome
+
 5. restore sbc-rcm
+
 - two post-restore scripts
 - crosswalk user_mstr table
+
 6. restore sbc-rcm-test (DO LATER in the week!)
+
 - two post-restore scripts
 - crosswalk user_mstr table
+
 7. enable Windows Scheduled Tasks
+
 - finish the PBIRS Restoration below before enabling Nightly Autobilling because it relies on BillingSelection and Billing Exception reports
 - verify the Waystar upload/download tasks
+
 8. copy Image Deltas
 9. change MIRTH ports
+
 - [Update HL7 interfaces via MIRTH console](https://dev.azure.com/medsphere/MCSP/_workitems/edit/6823)
 - MIRTH on openvista-sbc.openvista.net is 10.252.1.29 listening on 19100
 - ap01e1-sbc.openvista.net is 10.252.129.10 listening on 7500
+
 10. restart HL7 and all other interfaces
 
 **PBIRS Restoration**
+
 1. add a "near midnight" schedule
 2. Claim Reconciliation is emailed near midnight ssumner@behavioralcenter.com
 3. Census by Nursing Station is emailed twice a day vadodara@bvstranstech.com; manager@bvstranstech.com
 4. Census by Nursing Station is filed every ten minutes (see subpage to this Wiki for fileshare details)
+
 - openvista\sbcapp
 - )AM2};F98$vEM)9(+KVV
 - \\ap01e1-sbc\c$\onPremFileStaging
+
 5. restore report server data sources
+
 - shared data source
 - Claim Reconciliation uses controlwks
 - Census by Nursing Station uses controlwks
 - BillingSelection and BillingException uses controlwks
+
 6. SBC RCM Cloud Access and SBC RCM Classic Access need access to SSRS
+
 - make sure it goes down into the IcsMain folder and subfolders!
 
 Data Source=db01e1-msc\sbc;Initial Catalog=sbc-rcm

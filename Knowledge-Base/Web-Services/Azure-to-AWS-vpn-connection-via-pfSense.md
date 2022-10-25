@@ -6,11 +6,22 @@ Passcode: H9eN+ef^
 
 When the pfSense servers are running again, you have two things on the Azure side -- the Virtual Gateways and the DNS Servers / Domain Controllers.
 
-The Virtual Gateways
+**The Virtual Network Gateways**
 
-These are the Virtual Gateways
+MSC-CVC-GATE1 (Azure IP = 104.43.216.101)
+|Connection|Amazon IP|Amazon Address Space|
+|--|--|--|
+|msc-cvc-eus-con|52.55.174.134|10.252.0.0/16|
+|msc-cvc-wus-con|13.57.91.188|10.0.76.0/24, 10.0.77.0/24, 10.140.80.52/32, 10.251.0.0/16, 172.31.255.0/24|
+|msc-rcm-gch-gate-conn|74.50.132.160|192.168.1.227/32|
 
-The DNS Servers / Domain Controllers
+MSC-CVC-Gate2 (Azure IP = 40.121.23.49)
+|Connection|Amazon IP|Amazon Address Space|
+|--|--|--|
+|msc-cvc-eus-eus-con|52.55.174.134|10.252.0.0/16|
+|msc-cvc-wus-eus-con|13.57.91.188|10.0.76.0/24, 10.0.77.0/24, 10.140.80.52/32, 10.251.0.0/16, 172.31.255.0/24|
+
+**The DNS Servers / Domain Controllers**
 
 These are the DNS Servers / Domain Controllers (each vm serves as both DNS Server and Domain Controller). After pfSense is reset, just to be safe reboot these eight machines:
 

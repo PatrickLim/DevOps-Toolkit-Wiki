@@ -33,6 +33,13 @@ MSCCSP-WUS-VNET-GW (Azure IP = 52.160.43.103)
 |cov-east-1|52.55.174.134|10.252.0.0/16|
 |cvc-west-1|13.57.91.188|10.0.76.0/24, 10.0.77.0/24, 10.140.80.52/32, 10.251.0.0/16, 172.31.255.0/24|
 
+SBC-RCM-VPN-GATE (Azure IP = 13.92.90.176)
+|Connection|Amazon IP|Amazon Address Space|
+|--|--|--|
+|rcm-cvc-conn-useast1|52.55.174.134|10.252.1.0/27|
+|rcm-cvc-conn-uswest1|13.57.91.188|10.251.1.0/27|
+|sbc-rcm-conn|209.124.44.18|10.254.16.0/21, 10.254.173.0/24, 10.254.198.0/24, 10.254.199.0/24, 10.254.200.0/21, 10.90.50.0/24|
+
 **The DNS Servers / Domain Controllers**
 
 These are the DNS Servers / Domain Controllers (each vm serves as both DNS Server and Domain Controller). After pfSense is reset, just to be safe reboot these eight machines:

@@ -1,22 +1,29 @@
+# Azure-to-AWS-vpn-connection-via-pfSense
+
 This is the pfSense video recorded by Abdul Mohammed and Todd Riffel:
 
-https://medsphere.zoom.us/rec/share/HHspzuG_rSOqanGeaXibZE5dwOAjOzkCt4XFGHbxoe8P7n_K0NDHRRd_lGig2qWp.3t-ZcpQY3epn4luA
+<https://medsphere.zoom.us/rec/share/HHspzuG_rSOqanGeaXibZE5dwOAjOzkCt4XFGHbxoe8P7n_K0NDHRRd_lGig2qWp.3t-ZcpQY3epn4luA>
 
 Passcode: H9eN+ef^
 
 (There are two recordings, just watch the first one under eight minutes, the second recording has nothing to do with pfSense.)
 
+## pfSense VPN Virtual Machines in AWS
+
+[Netgate documentation](https://docs.netgate.com/pfsense/en/latest/vpn/openvpn/index.html#)
+
 The two pfSense servers are:
+
 - pf01w1-msc.openvista.net 13.57.91.188
 - pf01e1-msc.openvista.net 52.55.174.134
 
-1. Since pfSense has a web portal, from inside MSC-MG you can launch a browser and navigate to https://pf01w1-msc.openvista.net or to https://pf01e1-msc.openvista.net -- log in with your openvista creds.
+1. Since pfSense has a web portal, from inside MSC-MG you can launch a browser and navigate to <https://pf01w1-msc.openvista.net> or to <https://pf01e1-msc.openvista.net> -- log in with your openvista creds.
 
-1. Once logged in, https://pf01w1-msc.openvista.net/vpn_ipsec.php lists all the pfSense connections.
+1. Once logged in, <https://pf01w1-msc.openvista.net/vpn_ipsec.php> lists all the pfSense connections.
 
 1. When the pfSense servers are running again, you have two things to check on the Azure side -- the Virtual Gateways and the DNS Servers / Domain Controllers.
 
-**The Virtual Network Gateways**
+## The Virtual Network Gateways
 
 MSC-CVC-GATE1 (Azure IP = 104.43.216.101)
 |Connection|Amazon IP|Amazon Address Space|
@@ -54,18 +61,18 @@ SBC-RCM-VPN-GATE (Azure IP = 13.92.90.176)
 
 These are the DNS Servers / Domain Controllers (each vm serves as both DNS Server and Domain Controller). After pfSense is reset, just to be safe reboot these eight machines:
 
-msc-rcm-dc 10.7.11.4
-msc-rcm-dc2 10.7.11.5
-msc-rcm-dc3 10.17.11.4
-msc-rcm-dc4 10.17.11.5
+- msc-rcm-dc 10.7.11.4
+- msc-rcm-dc2 10.7.11.5
+- msc-rcm-dc3 10.17.11.4
+- msc-rcm-dc4 10.17.11.5
 
-msc-wus-dc1 10.177.11.4
-msc-cus-dc1 10.7.11.6
-msc-cus-dc2 10.7.11.7
-msc-eus-dc1 10.17.11.6
+- msc-wus-dc1 10.177.11.4
+- msc-cus-dc1 10.7.11.6
+- msc-cus-dc2 10.7.11.7
+- msc-eus-dc1 10.17.11.6
 
 These three dc's (in Azure) are no longer needed:
 
-azwusdc01
-sbc-rcm-ad
-sbc-rcm-adds-e1
+- azwusdc01
+- sbc-rcm-ad
+- sbc-rcm-adds-e1

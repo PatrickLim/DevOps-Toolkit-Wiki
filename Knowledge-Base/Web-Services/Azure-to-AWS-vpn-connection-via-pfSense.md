@@ -23,7 +23,9 @@ The two pfSense servers are:
 
 1. When the pfSense servers are running again, you have two things to check on the Azure side -- the Virtual Gateways and the DNS Servers / Domain Controllers.
 
-## The Virtual Network Gateways
+## Azure Virtual Network Gateways
+
+[azure resource graph explorer query](/Knowledge-Base/Web-Services/az-resource-graph-query-gateways.md)
 
 MSC-CVC-GATE1 (Azure IP = 104.43.216.101)
 |Connection|Amazon IP|Amazon Address Space|

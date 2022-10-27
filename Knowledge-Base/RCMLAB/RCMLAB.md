@@ -14,7 +14,9 @@
       - Active Directory Administrative Center
       - AD DS Snap-Ins and Commmand-Line Tools
     - DNS Server Tools
-- install VS Code
+- install [VS Code](https://code.visualstudio.com/docs/?dv=win64)
+- install [git](https://git-scm.com/download/win)
+- 
 
 ## [rcmlab.local](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.aadds.rg/providers/Microsoft.AAD/DomainServices/rcmlab.local/overview)
 

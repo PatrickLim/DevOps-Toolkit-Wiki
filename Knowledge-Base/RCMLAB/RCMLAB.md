@@ -43,7 +43,7 @@ How do we connect to VMs in RCMLAB?
 
 <https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.jump.rg/providers/Microsoft.Compute/virtualMachines/rcmlab-jump/bastionHost>
 
-simply provide your username and password only; do not include domain names (see below)
+> simply provide your username and password only; do not include domain names (see below)
 
 - email - brian@rcmdevops.onmicrosoft.com
 - **username - brian**

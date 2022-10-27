@@ -14,7 +14,7 @@ Since most scenarios would have the TruCode Server installed separately, most of
 
 ![image.png](/.attachments/image-e0d58080-5bde-4541-9bb8-7ecc16f5277e.png)
 
-Enter the SERVER\INSTANCE of the TruCode Server. In the case of Long Beach CHLB it is "RD01W1-CHLB\TRUCODE":
+Enter the SERVER\INSTANCE of the TruCode Server. In the case of Long Beach CHLB it is "rcm-db01w1\TRUCODECHLB" (the screenshot is wrong):
 
 ![image.png](/.attachments/image-3eae4442-0f36-492b-beff-ef411fb531ee.png)
 

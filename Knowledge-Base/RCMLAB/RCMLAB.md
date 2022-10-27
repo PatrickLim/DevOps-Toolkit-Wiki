@@ -4,7 +4,7 @@
 
 ---
 
-## rcmlab-jump
+## [rcmlab-jump](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.jump.rg/providers/Microsoft.Compute/virtualMachines/rcmlab-jump/bastionHost)
 
 - install .NET Framwork 3.5 Features
   - .NET 2.0 / 3.0

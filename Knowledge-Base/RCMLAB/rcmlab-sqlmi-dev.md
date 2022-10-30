@@ -19,12 +19,25 @@
   - [ in progress ] - [Setup modern interactive flow Group Policy](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-modern-interactive-flow?view=azuresql#configure-group-policy)
 
 ---
+
 ## [rcmlab-ws2022-ssms](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourcegroups/rcmlab.sqlmi.scus.rg/providers/Microsoft.Compute/virtualMachines/rcmlab-ws2022-ssms/overview)
 
 > Deploy Windows Server 2022 Datacenter (ws2022) as the management VM for SQL Managed Instance (sqlmi) configuration and connectivity via SQL Server Management Studio (ssms). Please note Azure VM **_Device Name_** has been truncated based on the Azure Resource Name: rcmlab-ws2022-ssms --> **_rcmlab-ws2022-s_**
 
+- Required Microsoft Updates
+
+  - [KB5012170: Security update for Secure Boot DBX: August 9, 2022](https://support.microsoft.com/en-us/topic/kb5012170-security-update-for-secure-boot-dbx-august-9-2022-72ff5eed-25b4-47c7-be28-c42bd211bb15)
+
+  - [October 11, 2022-KB5018551](https://support.microsoft.com/en-us/topic/october-11-2022-kb5018551-cumulative-update-for-net-framework-3-5-4-8-and-4-8-1-for-microsoft-server-operating-system-version-21h2-cfee4e3e-c48e-44eb-bbf3-b208e16b17f2)
+
+  - [October 25, 2022—KB5018485 (OS Build 20348.1194) Preview](https://support.microsoft.com/en-us/topic/october-25-2022-kb5018485-os-build-20348-1194-preview-becf7d1a-9482-4d56-955d-097e35b992a4)
+
+  - [October 25, 2022-KB5018860 Cumulative Update Preview for .NET Framework 3.5, 4.8 and 4.8.1 for Microsoft server operating system version 21H2](https://support.microsoft.com/en-us/topic/october-25-2022-kb5018860-cumulative-update-preview-for-net-framework-3-5-4-8-and-4-8-1-for-microsoft-server-operating-system-version-21h2-353265cc-c9cd-4bf0-b188-909277209abf)
+
+- Required PowerShell commands
+
 ```powershell
-# You can determine if this prerequisite is met by running the dsregcmd command:
+# Clients must be joined to Azure AD or Hybrid Azure AD. You can determine if this prerequisite is met by running the dsregcmd command:
 
 dsregcmd.exe /status
 

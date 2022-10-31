@@ -36,6 +36,8 @@
 
 - Required PowerShell commands
 
+[PowerShell script download](../../.attachments/PSModules-Required-to-manage-SQLMI.ps1)
+
 ```powershell
 # Clients must be joined to Azure AD or Hybrid Azure AD. You can determine if this prerequisite is met by running the dsregcmd command:
 

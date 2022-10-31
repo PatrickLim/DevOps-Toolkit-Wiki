@@ -46,6 +46,11 @@ dsregcmd.exe /status
 
 dsregcmd.exe /RefreshPrt
 
+# This module allows the device to interact with Azure accounts
+# use -AllowClobber parameter as needed
+
+Install-Module Az.Accounts # - AllowClobber
+
 # This PowerShell module provides management cmdlets for Azure SQL resources.
 
 Install-Module -Name Az.Sql
@@ -55,7 +60,6 @@ Update-Module -Name Az.Sql
 
 Install-Module -Name AzureAD
 Update-Module -Name AzureAD
-
 ```
 
 ### links to documentation and tutorials

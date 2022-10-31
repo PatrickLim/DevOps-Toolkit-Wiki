@@ -36,8 +36,6 @@
 
 - Required PowerShell commands
 
-[PowerShell script download](../../.attachments/PSModules-Required-to-manage-SQLMI.ps1)
-
 ```powershell
 # Clients must be joined to Azure AD or Hybrid Azure AD. You can determine if this prerequisite is met by running the dsregcmd command:
 
@@ -64,6 +62,8 @@ Install-Module -Name AzureAD
 Update-Module -Name AzureAD
 ```
 
+> [download powershell script](../../.attachments/PSModules-Required-to-manage-SQLMI.ps1)
+
 ### links to documentation and tutorials
 
 - [Plan and implement data platform resources](https://learn.microsoft.com/en-us/training/paths/plan-implement-data-platform-resources/)
@@ -71,4 +71,5 @@ Update-Module -Name AzureAD
 - [Lift+Shift on-premises SQL Servers to Azure with minimal changes](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-overview?view=azuresql#lift-and-shift-on-premises-sql-servers-to-azure-with-minimal-changes)
 -
 
+---
 ---

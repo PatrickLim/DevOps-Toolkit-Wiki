@@ -70,7 +70,16 @@ Update-Module -Name AzureAD
 - [Plan and implement data platform resources](https://learn.microsoft.com/en-us/training/paths/plan-implement-data-platform-resources/)
 - [SQLMI + Windows Authentication + Azure AD](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-overview?view=azuresql#lift-and-shift-on-premises-sql-servers-to-azure-with-minimal-changes)
 - [Lift+Shift on-premises SQL Servers to Azure with minimal changes](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-overview?view=azuresql#lift-and-shift-on-premises-sql-servers-to-azure-with-minimal-changes)
--
 
 ---
----
+
+### links to offical Microsoft Developer videos
+
+- [Data Exposed](https://www.youtube.com/watch?v=SXBHtE_eXdI&t=6s)
+
+```Markdown
+- 1,073 views  Sep 15, 2022
+- In this episode of Data Exposed with Anna Hoffman and Sravani Saluru
+- they'll discuss the benefits of the newly announced  Windows Authentication for Azure AD principals
+- now Generally Available on SQL Managed instance!
+```

@@ -12,121 +12,47 @@
 
 > SQL Managed Instance --> Identity --> System assigned service principle --> ON
 
-- [ in progress ] - [Modern interactive authentication flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#modern-interactive-authentication-flow)
+---
 
-  - [ done ] - [Configure Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#configure-azure-sql-managed-instance)
+## [Modern interactive authentication flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#modern-interactive-authentication-flow)
 
-  - [ in progress ] - [Setup modern interactive flow Group Policy](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-modern-interactive-flow?view=azuresql#configure-group-policy)
+- [ done ] - [Configure Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#configure-azure-sql-managed-instance)
 
-- [ in progress ] - [Incoming trust-based flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#incoming-trust-based-authentication-flow)
+- [ in progress ] - [Setup modern interactive flow Group Policy](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-modern-interactive-flow?view=azuresql#configure-group-policy)
+
+---
+
+## [Incoming trust-based flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#incoming-trust-based-authentication-flow)
+
+### [Install Azure AD Hybrid Authentication Management PowerShell Module](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-incoming-trust-based-flow?view=azuresql#install-the-azure-ad-hybrid-authentication-management-powershell-module)
+
+- Start a Windows PowerShell session with the Run as administrator option. nstall the Azure AD Hybrid Authentication Management PowerShell module sing the following script. The script:
+  - Enables TLS 1.2 for communication.
+  - Installs the NuGet package provider.
+  - Registers the PSGallery repository.
+  - Installs the PowerShellGet module.
+  - Installs the Azure AD Hybrid Authentication Management PowerShell module. The Azure AD Hybrid Authentication Management PowerShell uses the AzureADPreview module, which provides advanced Azure AD management feature.
+  - To protect against unnecessary installation conflicts with AzureAD PowerShell module, this command includes the –AllowClobber option flag.
 
 ```powershell
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 
 
-PS C:\Users\rcmlabmaster> dsregcmd.exe /status
+Install-PackageProvider -Name NuGet -Force 
 
+if (@(Get-PSRepository | ? {$_.Name -eq "PSGallery"}).Count -eq 0){ 
+    Register-PSRepository -DefaultSet-PSRepository -Name "PSGallery" -InstallationPolicy Trusted 
+} 
 
-+----------------------------------------------------------------------+
-| Device State                                                         |
-+----------------------------------------------------------------------+
+Install-Module -Name PowerShellGet -Force 
 
-             AzureAdJoined : NO
-          EnterpriseJoined : NO
-              DomainJoined : YES
-                DomainName : RCMLAB
-               Device Name : rcmlab-ws2022-s.rcmlab.local
-
-+----------------------------------------------------------------------+
-| User State                                                           |
-+----------------------------------------------------------------------+
-
-                    NgcSet : NO
-           WorkplaceJoined : NO
-             WamDefaultSet : NO
-
-+----------------------------------------------------------------------+
-| SSO State                                                            |
-+----------------------------------------------------------------------+
-
-                AzureAdPrt : NO
-       AzureAdPrtAuthority : NO
-             EnterprisePrt : NO
-    EnterprisePrtAuthority : NO
-
-+----------------------------------------------------------------------+
-| Diagnostic Data                                                      |
-+----------------------------------------------------------------------+
-
-Waiting for Diagnostics Task to complete. This could take a few minutes...
-                                                                                             
-     Diagnostics Reference : www.microsoft.com/aadjerrors
-              User Context : SYSTEM
-               Client Time : 2022-11-07 15:51:42.000 UTC
-      AD Connectivity Test : PASS
-     AD Configuration Test : FAIL [0x80070002]
-        DRS Discovery Test : SKIPPED
-     DRS Connectivity Test : SKIPPED
-    Token acquisition Test : SKIPPED
-     Fallback to Sync-Join : ENABLED
-
-     Previous Registration : 2022-11-07 15:50:24.000 UTC
-               Error Phase : discover
-          Client ErrorCode : 0x801c001d
-
-+----------------------------------------------------------------------+
-| IE Proxy Config for System Account                                   |
-+----------------------------------------------------------------------+
-
-      Auto Detect Settings : YES
-    Auto-Configuration URL : 
-         Proxy Server List : 
-         Proxy Bypass List : 
-
-+----------------------------------------------------------------------+
-| URL Specific Proxy Config                                            |
-+----------------------------------------------------------------------+
-
-    Auto Detect PAC Status : Failed to auto detect the Proxy Auto-Configuration (PAC) script u
-sing WPAD. code: 0x80072f94
-
-    Executing Account Name : RCMLAB\RCMLAB-WS2022-S$, RCMLAB-WS2022-S$@rcmlab.local
-
-+----------------------------------------------------------------------+
-| IE Proxy Config for Current User                                     |
-+----------------------------------------------------------------------+
-
-      Auto Detect Settings : YES
-    Auto-Configuration URL : 
-         Proxy Server List : 
-         Proxy Bypass List : 
-
-+----------------------------------------------------------------------+
-| WinHttp Default Proxy Config                                         |
-+----------------------------------------------------------------------+
-
-               Access Type : DIRECT
-
-+----------------------------------------------------------------------+
-| Ngc Prerequisite Check                                               |
-+----------------------------------------------------------------------+
-
-            IsDeviceJoined : NO
-             IsUserAzureAD : NO
-             PolicyEnabled : NO
-          PostLogonEnabled : YES
-            DeviceEligible : NO
-        SessionIsNotRemote : NO
-            CertEnrollment : none
-              PreReqResult : WillNotProvision
-
-For more information, please visit https://www.microsoft.com/aadjerrors
-
-PS C:\Users\rcmlabmaster> 
-
+Install-Module -Name AzureADHybridAuthenticationManagement -AllowClobber
 ```
 
--
+### [Create the Trusted Domain Object](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-incoming-trust-based-flow?view=azuresql#create-the-trusted-domain-object)
 
--
+- <https://learn.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso>
+- <https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-primary-refresh-token#what-does-the-prt-contain>
+- <https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-primary-refresh-token#prt-issuance-during-first-sign-in>
 
 ---
 
@@ -172,47 +98,33 @@ Install-Module -Name AzureAD
 Update-Module -Name AzureAD
 ```
 
----
-
-```powershell
-
-+----------------------------------------------------------------------+
-| Device State                                                         |
-+----------------------------------------------------------------------+
-
-             AzureAdJoined : NO
-          EnterpriseJoined : NO
-              DomainJoined : YES
-                DomainName : RCMLAB
-               Device Name : rcmlab-ws2022-s.rcmlab.local
-
-```
-
 > [download powershell script](../../.attachments/PSModules-Required-to-manage-SQLMI.ps1)
+
+---
 
 ### links to documentation and tutorials
 
 - [Chose the right authentication method for your Azure AD hybrid identity solution](https://learn.microsoft.com/en-us/azure/active-directory/hybrid/choose-ad-authn)
 
-  - [Decision tree](https://learn.microsoft.com/en-us/azure/active-directory/hybrid/choose-ad-authn#decision-tree)
-  -
-  - <https://learn.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-sspr>
-  -
-  - <https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-configure-single-sign-on-with-kcd?source=recommendations>
-  -
-  - <https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-configure-single-sign-on-with-kcd?source=recommendations>
-  -
-  - <https://learn.microsoft.com/en-us/azure/active-directory-domain-services/create-ou>
-  -
-  -
-  - <https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759186(v=ws.11>)
-  -
-  - <https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-back-end-kerberos-constrained-delegation-how-to>
-  -
-  -
-  - <https://labdevsmi-rcmdevops.msappproxy.net/>
-  -
-  -
+- [Decision tree](https://learn.microsoft.com/en-us/azure/active-directory/brid/choose-ad-authn#decision-tree)
+
+- <https://learn.microsoft.com/en-us/azure/active-directory/authentication/torial-enable-sspr>
+
+- <https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/plication-proxy-configure-single-sign-on-with-kcd?source=recommendations>
+
+- <https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/plication-proxy-configure-single-sign-on-with-kcd?source=recommendations>
+
+- <https://learn.microsoft.com/en-us/azure/active-directory-domain-services/eate-ou>
+
+- <https://learn.microsoft.com/en-us/azure/active-directory-domain-services/compare-identity-solutions#azure-ad-ds-and-self-managed-ad-ds>
+
+- <https://learn.microsoft.com/en-us/azure/active-directory-domain-services/scenarios?source=recommendations#azure-ad-ds-for-hybrid-organizations>
+
+- <https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759186(v=ws.11>
+
+- <https://learn.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-back-end-kerberos-constrained-delegation-how-to>
+
+- <https://labdevsmi-rcmdevops.msappproxy.net/>
 
 - [Make Your Azure SQL Managed Instance Passwordless](https://techcommunity.microsoft.com/t5/azure-sql-blog/make-your-azure-sql-managed-instance-passwordless/ba-p/2908166)
 - [Plan and implement data platform resources](https://learn.microsoft.com/en-us/training/paths/plan-implement-data-platform-resources/)

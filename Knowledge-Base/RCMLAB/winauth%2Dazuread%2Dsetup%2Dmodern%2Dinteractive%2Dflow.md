@@ -143,3 +143,13 @@ Update-Module -Name AzureAD
 - they'll discuss the benefits of the newly announced  Windows Authentication for Azure AD principals
 - now Generally Available on SQL Managed instance!
 ```
+
+`SELECT name, compatibility_level FROM sys.databases;`
+
+- [Learn Live - Secure Azure SQL and Deliver Consistent Performance | Azure SQL Bootcamp (Session 2)](https://www.youtube.com/watch?v=WXNRU82x1vs)
+
+Azure SQL Security topics
+RBAC @ +30min...
+
+https://www.youtube.com/watch?v=WXNRU82x1vs
+

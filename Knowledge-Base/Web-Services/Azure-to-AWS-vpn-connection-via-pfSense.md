@@ -23,6 +23,7 @@ The two pfSense servers are:
 
 1. When the pfSense servers are running again, you have two things to check on the Azure side -- the Virtual Gateways and the DNS Servers / Domain Controllers.
 
+https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetails:instanceId=i-0792d871b41727ed0
 ## Azure Virtual Network Gateways
 
 [azure resource graph explorer query](/Knowledge-Base/Web-Services/az-resource-graph-query-gateways.md)

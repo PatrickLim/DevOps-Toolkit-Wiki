@@ -46,4 +46,9 @@
 - [VS Code](https://code.visualstudio.com/docs/?dv=win64)
 - [git](https://git-scm.com/download/win)
 - [VS 2022 Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
--
+- [Microsoft SQL Server Backup to Microsoft Azure Tool](https://www.microsoft.com/en-us/download/details.aspx?id=40740)
+- [SQL Server Data-Tier Application Framework](https://learn.microsoft.com/en-us/sql/tools/sqlpackage/sqlpackage-download?view=sql-server-ver16#dacfx)
+- [SQL Server Management Objects](https://learn.microsoft.com/en-us/sql/relational-databases/server-management-objects-smo/installing-smo?view=sql-server-ver16)
+- [Windows PowerShell Extensions for Microsoft SQL Server](https://learn.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-powershell?view=sql-server-ver16)
+- [System CLR Types](https://www.microsoft.com/en-us/download/details.aspx?id=100451)
+- 

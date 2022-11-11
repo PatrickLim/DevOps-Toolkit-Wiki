@@ -14,17 +14,29 @@
 
 ---
 
-## [Modern interactive authentication flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#modern-interactive-authentication-flow)
+# 2 stages
+
+when deploying ***Windows Authentication*** for Azure SQL Managed Instance using Azure Active Directory (Azure AD) ***and Kerberos***.
+
+## _One-time_ infrastructure setup.
+
+> [**Synchronize Active Directory (AD)**](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#synchronize-ad-with-azure-ad) and Azure AD, if this hasn't already been done.
+
+> **Enable the modern interactive authentication flow, when available.** The modern interactive flow is recommended for organizations with Azure AD joined or Hybrid AD joined clients running Windows 10 20H1 / Windows Server 2022 and higher where clients are joined to Azure AD or Hybrid AD.
+
+### [Modern interactive authentication flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#modern-interactive-authentication-flow)
 
 - [ done ] - [Configure Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#configure-azure-sql-managed-instance)
 
 - [ in progress ] - [Setup modern interactive flow Group Policy](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-modern-interactive-flow?view=azuresql#configure-group-policy)
 
----
+> **Set up the incoming trust-based authentication flow.** This is recommended for customers who can't use the modern interactive flow, but who have AD joined clients running Windows 10 / Windows Server 2012 and higher.
 
-## [Incoming trust-based flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#incoming-trust-based-authentication-flow)
+### [Incoming trust-based flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#incoming-trust-based-authentication-flow)
 
-### [Install Azure AD Hybrid Authentication Management PowerShell Module](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-incoming-trust-based-flow?view=azuresql#install-the-azure-ad-hybrid-authentication-management-powershell-module)
+The incoming trust-based flow works for clients running Windows 10 or Windows Server 2012 and higher. This flow requires that clients be joined to AD and have a line of sight to AD from on-premises. In the incoming trust-based flow, a trust object is created in the customer's AD and is registered in Azure AD. To enable the incoming trust-based flow, an administrator will set up an incoming trust with Azure AD and set up Kerberos Proxy via group policy.
+
+- [Install Azure AD Hybrid Authentication Management PowerShell Module](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-incoming-trust-based-flow?view=azuresql#install-the-azure-ad-hybrid-authentication-management-powershell-module)
 
 - Start a Windows PowerShell session with the Run as administrator option. nstall the Azure AD Hybrid Authentication Management PowerShell module sing the following script. The script:
   - Enables TLS 1.2 for communication.
@@ -47,6 +59,15 @@ Install-Module -Name PowerShellGet -Force
 
 Install-Module -Name AzureADHybridAuthenticationManagement -AllowClobber
 ```
+
+---
+
+## Configuration of Azure SQL Managed Instance
+
+Create a system assigned service principal for each managed instance.
+
+---
+
 
 ### [Create the Trusted Domain Object](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-incoming-trust-based-flow?view=azuresql#create-the-trusted-domain-object)
 
@@ -127,6 +148,45 @@ Update-Module -Name AzureAD
 - <https://labdevsmi-rcmdevops.msappproxy.net/>
 
 - [Make Your Azure SQL Managed Instance Passwordless](https://techcommunity.microsoft.com/t5/azure-sql-blog/make-your-azure-sql-managed-instance-passwordless/ba-p/2908166)
+
+Windows Authentication protocol for Azure AD users
+Windows Authentication is an additional Single-Sign-On authentication option for Azure AD users that supports Azure AD authentication with the Kerberos protocol. From a compatibility perspective it enables legacy apps or just apps that do not yet support Azure AD authentication to connect to Managed Instance. In that regard, your existing portfolio of applications, no matter how old, will no longer represent a barrier for identity management and security modernization in Azure.
+
+ 
+
+Yet this feature is not only about compatibility, but also about hardening the security and modernizing the infrastructure. If your application is running on Windows 11 Azure AD joined or Hybrid Azure AD joined machine that you’ve logged into with modern authentication (i.e., Windows Hello), that would count as Multi Factor Authentication (MFA) and you’ll be granted secure access to your Managed Instance.
+
+ 
+
+Though I’m sure you’d agree this is great, you may wonder what exactly it was that we’ve done to enable passwordless connection between Managed Instance and other Azure resources.
+
+
+```md
+Microsoft doesn't recommend the use of preview features in a production environment, unless you're working directly with the product team to ensure support.
+
+Preview features are broken down into the following categories:
+
+Private preview
+Public preview
+Private preview features will require that Microsoft add your subscription to an allowlist for a given feature.
+
+Public preview features are opted into in the portal but are available to everyone. Some features may require further opt-in at the individual resource. The public preview experience isn't consistent across Azure services.
+
+You can check the latest public preview features by opening the Azure portal preview page.
+
+After public preview, the status of the feature changes to generally availability. General availability (GA) is the final release status, and it means the functionality is complete and accessible to all users.
+```
+
+#### [These tools are used to migrate, configure, and provide other features for SQL databases.](https://learn.microsoft.com/en-us/sql/tools/overview-sql-tools?view=sql-server-ver16#migration-and-other-tools)
+
+- [ssbdiagnose](https://learn.microsoft.com/en-us/sql/tools/ssbdiagnose/ssbdiagnose-utility-service-broker?view=sql-server-ver16)
+- 
+
+- https://learn.microsoft.com/en-us/sql/tools/command-prompt-utility-reference-database-engine?view=sql-server-ver16
+
+- https://learn.microsoft.com/en-us/sql/tools/download-sql-feature-packs?view=sql-server-ver16
+
+
 - [Plan and implement data platform resources](https://learn.microsoft.com/en-us/training/paths/plan-implement-data-platform-resources/)
 - [SQLMI + Windows Authentication + Azure AD](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-overview?view=azuresql#lift-and-shift-on-premises-sql-servers-to-azure-with-minimal-changes)
 - [Lift+Shift on-premises SQL Servers to Azure with minimal changes](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-overview?view=azuresql#lift-and-shift-on-premises-sql-servers-to-azure-with-minimal-changes)
@@ -143,3 +203,18 @@ Update-Module -Name AzureAD
 - they'll discuss the benefits of the newly announced  Windows Authentication for Azure AD principals
 - now Generally Available on SQL Managed instance!
 ```
+
+`SELECT name, compatibility_level FROM sys.databases;`
+
+- [Learn Live - Secure Azure SQL and Deliver Consistent Performance | Azure SQL Bootcamp (Session 2)](https://www.youtube.com/watch?v=WXNRU82x1vs)
+
+Azure SQL Security topics
+RBAC @ +30min...
+
+https://www.youtube.com/watch?v=WXNRU82x1vs
+
+### [rcmlab.sqlmi.scus.firewall](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.sqlmi.scus.rg/providers/Microsoft.Network/azureFirewalls/rcmlab.sqlmi.scus.firewall/overview)
+
+
+
+> [23.102.140.74](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.sqlmi.scus.rg/providers/Microsoft.Network/publicIPAddresses/rcmlab.sqlmi.scus.firewall.public.ip/overview)

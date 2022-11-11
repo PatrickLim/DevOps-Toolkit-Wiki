@@ -44,3 +44,11 @@ foreach ($member in $members)
 }
 ```
 
+## License Management:
+patrick@mcsplab.cloud Lur86153
+
+Microsoft 365 Admin Center:
+https://admin.microsoft.com/adminportal/home?#/homepage
+
+This article says "Users must have a Premium Per User (PPU) license to access content in a Premium Per User (PPU) workspace or app.":
+https://learn.microsoft.com/en-us/power-bi/enterprise/service-premium-per-user-faq#administration-of-premium-per-user--ppu-

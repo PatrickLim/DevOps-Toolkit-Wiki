@@ -18,27 +18,29 @@
 
 when deploying ***Windows Authentication*** for Azure SQL Managed Instance using Azure Active Directory (Azure AD) ***and Kerberos***.
 
-## _One-time_ infrastructure setup.
+## *One-time* infrastructure setup
 
 > [**Synchronize Active Directory (AD)**](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#synchronize-ad-with-azure-ad) and Azure AD, if this hasn't already been done.
 
 > **Enable the modern interactive authentication flow, when available.** The modern interactive flow is recommended for organizations with Azure AD joined or Hybrid AD joined clients running Windows 10 20H1 / Windows Server 2022 and higher where clients are joined to Azure AD or Hybrid AD.
 
-### [Modern interactive authentication flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#modern-interactive-authentication-flow)
+- [Modern interactive authentication flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#modern-interactive-authentication-flow)
 
-- [ done ] - [Configure Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#configure-azure-sql-managed-instance)
+  - [ done ] - [Configure Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#configure-azure-sql-managed-instance)
 
-- [ in progress ] - [Setup modern interactive flow Group Policy](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-modern-interactive-flow?view=azuresql#configure-group-policy)
+  - [ in progress ] - [Setup modern interactive flow Group Policy](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-modern-interactive-flow?view=azuresql#configure-group-policy)
 
 > **Set up the incoming trust-based authentication flow.** This is recommended for customers who can't use the modern interactive flow, but who have AD joined clients running Windows 10 / Windows Server 2012 and higher.
 
-### [Incoming trust-based flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#incoming-trust-based-authentication-flow)
+## [*Incoming trust-based flow*](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#incoming-trust-based-authentication-flow)
 
 The incoming trust-based flow works for clients running Windows 10 or Windows Server 2012 and higher. This flow requires that clients be joined to AD and have a line of sight to AD from on-premises. In the incoming trust-based flow, a trust object is created in the customer's AD and is registered in Azure AD. To enable the incoming trust-based flow, an administrator will set up an incoming trust with Azure AD and set up Kerberos Proxy via group policy.
 
+### Task: [Create and configure the Azure AD Kerberos Trusted Domain Object](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-incoming-trust-based-flow?view=azuresql#create-and-configure-the-azure-ad-kerberos-trusted-domain-object)
+
 - [Install Azure AD Hybrid Authentication Management PowerShell Module](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-incoming-trust-based-flow?view=azuresql#install-the-azure-ad-hybrid-authentication-management-powershell-module)
 
-- Start a Windows PowerShell session with the Run as administrator option. nstall the Azure AD Hybrid Authentication Management PowerShell module sing the following script. The script:
+  - Start a Windows PowerShell session with the Run as administrator option. nstall the Azure AD Hybrid Authentication Management PowerShell module sing the following script. The script:
   - Enables TLS 1.2 for communication.
   - Installs the NuGet package provider.
   - Registers the PSGallery repository.
@@ -60,16 +62,51 @@ Install-Module -Name PowerShellGet -Force
 Install-Module -Name AzureADHybridAuthenticationManagement -AllowClobber
 ```
 
----
+### Task: [Create the Trusted Domain Object](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-incoming-trust-based-flow?view=azuresql#create-the-trusted-domain-object)
 
-## Configuration of Azure SQL Managed Instance
+Create inbound forest trust in the on-premises domain
+The on-premises AD DS domain needs an incoming forest trust for the managed domain. This trust must be manually created in the on-premises AD DS domain, it can't be created from the Azure portal.
 
-Create a system assigned service principal for each managed instance.
+```md
+Start a Windows PowerShell session with the Run as administrator option.
 
----
+Set the common parameters. Customize the script below prior to running it.
 
+Set the $domain parameter to your on-premises Active Directory domain name.
+When prompted by Get-Credential, enter an on-premises Active Directory administrator username and password.
+Set the $cloudUserName parameter to the username of a Global Administrator privileged account for Azure AD cloud access.
+```
+
+## create one-way inconing forest trust
+
+To configure inbound trust on the on-premises AD DS domain, complete the following steps from a management workstation for the on-premises AD DS domain:
+
+- Select Start > Administrative Tools > Active Directory Domains and Trusts.
+- Right-click the domain, such as onprem.contoso.com, then select Properties.
+- Choose Trusts tab, then New Trust.
+- Enter the name for Azure AD DS domain name, such as aaddscontoso.com, then select Next.
+- Select the option to create a Forest trust, then to create a One way: incoming trust.
+- Choose to create the trust for This domain only. In the next step, you create the trust in the Azure portal for the managed domain.
+- Choose to use Forest-wide authentication, then enter and confirm a trust password. This same password is also entered in the Azure portal in the next section.
+- Step through the next few windows with default options, then choose the option for No, do not confirm the outgoing trust.
+- Select Finish.
+-
+
+```md
+If the forest trust is no longer needed for an environment, complete the following steps to remove it from the on-premises domain:
+
+Select Start > Administrative Tools > Active Directory Domains and Trusts.
+Right-click the domain, such as onprem.contoso.com, then select Properties.
+Choose Trusts tab, then Domains that trust this domain (incoming trusts), click the trust to be removed, and then click Remove.
+On the Trusts tab, under Domains trusted by this domain (outgoing trusts), click the trust to be removed, and then click Remove.
+Click No, remove the trust from the local domain only.
+
+```
 
 ### [Create the Trusted Domain Object](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-incoming-trust-based-flow?view=azuresql#create-the-trusted-domain-object)
+
+-
+-
 
 - <https://learn.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso>
 - <https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-primary-refresh-token#what-does-the-prt-contain>
@@ -79,7 +116,7 @@ Create a system assigned service principal for each managed instance.
 
 ## [rcmlab-ws2022-ssms](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourcegroups/rcmlab.sqlmi.scus.rg/providers/Microsoft.Compute/virtualMachines/rcmlab-ws2022-ssms/overview)
 
-> Deploy Windows Server 2022 Datacenter (ws2022) as the management VM for SQL Managed Instance (sqlmi) configuration and connectivity via SQL Server Management Studio (ssms). Please note Azure VM **_Device Name_** has been truncated based on the Azure Resource Name: rcmlab-ws2022-ssms --> **_rcmlab-ws2022-s_**
+> Deploy Windows Server 2022 Datacenter (ws2022) as the management VM for SQL Managed Instance (sqlmi) configuration and connectivity via SQL Server Management Studio (ssms). Please note Azure VM ***Device Name*** has been truncated based on the Azure Resource Name: rcmlab-ws2022-ssms --> ***rcmlab-ws2022-s***
 
 - Required Microsoft Updates
 
@@ -152,14 +189,9 @@ Update-Module -Name AzureAD
 Windows Authentication protocol for Azure AD users
 Windows Authentication is an additional Single-Sign-On authentication option for Azure AD users that supports Azure AD authentication with the Kerberos protocol. From a compatibility perspective it enables legacy apps or just apps that do not yet support Azure AD authentication to connect to Managed Instance. In that regard, your existing portfolio of applications, no matter how old, will no longer represent a barrier for identity management and security modernization in Azure.
 
- 
-
 Yet this feature is not only about compatibility, but also about hardening the security and modernizing the infrastructure. If your application is running on Windows 11 Azure AD joined or Hybrid Azure AD joined machine that you’ve logged into with modern authentication (i.e., Windows Hello), that would count as Multi Factor Authentication (MFA) and you’ll be granted secure access to your Managed Instance.
 
- 
-
 Though I’m sure you’d agree this is great, you may wonder what exactly it was that we’ve done to enable passwordless connection between Managed Instance and other Azure resources.
-
 
 ```md
 Microsoft doesn't recommend the use of preview features in a production environment, unless you're working directly with the product team to ensure support.
@@ -180,12 +212,11 @@ After public preview, the status of the feature changes to generally availabilit
 #### [These tools are used to migrate, configure, and provide other features for SQL databases.](https://learn.microsoft.com/en-us/sql/tools/overview-sql-tools?view=sql-server-ver16#migration-and-other-tools)
 
 - [ssbdiagnose](https://learn.microsoft.com/en-us/sql/tools/ssbdiagnose/ssbdiagnose-utility-service-broker?view=sql-server-ver16)
-- 
+-
 
-- https://learn.microsoft.com/en-us/sql/tools/command-prompt-utility-reference-database-engine?view=sql-server-ver16
+- <https://learn.microsoft.com/en-us/sql/tools/command-prompt-utility-reference-database-engine?view=sql-server-ver16>
 
-- https://learn.microsoft.com/en-us/sql/tools/download-sql-feature-packs?view=sql-server-ver16
-
+- <https://learn.microsoft.com/en-us/sql/tools/download-sql-feature-packs?view=sql-server-ver16>
 
 - [Plan and implement data platform resources](https://learn.microsoft.com/en-us/training/paths/plan-implement-data-platform-resources/)
 - [SQLMI + Windows Authentication + Azure AD](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-overview?view=azuresql#lift-and-shift-on-premises-sql-servers-to-azure-with-minimal-changes)
@@ -211,10 +242,8 @@ After public preview, the status of the feature changes to generally availabilit
 Azure SQL Security topics
 RBAC @ +30min...
 
-https://www.youtube.com/watch?v=WXNRU82x1vs
+<https://www.youtube.com/watch?v=WXNRU82x1vs>
 
 ### [rcmlab.sqlmi.scus.firewall](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.sqlmi.scus.rg/providers/Microsoft.Network/azureFirewalls/rcmlab.sqlmi.scus.firewall/overview)
-
-
 
 > [23.102.140.74](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.sqlmi.scus.rg/providers/Microsoft.Network/publicIPAddresses/rcmlab.sqlmi.scus.firewall.public.ip/overview)

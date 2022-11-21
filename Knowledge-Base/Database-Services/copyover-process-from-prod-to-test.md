@@ -8,6 +8,7 @@ May need to bug Terri/Joy to verify that connectivity is there before signing of
 2. restore prod to test
 3. SERVICE BROKER!!!
 4. run Update Paths Test from Prod script (and verify results table by table)
+5. in SERVICES_MSTR table, the URI port has to be changed too, otherwise the BillingTest service may end up duplicating the BillingProd service.
 5. depending on the client, scrub the data using GO LIVE INIT script
 6. copy Image Folders from prod to test
 

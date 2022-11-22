@@ -1,3 +1,5 @@
 [[_TOC_]]
 
 [add initial user](/Knowledge-Base/Database-Services/useful-queries/add-initial-user)
+
+[Get Login Times for User Account](/Knowledge-Base/Database-Services/useful-queries/Get-Login-Times-for-User-Account)

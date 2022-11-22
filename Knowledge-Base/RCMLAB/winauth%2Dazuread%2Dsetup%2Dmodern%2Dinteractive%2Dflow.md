@@ -79,7 +79,7 @@ When prompted by Get-Credential, enter an on-premises Active Directory administr
 Set the $cloudUserName parameter to the username of a Global Administrator privileged account for Azure AD cloud access.
 ```
 
-## create one-way inconing forest trust
+## create one-way incoming forest trust
 
 To configure inbound trust on the on-premises AD DS domain, complete the following steps from a management workstation for the on-premises AD DS domain:
 

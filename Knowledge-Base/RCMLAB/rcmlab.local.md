@@ -1,6 +1,6 @@
 [[_TOC_]]
 
-# [RCMLAB](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/dashboard/arm/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourcegroups/dashboards/providers/microsoft.portal/dashboards/31c91306-384d-4ce4-bcb0-cbc2f759f674)
+# [rcmlab.dashboard](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/dashboard/arm/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourcegroups/dashboards/providers/microsoft.portal/dashboards/31c91306-384d-4ce4-bcb0-cbc2f759f674)
 
 ## [rcmlab.local](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.aadds.rg/providers/Microsoft.AAD/DomainServices/rcmlab.local/overview)
 
@@ -22,8 +22,7 @@
 - <https://learn.microsoft.com/en-us/azure/active-directory-domain-services/powershell-scoped-synchronization>
 -
 
-# How to connect to VMs in RCMLAB?
-
+# how to connect to virtual machines in rcmlab?
 > [Bastions](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.jump.rg/providers/Microsoft.Compute/virtualMachines/rcmlab-jump/bastionHost) simply provide your username and password only; do not include domain names (see below)
 
 - email - brian@rcmdevops.onmicrosoft.com

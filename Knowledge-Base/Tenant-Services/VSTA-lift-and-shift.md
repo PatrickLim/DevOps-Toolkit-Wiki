@@ -2,11 +2,20 @@ Data Source=db01e1-msc\vsta;Initial Catalog=vsta-rcm
 
 **from original server:**
 
-shut down processes
-grab backups
-grab PBIRS encryption keys
-stage backup files (compress and upload to nextcloud)
-stage image files (determine delta)
+1. shut down processes
+- shut down access
+- shut down HL7 and other interfaces
+- shut down Windows Scheduled Tasks
+2. grab backups
+3. grab PBIRS encryption keys
+4. stage backup files (compress and upload to nextcloud)
+5. stage image files (determine delta)
+
+```
+select * from IMAGE_DIRS i join
+(select FORM_TYPE_CD, SEQ_NUM,numimages=count(*) from PAT_IMAGE where DATE_SCANNED > '11/21/2022' group by FORM_TYPE_CD, SEQ_NUM) x
+on i.FORM_TYPE_CD = x.FORM_TYPE_CD and i.SEQ_NUM = x.SEQ_NUM
+```
 
 \\DEVINTF01\Images\ICSImages\IcsMain\40\2022\11\
 \\DEVINTF01\Images\ICSImages\IcsMain\50\2022\11\
@@ -17,20 +26,31 @@ stage image files (determine delta)
 \\DEVINTF01\Images\ICSImages\IcsMain\EOB_R\2022\11\
 \\DEVINTF01\Images\ICSImages\IcsMain\INS CORR\2022\11\
 
-on target server:
-download backups
-take report server offline
-restore report server databases
-restore report server encryption keys trcicssql-11-21-2022.snk LLss!123
-if you get "scale out error" refer to this https://www.sqlnethub.com/blog/how-to-resolve-the-feature-scale-out-deployment-is-not-supported-in-this-edition-of-reporting-services/
-basically, the onprem server is MSSQLSERVER whereas the hosted one is SSRS, so the dbo.Keys table gets confused.
-restore report server data sources (including subscription reports) -- use controlwks favre until db01e1-msc can be rebooted for Kerberos stuck
-MBHC RCM Cloud Access, MBHC RCM Classic Access, TBHC RCM Cloud Access and TBHC RCM Classic Access need access to SSRS (make sure it goes down into the IcsMain folder and subfolders)
-restore vsta-rcm (including two post-restore scripts)
-crosswalk user_mstr table
-restore vsta-rcm-test (including two post-restore scripts)
-crosswalk user_mstr table
-enable Windows Scheduled Tasks
+**on target server:**
+
+1. download backups
+2. shut down services
+
+- take report server offline
+- shut down HL7 and all other interfaces
+
+3. restore report server databases
+4. restore report server encryption keys
+- trcicssql-11-21-2022.snk LLss!123
+- if you get "scale out error" refer to this https://www.sqlnethub.com/blog/how-to-resolve-the-feature-scale-out-deployment-is-not-supported-in-this-edition-of-reporting-services/
+- basically, the onprem server is MSSQLSERVER whereas the hosted one is SSRS, so the dbo.Keys table gets confused.
+- restart report server
+- test with chrome
+- restore report server data sources (including subscription reports) -- use controlwks favre until db01e1-msc can be rebooted for Kerberos stuck
+- MBHC RCM Cloud Access, MBHC RCM Classic Access, TBHC RCM Cloud Access and TBHC RCM Classic Access need access to SSRS (make sure it goes down into the IcsMain folder and subfolders)
+
+5. restore vsta-rcm (including two post-restore scripts)
+- crosswalk user_mstr table
+
+6. restore vsta-rcm-test (including two post-restore scripts)
+- crosswalk user_mstr table
+
+7. enable Windows Scheduled Tasks
 
 BillingSelection and BillingException need correct data sources!
 

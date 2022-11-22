@@ -1,5 +1,5 @@
 [[_TOC_]]
 
-[RCMLAB](/Knowledge-Base/RCMLAB/RCMLAB)
+# [rcmlab](/Knowledge-Base/RCMLAB/RCMLAB)
 
-[winauth-azuread-setup-modern-interactive-flow](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/363/winauth-azuread-setup-modern-interactive-flow)
+## [azure.sqlmi](/Knowledge-Base/RCMLAB/azure%2Dsql.managed%2Dinstance.winauth%2Dazuread%2Dsetup)

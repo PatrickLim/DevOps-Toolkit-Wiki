@@ -1,6 +1,6 @@
 [[_TOC_]]
 
-# [rcmlab](/Knowledge-Base/RCMLAB/rcmlab.local)
+# [rcmlab.local](/Knowledge-Base/RCMLAB/rcmlab.local)
 
 - [how to connect to vms in rcmlab](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/319/RCMLAB?anchor=how-to-connect-to-vms-in-rcmlab%3F)
 

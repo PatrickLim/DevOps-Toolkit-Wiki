@@ -122,6 +122,8 @@ Click No, remove the trust from the local domain only.
 
 > Deploy Windows Server 2022 Datacenter (ws2022) as the management VM for SQL Managed Instance (sqlmi) configuration and connectivity via SQL Server Management Studio (ssms). Please note Azure VM ***Device Name*** has been truncated based on the Azure Resource Name: rcmlab-ws2022-ssms --> ***rcmlab-ws2022-s***
 
+![start-rcmlab-ws2022.png](/.attachments/start-rcmlab-ws2022-c63f4e1e-de8c-427f-b0e5-09ef4c287fe9.png)
+
 - Required Microsoft Updates
 
   - [KB5012170: Security update for Secure Boot DBX: August 9, 2022](https://support.microsoft.com/en-us/topic/kb5012170-security-update-for-secure-boot-dbx-august-9-2022-72ff5eed-25b4-47c7-be28-c42bd211bb15)

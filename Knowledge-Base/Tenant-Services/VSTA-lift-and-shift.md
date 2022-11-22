@@ -43,6 +43,7 @@ on i.FORM_TYPE_CD = x.FORM_TYPE_CD and i.SEQ_NUM = x.SEQ_NUM
 - test with chrome
 - restore report server data sources (including subscription reports) -- use controlwks favre until db01e1-msc can be rebooted for Kerberos stuck
 - MBHC RCM Cloud Access, MBHC RCM Classic Access, TBHC RCM Cloud Access and TBHC RCM Classic Access need access to SSRS (make sure it goes down into the IcsMain folder and subfolders)
+- BillingSelection and BillingException need correct data sources!
 
 5. restore vsta-rcm (including two post-restore scripts)
 - crosswalk user_mstr table
@@ -52,6 +53,5 @@ on i.FORM_TYPE_CD = x.FORM_TYPE_CD and i.SEQ_NUM = x.SEQ_NUM
 
 7. enable Windows Scheduled Tasks
 
-BillingSelection and BillingException need correct data sources!
 
 Data Source=db01e1-msc\vsta;Initial Catalog=vsta-rcm

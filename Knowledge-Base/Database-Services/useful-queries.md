@@ -3,3 +3,5 @@
 [add initial user](/Knowledge-Base/Database-Services/useful-queries/add-initial-user)
 
 [Get Login Times for User Account](/Knowledge-Base/Database-Services/useful-queries/Get-Login-Times-for-User-Account)
+
+[list all permissions for a role](/Knowledge-Base/Database-Services/useful-queries/list-all-permissions-for-a-role)

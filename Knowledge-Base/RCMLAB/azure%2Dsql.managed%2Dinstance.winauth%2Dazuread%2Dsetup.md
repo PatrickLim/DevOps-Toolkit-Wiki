@@ -16,7 +16,7 @@
 
 ---
 
-# [How to set up Windows Authentication for Azure SQL Managed Instance using Azure Active Directory and Kerberos](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#one-time-infrastructure-setup)
+## [_How to set up Windows Authentication for Azure SQL Managed Instance using Azure Active Directory and Kerberos_](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#one-time-infrastructure-setup)
 
 This article gives an overview of how to set up infrastructure and managed instances to implement Windows Authentication for Azure AD principals on Azure SQL Managed Instance.
 
@@ -36,7 +36,7 @@ There are two phases to set up Windows Authentication for Azure SQL Managed Inst
 
 > **Set up the incoming trust-based authentication flow.** This is recommended for customers who can't use the modern interactive flow, but who have AD joined clients running Windows 10 / Windows Server 2012 and higher.
 
-### [_**Incoming trust-based flow**_](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#incoming-trust-based-authentication-flow)
+## [_**Incoming trust-based flow**_](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#incoming-trust-based-authentication-flow)
 
 The incoming trust-based flow works for clients running Windows 10 or Windows Server 2012 and higher. This flow requires that clients be joined to AD and have a line of sight to AD from on-premises. In the incoming trust-based flow, a trust object is created in the customer's AD and is registered in Azure AD. To enable the incoming trust-based flow, an administrator will set up an incoming trust with Azure AD and set up Kerberos Proxy via group policy.
 
@@ -164,7 +164,7 @@ Update-Module -Name AzureAD
 
 ---
 
-### links to documentation and tutorials
+# links to documentation and tutorials
 
 - [Chose the right authentication method for your Azure AD hybrid identity solution](https://learn.microsoft.com/en-us/azure/active-directory/hybrid/choose-ad-authn)
 

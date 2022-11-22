@@ -57,7 +57,7 @@ on i.FORM_TYPE_CD = x.FORM_TYPE_CD and i.SEQ_NUM = x.SEQ_NUM
 5. restore vsta-rcm (including two post-restore scripts)
 - crosswalk user_mstr table
 
-6. restore vsta-rcm-test (including two post-restore scripts)
+6. restore vsta-rcm-test (including two post-restore scripts) DO LATER in the week!
 - crosswalk user_mstr table
 
 7. enable Windows Scheduled Tasks

@@ -6,7 +6,16 @@ Data Source=db01e1-msc\vsta;Initial Catalog=vsta-rcm
 - shut down access
 - shut down HL7 and other interfaces
 - shut down Windows Scheduled Tasks
+
 2. grab backups
+- take final snapshot
+- IcsMain, ReportServer, ReportServerTempDB
+- IcsTest DO LATER in the week!
+- REPORT_SERVER_URL = http://DEVINTREPWARE/reportserver
+- login for DEVINTREPWARE:
+- Trc/ICSRPT 
+- fact-TOTAL-239
+
 3. grab PBIRS encryption keys
 4. stage backup files (compress and upload to nextcloud)
 5. stage image files (determine delta)

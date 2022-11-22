@@ -10,7 +10,7 @@
 
 - [rcmlab-ws2022-s.rcmlabadds.local](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/363/azure-sql.managed-instance.winauth-azuread-setup?anchor=%5Brcmlab-ws2022-ssms%5D(https%3A//portal.azure.com/%23%40rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourcegroups/rcmlab.sqlmi.scus.rg/providers/microsoft.compute/virtualmachines/rcmlab-ws2022-ssms/overview))
 
-# [azure.sqlmi](/Knowledge-Base/RCMLAB/azure%2Dsql.managed%2Dinstance.winauth%2Dazuread%2Dsetup)
+# [azure.sqlmi](/Knowledge-Base/RCMLAB/SQLMI)
 
  - [how to connect to management vm for sqlmi](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/363/azure-sql.managed-instance.winauth-azuread-setup?anchor=%5Brcmlab-ws2022-ssms%5D(https%3A//portal.azure.com/%23%40rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourcegroups/rcmlab.sqlmi.scus.rg/providers/microsoft.compute/virtualmachines/rcmlab-ws2022-ssms/overview))
 

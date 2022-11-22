@@ -81,12 +81,12 @@ Set the $cloudUserName parameter to the username of a Global Administrator privi
 
 ## create one-way incoming forest trust
 
-To configure inbound trust on the on-premises AD DS domain, complete the following steps from a management workstation for the on-premises AD DS domain:
+To configure inbound trust on the on-premises AD DS domain, complete the following steps from a management workstation for the on-premises AD DS domain ( _rcmlabadds.local_ ):
 
 - Select Start > Administrative Tools > Active Directory Domains and Trusts.
-- Right-click the domain, such as onprem.contoso.com, then select Properties.
+- Right-click the domain, such as on-premises domain _rcmlabadds.local_, then select Properties.
 - Choose Trusts tab, then New Trust.
-- Enter the name for Azure AD DS domain name, such as aaddscontoso.com, then select Next.
+- Enter the name for Azure AD DS domain name, such as _rcmlab.local_, then select Next.
 - Select the option to create a Forest trust, then to create a One way: incoming trust.
 - Choose to create the trust for This domain only. In the next step, you create the trust in the Azure portal for the managed domain.
 - Choose to use Forest-wide authentication, then enter and confirm a trust password. This same password is also entered in the Azure portal in the next section.

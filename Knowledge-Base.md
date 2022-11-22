@@ -1,12 +1,11 @@
 # [Database Services](/Knowledge-Base/Database-Services)
 
+- [copyover process from prod to test](/Knowledge-Base/Database-Services/copyover-process-from-prod-to-test) (_Nov 2022_)
 - [multi-instance sql servers](/Knowledge-Base/Database-Services/multi%2Dinstance-sql-servers) _(comments)_
 - [service broker](/Knowledge-Base/Database-Services/service-broker)
 - [replication instructions](/Knowledge-Base/Database-Services/replication-instructions)
 - [replication exclude sprocs](/Knowledge-Base/Database-Services/replication-exclude-sprocs)
 - [collector table path updates](/Knowledge-Base/Database-Services/collector-table-path-updates)
-
-[copyover process from prod to test](/Knowledge-Base/Database-Services/copyover-process-from-prod-to-test) (_Nov 2022_)
 
 ---
 

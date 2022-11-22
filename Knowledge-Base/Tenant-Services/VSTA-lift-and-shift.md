@@ -53,5 +53,10 @@ on i.FORM_TYPE_CD = x.FORM_TYPE_CD and i.SEQ_NUM = x.SEQ_NUM
 
 7. enable Windows Scheduled Tasks
 
+8. copy Image Deltas
+
+9. change MIRTH ports
+
+10. restart HL7 and all other interfaces
 
 Data Source=db01e1-msc\vsta;Initial Catalog=vsta-rcm

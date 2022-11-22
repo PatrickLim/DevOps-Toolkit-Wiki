@@ -6,6 +6,8 @@
 - [replication exclude sprocs](/Knowledge-Base/Database-Services/replication-exclude-sprocs)
 - [collector table path updates](/Knowledge-Base/Database-Services/collector-table-path-updates)
 
+[copyover process from prod to test](/Knowledge-Base/Database-Services/copyover-process-from-prod-to-test) (_Nov 2022_)
+
 ---
 
 # [Application Services](/Knowledge-Base/Application-Services)

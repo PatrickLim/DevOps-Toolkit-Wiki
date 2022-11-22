@@ -1,7 +1,7 @@
 # [RCMLAB](/Knowledge-Base/RCMLAB/rcmlab.local)
 
 - [how to connect to vms in rcmlab](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/319/RCMLAB?anchor=how-to-connect-to-vms-in-rcmlab%3F)
-- [SQLMI](/Knowledge-Base/RCMLAB/SQLMI)
+- [SQLMI](/Knowledge-Base/RCMLAB/rcmlab.sqlmi)
 
 # [Database Services](/Knowledge-Base/Database-Services)
 

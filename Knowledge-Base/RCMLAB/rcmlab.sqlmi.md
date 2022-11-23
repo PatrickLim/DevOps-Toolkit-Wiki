@@ -26,9 +26,9 @@ There are two phases to set up Windows Authentication for Azure SQL Managed Inst
 
 ## [_One-time infrastructure setup_](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#one-time-infrastructure-setup)
 
-> [**Synchronize Active Directory (AD)**](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#synchronize-ad-with-azure-ad) and Azure AD, if this hasn't already been done.
+> [__Synchronize Active Directory (AD)__](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#synchronize-ad-with-azure-ad) and Azure AD, if this hasn't already been done.
 
-> **Enable the modern interactive authentication flow, when available.** The modern interactive flow is recommended for organizations with Azure AD joined or Hybrid AD joined clients running Windows 10 20H1 / Windows Server 2022 and higher where clients are joined to Azure AD or Hybrid AD.
+> __Enable the modern interactive authentication flow, when available.__ The modern interactive flow is recommended for organizations with Azure AD joined or Hybrid AD joined clients running Windows 10 20H1 / Windows Server 2022 and higher where clients are joined to Azure AD or Hybrid AD.
 
 - [Modern interactive authentication flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#modern-interactive-authentication-flow)
 
@@ -36,9 +36,9 @@ There are two phases to set up Windows Authentication for Azure SQL Managed Inst
 
   - [ in progress ] - [Setup modern interactive flow Group Policy](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-modern-interactive-flow?view=azuresql#configure-group-policy)
 
-> **Set up the incoming trust-based authentication flow.** This is recommended for customers who can't use the modern interactive flow, but who have AD joined clients running Windows 10 / Windows Server 2012 and higher.
+> __Set up the incoming trust-based authentication flow.__ This is recommended for customers who can't use the modern interactive flow, but who have AD joined clients running Windows 10 / Windows Server 2012 and higher.
 
-## [_**Incoming trust-based flow**_](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#incoming-trust-based-authentication-flow)
+## [___Incoming trust-based flow___](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#incoming-trust-based-authentication-flow)
 
 The incoming trust-based flow works for clients running Windows 10 or Windows Server 2012 and higher. This flow requires that clients be joined to AD and have a line of sight to AD from on-premises. In the incoming trust-based flow, a trust object is created in the customer's AD and is registered in Azure AD. To enable the incoming trust-based flow, an administrator will set up an incoming trust with Azure AD and set up Kerberos Proxy via group policy.
 
@@ -73,17 +73,35 @@ Install-Module -Name AzureADHybridAuthenticationManagement -AllowClobber
 Create inbound forest trust in the on-premises domain
 The on-premises AD DS domain needs an incoming forest trust for the managed domain. This trust must be manually created in the on-premises AD DS domain, it can't be created from the Azure portal.
 
-```md
 Start a Windows PowerShell session with the Run as administrator option.
 
 Set the common parameters. Customize the script below prior to running it.
 
-Set the $domain parameter to your on-premises Active Directory domain name.
-When prompted by Get-Credential, enter an on-premises Active Directory administrator username and password.
-Set the $cloudUserName parameter to the username of a Global Administrator privileged account for Azure AD cloud access.
+- Set the $domain parameter to your on-premises Active Directory domain name.
+- When prompted by Get-Credential, enter an on-premises Active Directory administrator username and password.
+- Set the $cloudUserName parameter to the username of a Global Administrator privileged account for Azure AD cloud access.
+
+```powershell
+# 3. Check the current Kerberos Domain Settings.
+
+$domain = "rcmlabadds.local"
+$domainCred = Get-Credential 
+$cloudUserName = "brians@rcmdevops.onmicrosoft.com"
+
+Get-AzureAdKerberosServer -Domain $domain
+    -DomainCredential $domainCred
+    -UserPrincipalName $cloudUserName
+
+# 4. Add the Trusted Domain Object.
+
+Set-AzureAdKerberosServer -Domain $domain
+   -DomainCredential $domainCred
+   -UserPrincipalName $cloudUserName
+   -SetupCloudTrust
+
 ```
 
-## create one-way incoming forest trust
+### ___Task:___ Create one-way incoming forest trust in on-premises domain
 
 To configure inbound trust on the on-premises AD DS domain, complete the following steps from a management workstation for the on-premises AD DS domain ( _rcmlabadds.local_ ):
 
@@ -125,7 +143,7 @@ ___draft___
 
 ![start-rcmlab-ws2022.png](/.attachments/start-rcmlab-ws2022-c63f4e1e-de8c-427f-b0e5-09ef4c287fe9.png)
 
-> Deploy Windows Server 2022 Datacenter (ws2022) as the management VM for SQL Managed Instance (sqlmi) configuration and connectivity via SQL Server Management Studio (ssms). Please note Azure VM ***Device Name*** has been truncated based on the Azure Resource Name: rcmlab-ws2022-ssms --> ***rcmlab-ws2022-s***
+> Deploy Windows Server 2022 Datacenter (ws2022) as the management VM for SQL Managed Instance (sqlmi) configuration and connectivity via SQL Server Management Studio (ssms). Please note Azure VM *__Device Name__* has been truncated based on the Azure Resource Name: rcmlab-ws2022-ssms --> *__rcmlab-ws2022-s__*
 
 - Required Microsoft Updates
 

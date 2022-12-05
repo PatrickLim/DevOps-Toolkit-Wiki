@@ -1,9 +1,11 @@
-# [RCMLAB](/Knowledge-Base/RCMLAB)
+# Knowledge-Base
+
+## [RCMLAB](/Knowledge-Base/RCMLAB)
 
 - [connect to vms in rcmlab.local](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/319/RCMLAB?anchor=how-to-connect-to-vms-in-rcmlab%3F)
 - [connect to management vm for rcmlabadds.local](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/363/azure-sql.managed-instance.winauth-azuread-setup?anchor=%5Brcmlab-ws2022-ssms%5D(https%3A//portal.azure.com/%23%40rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourcegroups/rcmlab.sqlmi.scus.rg/providers/microsoft.compute/virtualmachines/rcmlab-ws2022-ssms/overview))
 
-# [Database Services](/Knowledge-Base/Database-Services)
+## [database services](/Knowledge-Base/Database-Services)
 
 - [copyover process from prod to test](/Knowledge-Base/Database-Services/copyover-process-from-prod-to-test) (_Nov 2022_)
 - [multi-instance sql servers](/Knowledge-Base/Database-Services/multi%2Dinstance-sql-servers) _(comments)_
@@ -12,24 +14,18 @@
 - [replication exclude sprocs](/Knowledge-Base/Database-Services/replication-exclude-sprocs)
 - [collector table path updates](/Knowledge-Base/Database-Services/collector-table-path-updates)
 
----
-
-# [Application Services](/Knowledge-Base/Application-Services)
+## [app services](/Knowledge-Base/Application-Services)
 
 - [RCM Classic Tips & Tricks](/Knowledge-Base/Application-Services/RCM-Classic-Tips-&-Tricks)
 - [dbserver installed things](/Knowledge-Base/Application-Services/dbserver-installed-things)
 - [appserver installed things](/Knowledge-Base/Application-Services/appserver-installed-things)
 - [Standard Mirth Interface Ports](/Knowledge-Base/Application-Services/Standard-Mirth-Interface-Ports) _(July 2021)_
 
----
-
-# [Web Services](/Knowledge-Base/Web-Services)
+## [web services](/Knowledge-Base/Web-Services)
 
 - [RCM: Deploy Chrome Registry Edits via Group Policy](/Knowledge-Base/Web-Services/RCM:-Deploy-Chrome-Registry-Edits-via-Group-Policy)
 
----
-
-# [Tenant Services](/Knowledge-Base/Tenant-Services)
+## [tenant services](/Knowledge-Base/Tenant-Services)
 
 - [AAT: Extract RDLs](/Knowledge-Base/Tenant-Services/AAT)
 - [AAT: SPNs & SQL Instances](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/235/AAT?anchor=aat%3A-spns-%26-sql-instances)
@@ -37,19 +33,13 @@
 - [CRMC: sql agent job history](/Knowledge-Base/Tenant-Services/CRMC:-sql-agent-job-history)
 - [OHH: Reporting Services SPNs & Kerberos Delegation](/Knowledge-Base/Tenant-Services/OHH:-Reporting-Services-SPNs-&-Kerberos-Delegation)
 
----
+### [migration strategies](/Knowledge-Base/Migration-Strategies)
 
-# [Migration Strategies](/Knowledge-Base/Migration-Strategies)
-
----
-
-# [RCM Support Knowledge Base](http://stlvmonlinehelp/KB/index.php)
+### [support team knowledge base](http://stlvmonlinehelp/KB/index.php)
 
 - [Support Client Guide Report](/Knowledge-Base/Database-Services/Support-Client-Guide-Report)
 - [Configuring a Report as Signature Background Image](http://stlvmonlinehelp/KB/article.php?id=164)
 - [How to Update Imaging Directories](http://stlvmonlinehelp/KB/article.php?id=36)
 - [Admit Form Images Are Not Being Created After Moving/Upgrading Services](http://stlvmonlinehelp/KB/article.php?id=92)
-
----
 
 _[Need help with Markdown syntax for wikis?](https://docs.microsoft.com/en-us/azure/devops/project/wiki/wiki-markdown-guidance?view=azure-devops)_

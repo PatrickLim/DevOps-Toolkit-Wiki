@@ -4,7 +4,7 @@
 
 ## [Managed domain _(rcmlab.local)_](/Knowledge-Base/RCMLAB/rcmlab.local)
 
-### [connect-to-vm-in-managed-domain-vnet](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/319/RCMLAB?anchor=how-to-connect-to-vms-in-rcmlab%3F)
+### [connect-to-vm-in-managed-domain-vnet](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/319/rcmlab.local?anchor=how-to-connect-to-virtual-machines-in-rcmlab%3F)
 
 ### [_one-time-infrastructure-setup_](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/363/azure-sql.managed-instance.winauth-azuread-setup?anchor=%5B_one-time-infrastructure-setup)
 

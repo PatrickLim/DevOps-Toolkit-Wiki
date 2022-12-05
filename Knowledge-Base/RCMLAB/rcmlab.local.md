@@ -1,6 +1,8 @@
+# rcmlab.local
+
 [[_TOC_]]
 
-# [rcmlab.dashboard](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/dashboard/arm/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourcegroups/dashboards/providers/microsoft.portal/dashboards/31c91306-384d-4ce4-bcb0-cbc2f759f674)
+## [rcmlab.dashboard](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/dashboard/arm/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourcegroups/dashboards/providers/microsoft.portal/dashboards/31c91306-384d-4ce4-bcb0-cbc2f759f674)
 
 ## [rcmlab.local](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.aadds.rg/providers/Microsoft.AAD/DomainServices/rcmlab.local/overview)
 
@@ -22,7 +24,8 @@
 - <https://learn.microsoft.com/en-us/azure/active-directory-domain-services/powershell-scoped-synchronization>
 -
 
-# how to connect to virtual machines in rcmlab?
+## how to connect to virtual machines in rcmlab?
+
 > [Bastions](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.jump.rg/providers/Microsoft.Compute/virtualMachines/rcmlab-jump/bastionHost) simply provide your username and password only; do not include domain names (see below)
 
 - email - brian@rcmdevops.onmicrosoft.com
@@ -52,4 +55,4 @@
 - [SQL Server Management Objects](https://learn.microsoft.com/en-us/sql/relational-databases/server-management-objects-smo/installing-smo?view=sql-server-ver16)
 - [Windows PowerShell Extensions for Microsoft SQL Server](https://learn.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-powershell?view=sql-server-ver16)
 - [System CLR Types](https://www.microsoft.com/en-us/download/details.aspx?id=100451)
-- 
+-

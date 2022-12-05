@@ -1,8 +1,8 @@
+# rcmlab.sqlmi
+
 [[_TOC_]]
 
-___draft___
-
-# [rcmlab-sqlmi-dev](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.sqlmi.scus.rg/providers/Microsoft.Sql/managedInstances/rcmlab-sqlmi-dev/overview)
+## [rcmlab-sqlmi-dev](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.sqlmi.scus.rg/providers/Microsoft.Sql/managedInstances/rcmlab-sqlmi-dev/overview)
 
 > Azure SQL Managed Instance is the intelligent, scalable cloud database service that combines the broadest SQL Server database engine compatibility with the benefits of a fully managed and evergreen platform as a service. Kerberos authentication for Azure Active Directory (Azure AD) enables Windows Authentication access to Azure SQL Managed Instance. Windows Authentication for managed instances empowers customers to move existing services to the cloud while maintaining a seamless user experience and provides the basis for infrastructure modernization.
 
@@ -27,7 +27,6 @@ There are two phases to set up Windows Authentication for Azure SQL Managed Inst
 ## [_One-time infrastructure setup_](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#one-time-infrastructure-setup)
 
 > [__Synchronize Active Directory (AD)__](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#synchronize-ad-with-azure-ad) and Azure AD, if this hasn't already been done.
-
 > __Enable the modern interactive authentication flow, when available.__ The modern interactive flow is recommended for organizations with Azure AD joined or Hybrid AD joined clients running Windows 10 20H1 / Windows Server 2022 and higher where clients are joined to Azure AD or Hybrid AD.
 
 - [Modern interactive authentication flow](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup?view=azuresql#modern-interactive-authentication-flow)
@@ -137,13 +136,14 @@ Click No, remove the trust from the local domain only.
 - <https://learn.microsoft.com/en-us/azure/active-directory/devices/concept-primary-refresh-token#prt-issuance-during-first-sign-in>
 
 ---
+
 ___draft___
 
-# [rcmlab-ws2022-ssms](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourcegroups/rcmlab.sqlmi.scus.rg/providers/Microsoft.Compute/virtualMachines/rcmlab-ws2022-ssms/overview)
+## [rcmlab-ws2022-ssms](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourcegroups/rcmlab.sqlmi.scus.rg/providers/Microsoft.Compute/virtualMachines/rcmlab-ws2022-ssms/overview)
 
 ![start-rcmlab-ws2022.png](/.attachments/start-rcmlab-ws2022-c63f4e1e-de8c-427f-b0e5-09ef4c287fe9.png)
 
-> Deploy Windows Server 2022 Datacenter (ws2022) as the management VM for SQL Managed Instance (sqlmi) configuration and connectivity via SQL Server Management Studio (ssms). Please note Azure VM *__Device Name__* has been truncated based on the Azure Resource Name: rcmlab-ws2022-ssms --> *__rcmlab-ws2022-s__*
+> Deploy Windows Server 2022 Datacenter (ws2022) as the management VM for SQL Managed Instance (sqlmi) configuration and connectivity via SQL Server Management Studio (ssms). Please note Azure VM ___Device Name___ has been truncated based on the Azure Resource Name: rcmlab-ws2022-ssms --> ___rcmlab-ws2022-s___
 
 - Required Microsoft Updates
 
@@ -187,7 +187,7 @@ Update-Module -Name AzureAD
 
 ---
 
-# links to documentation and tutorials
+## links to documentation and tutorials
 
 - [Chose the right authentication method for your Azure AD hybrid identity solution](https://learn.microsoft.com/en-us/azure/active-directory/hybrid/choose-ad-authn)
 
@@ -236,7 +236,7 @@ You can check the latest public preview features by opening the Azure portal pre
 After public preview, the status of the feature changes to generally availability. General availability (GA) is the final release status, and it means the functionality is complete and accessible to all users.
 ```
 
-#### [These tools are used to migrate, configure, and provide other features for SQL databases.](https://learn.microsoft.com/en-us/sql/tools/overview-sql-tools?view=sql-server-ver16#migration-and-other-tools)
+> [These tools are used to migrate, configure, and provide other features for SQL databases.](https://learn.microsoft.com/en-us/sql/tools/overview-sql-tools?view=sql-server-ver16#migration-and-other-tools)
 
 - [ssbdiagnose](https://learn.microsoft.com/en-us/sql/tools/ssbdiagnose/ssbdiagnose-utility-service-broker?view=sql-server-ver16)
 -
@@ -251,7 +251,7 @@ After public preview, the status of the feature changes to generally availabilit
 
 ---
 
-### links to offical Microsoft Developer videos
+> links to offical Microsoft Developer videos
 
 - [Data Exposed](https://www.youtube.com/watch?v=SXBHtE_eXdI&t=6s)
 
@@ -271,6 +271,6 @@ RBAC @ +30min...
 
 <https://www.youtube.com/watch?v=WXNRU82x1vs>
 
-### [rcmlab.sqlmi.scus.firewall](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.sqlmi.scus.rg/providers/Microsoft.Network/azureFirewalls/rcmlab.sqlmi.scus.firewall/overview)
+## [rcmlab.sqlmi.scus.firewall](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.sqlmi.scus.rg/providers/Microsoft.Network/azureFirewalls/rcmlab.sqlmi.scus.firewall/overview)
 
 > [23.102.140.74](https://portal.azure.com/#@rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourceGroups/rcmlab.sqlmi.scus.rg/providers/Microsoft.Network/publicIPAddresses/rcmlab.sqlmi.scus.firewall.public.ip/overview)

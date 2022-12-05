@@ -14,7 +14,9 @@
 
 ## [rcmlab.sqlmi](/Knowledge-Base/RCMLAB/rcmlab.sqlmi)
 
-### [connect to management vm for sqlmi](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/363/azure-sql.managed-instance.winauth-azuread-setup?anchor=%5Brcmlab-ws2022-ssms%5D(https%3A//portal.azure.com/%23%40rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourcegroups/rcmlab.sqlmi.scus.rg/providers/microsoft.compute/virtualmachines/rcmlab-ws2022-ssms/overview))
+### [connect to management vm for sqlmi](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/363/azure-sql.managed-instance.winauth-azuread-setup?anchor=%5Brcmlab-ws2022-ssms%5D)
+
+- [portal-rcmlab-ws2022-ssms-overview](https://portal.azure.com/%23%40rcmdevops.onmicrosoft.com/resource/subscriptions/81348982-0f31-4e9c-b2d2-817ac65b967e/resourcegroups/rcmlab.sqlmi.scus.rg/providers/microsoft.compute/virtualmachines/rcmlab-ws2022-ssms/overview)
 
 ### [how to setup windows authentication for sqlmi using aad and kerberos](https://dev.azure.com/limlab/DevOps%20Toolkit/_wiki/wikis/DevOps-Toolkit.wiki/363/azure-sql.managed-instance.winauth-azuread-setup?anchor=%5Bhow-to-set-up-windows-authentication-for-azure-sql-managed-instance-using-azure-active-directory-and-kerberos%5D(https%3A//learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup%3Fview%3Dazuresql%23one-time-infrastructure-setup))
 

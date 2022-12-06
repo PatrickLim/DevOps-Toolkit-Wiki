@@ -8,7 +8,7 @@ Deb Jansma Training 1 Recording
 
 https://us06web.zoom.us/rec/share/lVhZJbbu-s27ywE6DPVCoOTBFVzpDxKQc-OH7ZbwVCTIr0ipH2NoUBBI93FsYiMx.noyfhSd59U-XxYVL?iet=2VCklD8VPN8JIHO2fLMRrQlR-xs4E1mCK2wzxflS-CE.AG.DzJhG2tPmOR1iezoe-7zFM1h9jgz-zGpKAvh1dulaRH6ZqejRGh8aHCdURP9tp-2Qbnh-eVnhmAKsuO2NVsOoIYotoZwx_PQkXaoK2QtH1I8bwjBJi6Jnq5asWlPPKUrl_hB-PNONphuBQ.af6ef_Glk22Z6xhFiXkmRw.Lz_A8TMILVaB4dC3
 
-Passcode: W5FM1A%. 
+Passcode: W5FM1A%.
 
 Blyth Ellsworth Training 2 Recording
 

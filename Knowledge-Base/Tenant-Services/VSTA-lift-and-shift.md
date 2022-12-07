@@ -77,13 +77,13 @@ Xcopy "\\DEVINTF01\Images\ICSImages\IcsMain\INS CORR\2022\11" "G:\copyover\image
 
 8. copy Image Deltas
 
-9. change MIRTH ports
+9. change MIRTH ports (currently flipped, Joy says to coord with Valerie the night of the migration)
 - PROD
-- 19001 10.252.131.235
-- 7501 10.252.131.245
-- TEST
 - 19000 10.252.131.235
 - 7500 10.252.131.245
+- TEST
+- 19001 10.252.131.235
+- 7501 10.252.131.245
 
 10. restart HL7 and all other interfaces
 

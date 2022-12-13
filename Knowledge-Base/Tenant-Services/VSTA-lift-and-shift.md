@@ -28,6 +28,8 @@ on i.FORM_TYPE_CD = x.FORM_TYPE_CD and i.SEQ_NUM = x.SEQ_NUM
 
 
 ```
+G:\copyover\imagedeltacopyover.bat
+
 \\DEVINTF01\Images\ICSImages\IcsMain\40\2022\11\
 \\DEVINTF01\Images\ICSImages\IcsMain\50\2022\11\
 \\DEVINTF01\Images\ICSImages\IcsMain\7\2022\11\
@@ -45,6 +47,16 @@ Xcopy "\\DEVINTF01\Images\ICSImages\IcsMain\BILL INFO\2022\11" "G:\copyover\imag
 Xcopy \\DEVINTF01\Images\ICSImages\IcsMain\Correspond\2022\11 G:\copyover\imagedelta\Correspond\2022\11 /E /H /C /I /Y
 Xcopy \\DEVINTF01\Images\ICSImages\IcsMain\EOB_R\2022\11 G:\copyover\imagedelta\EOB_R\2022\11 /E /H /C /I /Y
 Xcopy "\\DEVINTF01\Images\ICSImages\IcsMain\INS CORR\2022\11" "G:\copyover\imagedelta\INS CORR\2022\11" /E /H /C /I /Y
+
+Xcopy \\DEVINTF01\Images\ICSImages\IcsMain\Correspond\2022\12 G:\copyover\imagedelta\Correspond\2022\12 /E /H /C /I /Y
+Xcopy \\DEVINTF01\Images\ICSImages\IcsMain\AUTH\2022\12 G:\copyover\imagedelta\AUTH\2022\12 /E /H /C /I /Y
+Xcopy "\\DEVINTF01\Images\ICSImages\IcsMain\BILL INFO\2022\12" G:\copyover\imagedelta\BILL INFO\2022\12 /E /H /C /I /Y
+Xcopy "\\DEVINTF01\Images\ICSImages\IcsMain\INS CORR\2022\12" G:\copyover\imagedelta\INS CORR\2022\12 /E /H /C /I /Y
+Xcopy \\DEVINTF01\Images\ICSImages\IcsMain\MEDICARE\2022\12 G:\copyover\imagedelta\MEDICARE\2022\12 /E /H /C /I /Y
+Xcopy \\DEVINTF01\Images\ICSImages\IcsMain\50\2022\12 G:\copyover\imagedelta\50\2022\12 /E /H /C /I /Y
+Xcopy \\DEVINTF01\Images\ICSImages\IcsMain\EOB_R\2022\12 G:\copyover\imagedelta\EOB_R\2022\12 /E /H /C /I /Y
+Xcopy \\DEVINTF01\Images\ICSImages\IcsMain\7\2022\12 G:\copyover\imagedelta\7\2022\12 /E /H /C /I /Y
+Xcopy \\DEVINTF01\Images\ICSImages\IcsMain\40\2022\12 G:\copyover\imagedelta\40\2022\12 /E /H /C /I /Y
 ```
 
 

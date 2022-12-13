@@ -15,3 +15,9 @@ Blyth Ellsworth Training 2 Recording
 https://us06web.zoom.us/rec/share/NTIb9qlFNlXFhnl8w7YksYNv8kCSC0WlWEjOTcicY_isfJU3kVMve8spw3A_Ehsa.HJol2PhFU6BDikCK 
 
 Passcode: Sc!R121y
+
+Blyth Ellsworth Training 3 Recording
+
+https://us06web.zoom.us/rec/play/e7EyGX2hE2KFyga5vbtZzstqDjUDXP797HbvjkBzgosd_UOTkX5Kixm960DUybWPAZTeasTE1BMVrLc.nMuNzoDJtzRV8YsG?startTime=1670861072000&_x_zm_rtaid=XJUiYarVQTG1qq5d6-pofw.1670945956647.93ed337159d378e9a525ec704d18099b&_x_zm_rhtaid=139
+
+Passcode: D0!3eTyA

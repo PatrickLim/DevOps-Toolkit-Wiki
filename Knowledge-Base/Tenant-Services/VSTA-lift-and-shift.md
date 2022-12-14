@@ -81,6 +81,7 @@ Xcopy \\DEVINTF01\Images\ICSImages\IcsMain\40\2022\12 G:\copyover\imagedelta\40\
 
 5. restore vsta-rcm (including two post-restore scripts)
 - crosswalk user_mstr table
+- apply Patch 2
 
 6. restore vsta-rcm-test (including two post-restore scripts) DO LATER in the week!
 - crosswalk user_mstr table

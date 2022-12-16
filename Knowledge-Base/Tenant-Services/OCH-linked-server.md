@@ -8,3 +8,5 @@ Once their SQL Server could reach our SQL Server (db02e1-msc\och) they created a
 
 standardsituser
 FzqzE@E?Nv$V3m)V71j}
+
+Nick and Charley requested that the password never change.

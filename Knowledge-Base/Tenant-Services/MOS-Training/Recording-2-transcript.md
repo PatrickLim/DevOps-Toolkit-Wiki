@@ -13,3 +13,5 @@
 24:50 Ashley Addiction example for RCM, discussion of settings file
 
 27:05 OneCore OCH example
+
+35:12 discussion of frompms and frompmsarchive folders, how to troubleshoot between PCGWay portal

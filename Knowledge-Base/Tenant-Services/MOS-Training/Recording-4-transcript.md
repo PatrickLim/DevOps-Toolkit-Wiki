@@ -41,3 +41,9 @@ JDM
 54:35 USPS mail tracking is outside the PCG engine (a Nina thing, info comes from MicroDynamics)
 
 55:45 address corrections and moves is also outside the PCG engine (a Nina thing, it comes from USPS)
+
+57:20 Payment Settlements
+
+58:45 constantly having mixups with Nina's job to collect the data that Vantiv/WorldPay supplies
+
+1:00:25 Nina pulls settlements 3pm Eastern everyday

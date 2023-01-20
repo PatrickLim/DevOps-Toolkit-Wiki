@@ -29,3 +29,7 @@ JDM
 37:12 for intake forms only HL7 and Log folder matters
 
 37:40 PCG CCDA Consolidated Clinical Document Architecture
+
+41:30 PCGWay allows patients to download their CCDA
+
+44:20 example of CCDA WVDHHR

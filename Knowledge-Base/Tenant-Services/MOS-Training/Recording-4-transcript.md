@@ -10,4 +10,6 @@ JDM
 
 22:30 Payment Transaction Process -- VANTIV
 
-23:30 Vantiv is with WorldPay
+23:30 Vantiv is with WorldPay, overview of patient payments through the PCGWay portal
+
+25:20 Nina has a special process that creates the file that the practice downloads

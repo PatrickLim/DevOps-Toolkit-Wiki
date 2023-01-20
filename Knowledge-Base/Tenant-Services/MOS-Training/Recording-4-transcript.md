@@ -49,3 +49,7 @@ JDM
 1:00:25 Nina pulls settlements 3pm Eastern everyday
 
 1:02:10 even if a ticket comes to Tier3, must pass it on to Nina and Eliyahu
+
+1:03:55 the Nina download file is just settlements, not authorizations. The practices only care about settlements.
+
+1:04:35 edelivery statement service flows

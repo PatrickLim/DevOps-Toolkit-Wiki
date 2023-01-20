@@ -17,3 +17,11 @@ JDM
 26:50 transaction file, Eliyahu's team handles the VANTIV api
 
 27:10 the file that the practice downloads is done via a report job that Nina (developer in Eliyahu's team) developed
+
+29:10 the files going back are csv files
+
+30:50 Nina's process drops the files into E:\PCGWay\FileRoot\Vantiv\ToMicroMD\MEDBIL23etc
+
+31:50 Forms HL7
+
+32:48 explanation of intake forms

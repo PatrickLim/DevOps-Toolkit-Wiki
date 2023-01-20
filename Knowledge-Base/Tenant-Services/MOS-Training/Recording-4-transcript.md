@@ -25,3 +25,7 @@ JDM
 31:50 Forms HL7
 
 32:48 explanation of intake forms
+
+37:12 for intake forms only HL7 and Log folder matters
+
+37:40 PCG CCDA Consolidated Clinical Document Architecture

@@ -9,3 +9,5 @@ JDM
 21:00 Payment Transaction Process (but Brian asked about the support team getting a daily issues report)
 
 22:30 Payment Transaction Process -- VANTIV
+
+23:30 Vantiv is with WorldPay

@@ -47,3 +47,5 @@ JDM
 58:45 constantly having mixups with Nina's job to collect the data that Vantiv/WorldPay supplies
 
 1:00:25 Nina pulls settlements 3pm Eastern everyday
+
+1:02:10 even if a ticket comes to Tier3, must pass it on to Nina and Eliyahu

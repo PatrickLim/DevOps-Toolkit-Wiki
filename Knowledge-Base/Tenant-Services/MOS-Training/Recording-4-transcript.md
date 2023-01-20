@@ -33,3 +33,11 @@ JDM
 41:30 PCGWay allows patients to download their CCDA
 
 44:20 example of CCDA WVDHHR
+
+48:20 encounter info is always entered via CareVue or Cerner (an EMR)
+
+51:02 downloads that are not handled by the engine
+
+54:35 USPS mail tracking is outside the PCG engine (a Nina thing, info comes from MicroDynamics)
+
+55:45 address corrections and moves is also outside the PCG engine (a Nina thing, it comes from USPS)

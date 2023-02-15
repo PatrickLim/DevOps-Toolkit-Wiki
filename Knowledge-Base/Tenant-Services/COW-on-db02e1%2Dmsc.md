@@ -16,4 +16,4 @@ C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230215_095904\Co
 
 Summary Log File:
 
-C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20220526_155627\Summary_db02e1-msc_20220526_155627.txt
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230215_095904\Summary_db02e1-msc_20230215_095904.txt

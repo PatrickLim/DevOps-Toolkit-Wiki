@@ -8,8 +8,8 @@ SQL Server sa QWEasd12345!
 
 Configuration File Path:
 
-C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230215_095904\ConfigurationFile.ini
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230221_155404\ConfigurationFile.ini
 
 Summary Log File:
 
-C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230215_095904\Summary_db02e1-msc_20230215_095904.txt
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230215_095904\Summary_db02e1-msc_20230221_155404.txt

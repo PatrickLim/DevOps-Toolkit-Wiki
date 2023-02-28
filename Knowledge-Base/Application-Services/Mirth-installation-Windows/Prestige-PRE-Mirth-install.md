@@ -18,7 +18,8 @@ Start Mirth Connect Server Manager (DIFFERENT from Mirth Connect Administrator!!
 ![image.png](/.attachments/image-7e8b48be-793f-46a0-bc4a-148bab13e6de.png)
 
 right click the tray icon then Show Manager
-image.png
+
+![image.png](/.attachments/image-3c220408-8691-4d9c-89e1-d14ed8a22639.png)
 
 image.png
 

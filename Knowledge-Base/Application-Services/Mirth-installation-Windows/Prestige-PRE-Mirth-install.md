@@ -1,6 +1,8 @@
 1. created mirthdb database in db02e1-msc\pre
 2. created sql auth login mirthadmin QWEasd123!
 
+![image.png](/.attachments/image-62e9ffa6-ffe3-457c-9977-be395b59b8d2.png)
+
 jdbc:jtds:sqlserver://db02e1-msc;instance=pre;DatabaseName=mirthdb
 
 Copied the mirth installation folder from ap01e1-cow (from Corterra which came from OneCore OCH)

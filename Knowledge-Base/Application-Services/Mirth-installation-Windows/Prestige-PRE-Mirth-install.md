@@ -15,7 +15,7 @@ installed mirthconnect-3.5.1.b194-windows-x64.exe
 
 Start Mirth Connect Server Manager (DIFFERENT from Mirth Connect Administrator!!!)
 
-image.png
+![image.png](/.attachments/image-7e8b48be-793f-46a0-bc4a-148bab13e6de.png)
 
 right click the tray icon then Show Manager
 image.png

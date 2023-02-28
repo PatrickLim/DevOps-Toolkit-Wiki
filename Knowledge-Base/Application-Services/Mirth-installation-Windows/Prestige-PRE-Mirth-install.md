@@ -27,6 +27,10 @@ change the Type to sqlserver
 
 change jdbc:derby:${dir.appdata}/mirthdb;create=true to jdbc:jtds:sqlserver://db02e1-msc;instance=cow;DatabaseName=mirthdb
 
+RESTART the Mirth Connect service
+
+![image.png](/.attachments/image-4f93bd5c-eec0-481a-bfee-e951fcd21009.png)
+
 LAST STEP!
 
 Launch Mirth Connect Administrator from http://localhost:8080/ 

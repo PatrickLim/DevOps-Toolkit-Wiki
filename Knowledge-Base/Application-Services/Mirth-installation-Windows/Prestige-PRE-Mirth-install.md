@@ -26,3 +26,11 @@ change the Type to sqlserver
 image.png
 
 change jdbc:derby:${dir.appdata}/mirthdb;create=true to jdbc:jtds:sqlserver://db02e1-msc;instance=cow;DatabaseName=mirthdb
+
+LAST STEP!
+
+Launch Mirth Connect Administrator from http://localhost:8080/ 
+
+launched webstart.jnlp and installed the application
+
+logged in with default admin admin

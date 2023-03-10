@@ -15,6 +15,12 @@ This means ABCSQL respects ABCWEB, so that any applications that ABCWEB is runni
 
 Also note that ABCWEB respects ABCWEB, which may seem redundant. This is needed for the Kerberos chain between IIS and SSRS.
 
+IMPORTANT! the appserver should also respect the webserver, because the webapp needs access to fileshares on the appserver.
+
+1. $appvm = get-adcomputer -identity ap01e1-ABC
+2. $webvm = get-adcomputer -identity wb01e1-ABC
+3. set-adcomputer -identity $appvm -PrincipalsAllowedToDelegateToAccount $webvm
+
 To check which accounts are allowed to delegate to any account, run the following in Powershell:
 
 1. $x = Get-ADUser -Identity $sqlguy -Properties msDS-AllowedToActOnBehalfOfOtherIdentity

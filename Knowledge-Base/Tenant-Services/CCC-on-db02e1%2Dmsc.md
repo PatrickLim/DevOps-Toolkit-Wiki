@@ -1,0 +1,19 @@
+PMBDC-FXVM3-T777P-N4FY8-PKFF4
+
+Installed SQLEngine, SQLEngine\Replication, AS
+
+SQL Server sa QWEasd12345!
+
+![image.png](/.attachments/image-b2a8e208-0264-439f-b613-6ca19456377f.png)
+
+Analysis Services MULTIDIMENSIONAL
+
+
+
+Configuration File Path:
+
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230215_095904\ConfigurationFile.ini
+
+Summary Log File:
+
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230215_095904\Summary_db02e1-msc_20230215_095904.txt

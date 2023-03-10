@@ -8,7 +8,7 @@ SQL Server sa QWEasd12345!
 
 Analysis Services MULTIDIMENSIONAL
 
-
+![image.png](/.attachments/image-a17dbdf0-dff1-4636-b138-881c03c964db.png)
 
 Configuration File Path:
 

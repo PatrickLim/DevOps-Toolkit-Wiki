@@ -1,4 +1,6 @@
-`
+
+```
+
 set nocount on
 
 /*
@@ -147,4 +149,5 @@ end
 close indexes;
 deallocate indexes;
 go
-`
+
+```

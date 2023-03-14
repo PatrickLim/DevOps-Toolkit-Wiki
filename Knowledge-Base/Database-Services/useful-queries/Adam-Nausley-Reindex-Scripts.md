@@ -1,4 +1,5 @@
-`set nocount on
+`
+set nocount on
 
 /*
 **	Update fragmented indexes on updated tables...

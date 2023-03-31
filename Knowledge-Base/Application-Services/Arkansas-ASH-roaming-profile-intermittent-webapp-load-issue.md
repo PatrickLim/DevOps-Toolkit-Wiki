@@ -8,3 +8,5 @@ parameters: --user-data-dir="%appdata%\Google\Chrome\User Data" --disk-cache-dir
 
 
 make sure RoamingProfileSupportEnabled REG_DWORD is enabled in HKLM\software\policies\google\chrome in all RD nodes in the cluster
+
+NS case 151573 Brian Dietz investigated use of roaming Chrome profiles for RCM Cloud in Parallels env

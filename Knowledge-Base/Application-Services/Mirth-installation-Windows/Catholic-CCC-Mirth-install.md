@@ -25,7 +25,7 @@ change the Type to sqlserver
 
 ![image.png](/.attachments/image-8090400a-95ff-4002-a087-de62403853d4.png)
 
-change jdbc:derby:${dir.appdata}/mirthdb;create=true to jdbc:jtds:sqlserver://db02e1-msc;instance=cow;DatabaseName=mirthdb
+change jdbc:derby:${dir.appdata}/mirthdb;create=true to jdbc:jtds:sqlserver://db02e1-msc;instance=ccc;DatabaseName=mirthdb
 
 RESTART the Mirth Connect service
 

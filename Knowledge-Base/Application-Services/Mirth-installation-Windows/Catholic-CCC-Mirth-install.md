@@ -3,7 +3,7 @@
 
 ![image.png](/.attachments/image-2637a308-816d-4e8d-86b9-b2d7754f7af7.png)
 
-jdbc:jtds:sqlserver://db02e1-msc;instance=pre;DatabaseName=mirthdb
+jdbc:jtds:sqlserver://db02e1-msc;instance=ccc;DatabaseName=mirthdb
 
 Copied the mirth installation folder from ap01e1-cow (from Corterra which came from OneCore OCH)
 

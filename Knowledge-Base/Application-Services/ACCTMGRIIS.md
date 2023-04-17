@@ -12,6 +12,8 @@ Deployment steps:
 
 2. Zip up the entire acctmgriis folder.
 
+![image.png](/.attachments/image-dc4c790a-27ed-473c-a0ed-9b28bd95169a.png)
+
 3. Copy the zip file onto MG02W1-MSC in the C:\inetpub folder.
 
 4. Extract the contents of the zip file onto C:\inetpub and completely replace the existing acctmgriis folder.

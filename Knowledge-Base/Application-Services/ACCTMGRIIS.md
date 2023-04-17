@@ -1,3 +1,5 @@
+The Account Maintenance webapp replaces the original Bulk Importer php tool. It allows the user to pick a Customer and upload a spreadsheet of new accounts that get created under that Customer's OU in the openvista.net Active Directory.
+
 The code is stored in this Azure git:
 
 https://dev.azure.com/limlab/code/_git/accountmanager

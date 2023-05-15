@@ -1,5 +1,7 @@
 [_Scripts_Readme.docx](/.attachments/_Scripts_Readme-bcff90ee-e497-4290-83b0-a146f1811f2f.docx)
 
+Chuck Musgrave specifications:
+
 [SQL Audit Log.docx](/.attachments/SQL%20Audit%20Log-3e53eff8-d28c-41b5-900d-cb9aaceafe62.docx)
 
 This is how you set database compatibility to 2017

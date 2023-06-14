@@ -19,7 +19,8 @@ i)	Insight.Services.Billing.dll.config
 
 ii)	Insight.Services.CDRProcessor.dll.config
 (1)	Update the log file path/name:
- 
+
+![image.png](/.attachments/image-7a979c98-7ea0-48dd-8153-c54a3e1eae7c.png)
 
 iii)	Insight.Services.DBSnapshot.dll.config
 (1)	Update the connection string info for the RCM and Sislnk databases. Controlwks credentials can be used.  The warehouse connection string can be blanked out.

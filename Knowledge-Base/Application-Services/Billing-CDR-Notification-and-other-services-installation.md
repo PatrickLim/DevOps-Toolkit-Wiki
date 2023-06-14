@@ -37,7 +37,9 @@ iii)	Insight.Services.DBSnapshot.dll.config
 
 iv)	Insight.Services.Notification.dll.config
 (1)	Update log file path/name: 
- 
+
+![image.png](/.attachments/image-1ae724f4-6c6c-4ada-b657-420267c837af.png)
+
 v)	InsightSvc.exe.config
 (1)	Update the connection string to the RCM database.  IcsNotif username should be used.
  

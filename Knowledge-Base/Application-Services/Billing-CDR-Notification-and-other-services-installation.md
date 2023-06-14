@@ -52,7 +52,8 @@ v)	InsightSvc.exe.config
 4.	Copy the updated files to the C:\Program Files (x86)\Insight\BIN\ folder. 
 5.	Open up a command prompt as Administrator, and change to the C:\Program Files (x86)\Insight\BIN\ path.
 6.	Run the following command:  insightsvc /i 1.  This will install the IcsNotificationService (or whatever is specified in the SERVICES_MSTR table with a ROW_NO of 1.
- 
+
+![image.png](/.attachments/image-783147ae-7597-4550-9531-20076a84fde9.png)
  
 7.	Repeat for the remaining ROW_NO’S in the SERVICES_MSTR table (should be 2-4)
 8.	Confirm the 4 services installed successfully.

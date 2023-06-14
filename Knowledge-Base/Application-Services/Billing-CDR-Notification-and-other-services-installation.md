@@ -14,7 +14,9 @@ i)	Insight.Services.Billing.dll.config
 ![image.png](/.attachments/image-ac7ab93a-fde0-48d0-ab38-7bcc29459a16.png)
 
 (2)	Update the log file path/name:
- 
+
+![image.png](/.attachments/image-64c49575-d3b5-4739-8229-52578df988a1.png)
+
 ii)	Insight.Services.CDRProcessor.dll.config
 (1)	Update the log file path/name:
  

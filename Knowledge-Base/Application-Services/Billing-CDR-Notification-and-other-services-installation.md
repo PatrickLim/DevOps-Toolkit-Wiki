@@ -32,7 +32,9 @@ iii)	Insight.Services.DBSnapshot.dll.config
 ![image.png](/.attachments/image-949ae6e5-cd13-412f-ab20-0b962f36ac4e.png)
 
 (3)	Update log file path/name:
- 
+
+![image.png](/.attachments/image-2dda5a76-1f03-438c-9296-9606e8b85a92.png)
+
 iv)	Insight.Services.Notification.dll.config
 (1)	Update log file path/name: 
  

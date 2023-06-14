@@ -10,8 +10,9 @@ v)	InsightSvc.exe.config
 3.	Make the following updates to each of the files:
 i)	Insight.Services.Billing.dll.config
 (1)	Update the baseAddress value.  This value should match the value in the SERVICES_MSTR table in the RCM database for the billing service.
- 
- 
+
+![image.png](/.attachments/image-ac7ab93a-fde0-48d0-ab38-7bcc29459a16.png)
+
 (2)	Update the log file path/name:
  
 ii)	Insight.Services.CDRProcessor.dll.config

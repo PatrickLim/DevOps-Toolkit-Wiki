@@ -46,7 +46,8 @@ v)	InsightSvc.exe.config
 ![image.png](/.attachments/image-a04853fd-e56d-4d74-b869-821afce4a718.png)
 
 (2)	Update the log file path:
- 
+
+![image.png](/.attachments/image-8bc26c7b-34cb-41be-ae61-a1a7542abb2c.png)
 
 4.	Copy the updated files to the C:\Program Files (x86)\Insight\BIN\ folder. 
 5.	Open up a command prompt as Administrator, and change to the C:\Program Files (x86)\Insight\BIN\ path.

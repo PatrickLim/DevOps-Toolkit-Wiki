@@ -24,7 +24,9 @@ ii)	Insight.Services.CDRProcessor.dll.config
 
 iii)	Insight.Services.DBSnapshot.dll.config
 (1)	Update the connection string info for the RCM and Sislnk databases. Controlwks credentials can be used.  The warehouse connection string can be blanked out.
- 
+
+![image.png](/.attachments/image-1f786bbc-eb77-4b0a-9038-1a814c8cc6f9.png)
+
 (2)	Update database values for the RCM and Sislnk Databases (warehouse can remain as-is):
  
 (3)	Update log file path/name:

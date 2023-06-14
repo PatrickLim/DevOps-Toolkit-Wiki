@@ -28,7 +28,9 @@ iii)	Insight.Services.DBSnapshot.dll.config
 ![image.png](/.attachments/image-1f786bbc-eb77-4b0a-9038-1a814c8cc6f9.png)
 
 (2)	Update database values for the RCM and Sislnk Databases (warehouse can remain as-is):
- 
+
+![image.png](/.attachments/image-949ae6e5-cd13-412f-ab20-0b962f36ac4e.png)
+
 (3)	Update log file path/name:
  
 iv)	Insight.Services.Notification.dll.config

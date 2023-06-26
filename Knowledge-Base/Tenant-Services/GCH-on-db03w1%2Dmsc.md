@@ -12,8 +12,8 @@ Analysis Services MULTIDIMENSIONAL
 
 Configuration File Path:
 
-C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230622_130339\ConfigurationFile.ini
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230626_142700\ConfigurationFile.ini
 
 Summary Log File:
 
-C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230622_130339\Summary_db03w1-msc_20230622_130339.txt
+C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Log\20230626_142700\Summary_db03w1-msc_20230626_142700.txt

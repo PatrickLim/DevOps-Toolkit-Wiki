@@ -22,6 +22,9 @@ restore ReportServer and ReportServerTempDB onto db03w1-msc\gch
 - redo encryption keys on ap02w1-gch
 - restart SSMS on ap02w1-gch
 
+restore gch-rcm-test onto db03w1-msc\gch
+- run upload paths script
+
 repoint web.config on wb02w1-gch
 
 repoint odbc on all rd nodes

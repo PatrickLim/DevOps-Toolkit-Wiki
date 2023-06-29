@@ -20,6 +20,7 @@ restore gch-rcm-sislnk onto db03w1-msc\gch
 
 restore ReportServer and ReportServerTempDB onto db03w1-msc\gch
 - redo encryption keys on ap02w1-gch
+- reset connection strings
 - restart SSMS on ap02w1-gch
 
 restore gch-rcm-test onto db03w1-msc\gch

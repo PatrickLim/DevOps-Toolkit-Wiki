@@ -21,6 +21,11 @@ restore gch-rcm-sislnk onto db03w1-msc\gch
 
 restore ReportServer and ReportServerTempDB onto db03w1-msc\gch
 redo encryption keys on ap02w1-gch
+restart SSMS on ap02w1-gch
+
+repoint web.config on wb02w1-gch
+
+repoint odbc on all rd nodes
 
 copy over image deltas
 

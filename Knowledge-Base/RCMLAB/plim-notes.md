@@ -6,3 +6,6 @@ Incoming Trust-Based Flow: this is the one to use for our level of Windows (Serv
 
 https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azuread-setup-incoming-trust-based-flow?view=azuresql
 
+Brian Stockell work item in ADO
+
+https://dev.azure.com/medsphere/RCM/_workitems/edit/6878

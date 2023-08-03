@@ -9,3 +9,9 @@ https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/winauth-azure
 Brian Stockell work item in ADO
 
 https://dev.azure.com/medsphere/RCM/_workitems/edit/6878
+
+Active Directory Basics
+
+https://activedirectorypro.com/deploy-domain-controller-azure/
+
+https://www.windows-active-directory.com/active-directory-sites.html

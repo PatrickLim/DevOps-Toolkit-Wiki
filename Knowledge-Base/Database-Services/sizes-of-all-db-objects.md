@@ -1,3 +1,5 @@
+
+```
 SELECT --- Schema, type and name of object and index:
        REPLACE(obj.type_desc, '_', ' ') AS objectType,
        sch.[name]+'.'+obj.[name] AS objectName,
@@ -49,3 +51,5 @@ LEFT JOIN sys.columns AS pc ON
 --WHERE obj.[type] NOT IN ('S', 'IT')
 
 ORDER BY totalUsed_MB desc,sch.[name], obj.[name], ix.index_id, p.partition_number;
+```
+

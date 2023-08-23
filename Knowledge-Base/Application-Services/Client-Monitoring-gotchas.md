@@ -20,3 +20,5 @@ device|notificationlog|SislnkHL7ToEngineHL7_ASHProd2|ash_rcm|controlwks|favre|FA
 add that line to the four outbound and one inbound service.
 
 The subject line should have the customer acronym in front, do this by editing the SUBJECT field in the NOTIFICATION_EMAIL_OVERRIDE table.
+
+http://stlvmonlinehelp/KB/article.php?id=141#A2

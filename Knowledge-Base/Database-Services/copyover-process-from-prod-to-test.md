@@ -11,6 +11,8 @@ May need to bug Terri/Joy to verify that connectivity is there before signing of
 5. in SERVICES_MSTR table, the URI port has to be changed too, otherwise the BillingTest service may end up duplicating the BillingProd service.
 5. depending on the client, scrub the data using PHI SCRUBBER script
 6. copy Image Folders from prod to test (latest "Upate Paths Test from Prod" script obviates this step because now we keep the Prod IMAGE_DIRS intact, but create a new SEQ_NUM so newly created scan test images go into the test folder)
+7. TEST db must be SIMPLE recovery type
+8. IMAGING_LICENSE_JS in GLOBAL_REGISTRY
 
 Update Paths Test from Prod
 

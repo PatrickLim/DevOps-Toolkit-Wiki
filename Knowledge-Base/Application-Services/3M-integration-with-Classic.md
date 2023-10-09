@@ -29,3 +29,8 @@ Then it will ask for credentials:
 ![image.png](/.attachments/image-0f573cfd-8f41-4205-ab44-15668d17dfa0.png)
 
 Use Medsphere r$}A=6d:_9G8
+
+In regedit you will find a key called Computer\HKEY_LOCAL_MACHINE\SOFTWARE\3M\HIS\INTERFACE
+In it there is a parameter called CodefindExeParams that should have the url of the 3m application.
+
+![image.png](/.attachments/image-344cc380-9227-4fd0-b673-253223b2d8ba.png)

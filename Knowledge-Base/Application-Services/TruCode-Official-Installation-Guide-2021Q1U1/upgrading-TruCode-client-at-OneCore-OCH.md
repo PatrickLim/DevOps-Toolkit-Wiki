@@ -1,6 +1,4 @@
-Clay has the standard server install
-
-same exe for both client and server
+Clay has the standard server install, therefore same exe for both client and server
 
 get the exe from Joe Oppenheimer (or better yet from Clay Beeler or Charley Moon)
 

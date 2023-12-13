@@ -34,3 +34,6 @@ rcmlab.vnet Virtual Network:
 
 ![image.png](/.attachments/image-10092fba-5afb-4c2d-935a-fa3b62387eb5.png)
 
+Application Proxy notes:
+
+![image.png](/.attachments/image-6ed1115a-d61c-4e12-9e56-22f10b7f12ff.png)

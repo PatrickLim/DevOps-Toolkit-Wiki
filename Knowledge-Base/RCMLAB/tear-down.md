@@ -41,3 +41,7 @@ Application Proxy notes:
 ![image.png](/.attachments/image-a017119d-7a43-4f17-beb4-8f4de1d08778.png)
 
 ![image.png](/.attachments/image-af3bba56-b820-418a-a0a6-47f720b617e7.png)
+
+Note that for SignalR the single sign-on is Disabled and the Pre Auth is "Passthrough":
+
+![image.png](/.attachments/image-40f046a5-2f2d-40a5-802e-792b01dcfd95.png)

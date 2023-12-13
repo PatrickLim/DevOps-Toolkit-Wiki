@@ -23,12 +23,12 @@ leadtools1 is a Container instance running $42 a month.
 rcmlab1 is a Container registry running $21 a month.
 
 other VM's (deallocated):
-rcmlab-jump
-rcmlab-ws2022-ssms
-rcm-win11
-rcmlab-web
-rcmlab-pbirs
-rcmlab-proxy
+- rcmlab-jump
+- rcmlab-ws2022-ssms
+- rcm-win11
+- rcmlab-web
+- rcmlab-pbirs
+- rcmlab-proxy
 
 rcmlab.vnet Virtual Network:
 

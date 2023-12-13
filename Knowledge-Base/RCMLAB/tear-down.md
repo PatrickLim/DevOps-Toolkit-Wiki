@@ -45,3 +45,7 @@ Application Proxy notes:
 Note that for SignalR the single sign-on is Disabled and the Pre Auth is "Passthrough":
 
 ![image.png](/.attachments/image-40f046a5-2f2d-40a5-802e-792b01dcfd95.png)
+
+And finally, on December 13, 2023:
+
+![image.png](/.attachments/image-ba471a65-c96e-471c-a79c-b8fda7f68b34.png)

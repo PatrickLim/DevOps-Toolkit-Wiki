@@ -1,0 +1,1 @@
+\\fsx02w1-msc.openvista.net\profiles-msc-mg$

@@ -7,3 +7,5 @@ The solution was to go into regedit and disable HTTP2 on the SSRS server ONLY. T
 https://techcommunity.microsoft.com/t5/sql-server/open-reportserver-webservice-url-with-https-leads-to-an-err/m-p/3761967
 
 https://stackoverflow.com/questions/44660634/how-to-disable-http-2-on-iis-of-windows-server-2016
+
+![image.png](/.attachments/image-95ff77f2-14f2-41af-91a0-f569a5983c6b.png)

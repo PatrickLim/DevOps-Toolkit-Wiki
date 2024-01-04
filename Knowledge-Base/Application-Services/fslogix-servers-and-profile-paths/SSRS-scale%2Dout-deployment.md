@@ -1,0 +1,1 @@
+https://learn.microsoft.com/en-us/sql/reporting-services/install-windows/configure-a-native-mode-report-server-scale-out-deployment?redirectedfrom=MSDN&view=sql-server-ver15

@@ -19,3 +19,11 @@ Edit the server field. Choose the main database, because we stopped replicating 
 Edit the membership of the Roles for ICS_Full and ICS_Read as needed:
 
 ![image.png](/.attachments/image-b6dea091-4be0-4f41-af2f-d6ac31be81db.png)
+
+Next, we need to make sure the Nightly Warehouse SQL Job is configured correctly, and runs successfully each night.  After running the Warehouse scripts earlier, a nightly warehouse sql job should have been created.  At the time of this writing, the current warehouse job is named:  ‘Nightly Analytics Processing V2017_Q3_V2’
+ 
+![image.png](/.attachments/image-baaaef22-abe6-49a0-8941-e8303048dcd4.png)
+
+The only update to this job to get it to run successfully is to update the final step of the job, which is responsible for building the datacubes.  To update this, double click on the job, and click on the Steps tab at the top left. Scroll down until you get to the final step – ‘Process Data Cubes’.  From there, you should only have to make 2 updates – 1) Update the Server to the Analysis Server Name, and 2) in the Command Box, update the DatabaseID field to the newly created Analytic database. (see below for example)  Once those updates are complete, click Ok, and Ok again to save.  Then run the job and ensure it completes successfully.
+
+![image.png](/.attachments/image-10eb2b90-46f2-4044-8945-b8ab03ea91ca.png)

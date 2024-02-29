@@ -15,3 +15,7 @@ Double-click on the newly created IcsWarehouse database and edit the Connection 
 ![image.png](/.attachments/image-dea2661e-ceb2-4720-87b4-9dc4da1fe8a0.png)
 
 Edit the server field. Choose the main database, because we stopped replicating main into warehouse around 2021.
+
+Edit the Roles
+
+![image.png](/.attachments/image-b6dea091-4be0-4f41-af2f-d6ac31be81db.png)

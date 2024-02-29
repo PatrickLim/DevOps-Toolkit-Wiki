@@ -7,3 +7,8 @@ Edit the xmla and change the ID and Name fields to something client specific, su
 ![image.png](/.attachments/image-1044061b-2823-45c3-8fca-d77a8fb5d6c6.png)
 
 Load the script in an SSMS Query Window and execute it.
+
+![image.png](/.attachments/image-6f0ee4f2-68d7-440a-a8ba-c65aa8f7f6f0.png)
+
+Double-click on the newly created IcsWarehouse database and edit the Connection String using the ellipses.
+

@@ -16,6 +16,6 @@ Double-click on the newly created IcsWarehouse database and edit the Connection 
 
 Edit the server field. Choose the main database, because we stopped replicating main into warehouse around 2021.
 
-Edit the Roles
+Edit the membership of the Roles for ICS_Full and ICS_Read as needed:
 
 ![image.png](/.attachments/image-b6dea091-4be0-4f41-af2f-d6ac31be81db.png)

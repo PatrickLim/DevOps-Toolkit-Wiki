@@ -1,5 +1,6 @@
 SELECT c.Name
 , c.Type
+, c.Path
 , c.Description
 , u.UserName AS CreatedBy
 , c.CreationDate

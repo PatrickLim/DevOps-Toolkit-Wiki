@@ -22,6 +22,9 @@ That way you do not need storageAccountSAS and you can change this line of code 
 ```
 azcopy copy $snapshotSAS.accessSAS "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$pageblobVHDFileName$storageaccountSAS"
 azcopy copy $snapshotSAS.accessSAS "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$pageblobVHDFileName"
+
+azcopy copy "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$pageblobVHDFileName$storageaccountSAS" "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$archiveVHDFileName$storageaccountSAS" --blob-type=BlockBlob
+azcopy copy "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$pageblobVHDFileName" "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$archiveVHDFileName" --blob-type=BlockBlob
 ```
 
 

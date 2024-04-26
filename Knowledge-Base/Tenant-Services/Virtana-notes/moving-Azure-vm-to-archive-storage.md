@@ -34,4 +34,4 @@ https://stackoverflow.com/questions/60602497/azcopy-error-this-request-is-not-au
 
 It took 5.5 minutes to copy 127Gb.
 
-Only storage accounts that are configured for LRS, GRS, or RA-GRS support moving blobs to the archive tier. The archive tier isn't supported for ZRS, GZRS, or RA-GZRS accounts.
+Only storage accounts that are configured for LRS, GRS, or RA-GRS Blob Storage and General Purpose V2 Accounts support moving blobs to the archive tier. The archive tier isn't supported for ZRS, GZRS, or RA-GZRS accounts.

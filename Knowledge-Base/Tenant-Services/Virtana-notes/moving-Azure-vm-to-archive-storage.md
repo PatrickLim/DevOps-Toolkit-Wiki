@@ -9,3 +9,7 @@ Install-Module -Name Az -AllowClobber
 connect-azaccount
 
 Set-AzContext -Subscription "4ac13795-6f56-44f7-90b7-e38e067aa8c6"
+
+if you get a 403, then you have to assign role "Storage Blob Data Owner" because "Owner" does not suffice:
+
+https://stackoverflow.com/questions/60602497/azcopy-error-this-request-is-not-authorized-to-perform-this-operation

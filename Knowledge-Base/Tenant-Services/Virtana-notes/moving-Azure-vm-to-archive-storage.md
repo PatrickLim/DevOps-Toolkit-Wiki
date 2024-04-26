@@ -28,3 +28,5 @@ azcopy copy $snapshotSAS.accessSAS "https://$storageAccountName.blob.core.window
 if you get a 403, then you have to assign role "Storage Blob Data Owner" because "Owner" does not suffice:
 
 https://stackoverflow.com/questions/60602497/azcopy-error-this-request-is-not-authorized-to-perform-this-operation
+
+It took 5.5 minutes to copy 127Gb.

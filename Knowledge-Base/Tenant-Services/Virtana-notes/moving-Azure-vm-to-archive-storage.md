@@ -123,5 +123,8 @@ Remove-AzStorageBlob -Container $storageContainerName -Blob "$vmName/$pageblobVH
 $archiveblob = Get-AzStorageBlob -Container $storageContainerName -Blob "$vmName/$archiveVHDFileName" -Context $storageAccountContext
 $archiveblob.BlobClient.SetAccessTier("Archive", $null, "Standard")
 
+#go back to vm subscription for subsequent activity
+Set-AzContext -Subscription $vmSubcriptionID
+
 ```
 

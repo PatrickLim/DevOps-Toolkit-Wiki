@@ -86,6 +86,9 @@ $snapshotName = $vmContext.StorageProfile.OsDisk.name+"-snapshot"
 #For data disks use the below command where [x] is the ID of the data disk
 #$snapshotName = $vmContext.StorageProfile.DataDisks[0].name+"-snapshot"
 
+#rename archiveVHDFileName specific to this snapshot
+$archiveVHDFileName = "$snapshotName.vhd"
+
 #Create snapshot
 New-AzSnapshot -Snapshot $snapshotConfig -SnapshotName $snapshotName -ResourceGroupName $vmResourceGroupName
 

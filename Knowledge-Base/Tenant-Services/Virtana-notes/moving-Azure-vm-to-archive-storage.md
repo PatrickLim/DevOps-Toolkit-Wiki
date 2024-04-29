@@ -66,7 +66,7 @@ $archiveVHDFileName = "blockblobarchive.vhd"
 #authenticate using Microsoft Entra ID
 azcopy login
 
-#go to Arkansas ASH subscrtiption to grab the vm context
+#go to vm subscription to grab the vm context
 Set-AzContext -Subscription $vmSubcriptionID
 
 #Set virtual machine context where snapshots will be taken

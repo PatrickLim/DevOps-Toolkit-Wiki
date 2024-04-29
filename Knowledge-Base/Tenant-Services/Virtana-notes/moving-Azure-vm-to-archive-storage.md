@@ -44,7 +44,7 @@ Complete code:
 $vmResourceGroupName = "ash-cus-web-rg"
 
 #Provide the name of your resource group where the blobs will be stored
-$storageaccountResourceGroupName = ""
+$storageaccountResourceGroupName = "rgSourceForgeMigration"
 
 #Provide the name of the virtual machine where the snapshot will be made
 $vmName = "ash-rcm-web"

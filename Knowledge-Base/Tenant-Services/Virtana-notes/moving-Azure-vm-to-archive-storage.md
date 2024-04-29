@@ -97,11 +97,8 @@ Set-AzContext -Subscription "5a7b5fa1-9067-433d-a826-61f09d1d8e56"
 #Get the storage account context for the VHD blobs
 $storageAccountContext = (Get-AzStorageAccount -ResourceGroupName $storageaccountResourceGroupName -AccountName $storageAccountName).context
 
-#Generate the SAS for the storage account - valid for 24 hours
-$storageaccountSAS = New-AzStorageAccountSASToken -Context $storageAccountContext -Service Blob -ResourceType Service,Container,Object -Permission "rw" -ExpiryTime (Get-Date).AddDays(1)
-
 #Copy snapshot to page blob
-azcopy copy $snapshotSAS.accessSAS "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$pageblobVHDFileName$storageaccountSAS"
+azcopy copy $snapshotSAS.accessSAS "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$pageblobVHDFileName"
 
 #Revoke SAS for the snapshot
 Revoke-AzSnapshotAccess -ResourceGroupName $vmResourceGroupName -SnapshotName $SnapshotName
@@ -110,7 +107,7 @@ Revoke-AzSnapshotAccess -ResourceGroupName $vmResourceGroupName -SnapshotName $S
 Remove-AzSnapshot -SnapshotName $snapshotName -ResourceGroupName $vmResourceGroupName -Force
 
 #Copy page blob to block blob
-azcopy copy "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$pageblobVHDFileName$storageaccountSAS" "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$archiveVHDFileName$storageaccountSAS" --blob-type=BlockBlob
+azcopy copy "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$pageblobVHDFileName" "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$archiveVHDFileName" --blob-type=BlockBlob
 
 #Delete page blog
 Remove-AzStorageBlob -Container $storageContainerName -Blob $pageblobVHDFileName -Context $storageAccountContext

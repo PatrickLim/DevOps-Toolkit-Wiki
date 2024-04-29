@@ -46,6 +46,9 @@ $vmResourceGroupName = "ash-cus-web-rg"
 #Provide the name of the virtual machine where the snapshot will be made
 $vmName = "ash-rcm-web"
 
+#Provide the subscription ID where the vm lives
+$vmSubcriptionID = "4ac13795-6f56-44f7-90b7-e38e067aa8c6"
+
 #Provide the name of your resource group where the blobs will be stored
 $storageaccountResourceGroupName = "rgSourceForgeMigration"
 
@@ -64,7 +67,7 @@ $archiveVHDFileName = "blockblobarchive.vhd"
 azcopy login
 
 #go to Arkansas ASH subscrtiption to grab the vm context
-Set-AzContext -Subscription "4ac13795-6f56-44f7-90b7-e38e067aa8c6"
+Set-AzContext -Subscription $vmSubcriptionID
 
 #Set virtual machine context where snapshots will be taken
 $vmContext = Get-AzVM -ResourceGroupName $VMResourceGroupName -Name $vmName

@@ -54,6 +54,7 @@ $storageAccountName = "stgsfmigration"
 
 #Name of the storage container where the downloaded snapshot will be stored
 $storageContainerName = "vmdiskarchive"
+$containerSubFolder = "$storageContainerName/$vmName"
 
 #Provide the name of the VHD files for blob storage
 $pageblobVHDFileName = "pageblobsnapshot.vhd"

@@ -117,7 +117,7 @@ $storageAccountContext = (Get-AzStorageAccount -ResourceGroupName $storageaccoun
 Remove-AzStorageBlob -Container $storageContainerName -Blob "$vmName/$pageblobVHDFileName" -Context $storageAccountContext
 
 #Set block blob to archive tier
-$archiveblob = Get-AzStorageBlob -Container $storageContainerName -Blob $archiveVHDFileName -Context $storageAccountContext
+$archiveblob = Get-AzStorageBlob -Container $storageContainerName -Blob "$vmName/$archiveVHDFileName" -Context $storageAccountContext
 $archiveblob.BlobClient.SetAccessTier("Archive", $null, "Standard")
 
 ```

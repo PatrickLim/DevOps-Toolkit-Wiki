@@ -102,9 +102,9 @@ Set-AzContext -Subscription "5a7b5fa1-9067-433d-a826-61f09d1d8e56"
 $storageAccountContext = (Get-AzStorageAccount -ResourceGroupName $storageaccountResourceGroupName -AccountName $storageAccountName).context
 
 #Copy snapshot to page blob
-azcopy copy $snapshotSAS.accessSAS "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$pageblobVHDFileName"
+azcopy copy $snapshotSAS.accessSAS "https://$storageAccountName.blob.core.windows.net/$containerSubFolder/$pageblobVHDFileName"
 
-#go back to Arkansas ASH subscrtiption to clean up the snapshot since already copied to storage
+#go back to Arkansas ASH subscription to clean up the snapshot since already copied to storage
 Set-AzContext -Subscription "4ac13795-6f56-44f7-90b7-e38e067aa8c6"
 
 #Revoke SAS for the snapshot
@@ -114,7 +114,7 @@ Revoke-AzSnapshotAccess -ResourceGroupName $vmResourceGroupName -SnapshotName $S
 Remove-AzSnapshot -SnapshotName $snapshotName -ResourceGroupName $vmResourceGroupName -Force
 
 #Copy page blob to block blob
-azcopy copy "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$pageblobVHDFileName" "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$archiveVHDFileName" --blob-type=BlockBlob
+azcopy copy "https://$storageAccountName.blob.core.windows.net/$containerSubFolder/$pageblobVHDFileName" "https://$storageAccountName.blob.core.windows.net/$containerSubFolder/$archiveVHDFileName" --blob-type=BlockBlob
 
 #Delete page blob
 Remove-AzStorageBlob -Container $storageContainerName -Blob $pageblobVHDFileName -Context $storageAccountContext

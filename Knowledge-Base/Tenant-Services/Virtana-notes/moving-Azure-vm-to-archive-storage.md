@@ -95,12 +95,6 @@ New-AzSnapshot -Snapshot $snapshotConfig -SnapshotName $snapshotName -ResourceGr
 #Generate the SAS for the snapshot - valid for 24 hours
 $snapshotSAS = Grant-AzSnapshotAccess -ResourceGroupName $vmResourceGroupName -SnapshotName $SnapshotName -DurationInSecond 86400 -Access Read
 
-#go to RCM subscription to get storage account context
-Set-AzContext -Subscription "5a7b5fa1-9067-433d-a826-61f09d1d8e56"
-
-#Get the storage account context for the VHD blobs
-$storageAccountContext = (Get-AzStorageAccount -ResourceGroupName $storageaccountResourceGroupName -AccountName $storageAccountName).context
-
 #Copy snapshot to page blob
 azcopy copy $snapshotSAS.accessSAS "https://$storageAccountName.blob.core.windows.net/$containerSubFolder/$pageblobVHDFileName"
 

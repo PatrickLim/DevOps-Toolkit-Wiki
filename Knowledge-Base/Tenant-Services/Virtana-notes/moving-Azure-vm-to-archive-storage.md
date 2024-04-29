@@ -107,6 +107,12 @@ Remove-AzSnapshot -SnapshotName $snapshotName -ResourceGroupName $vmResourceGrou
 #Copy page blob to block blob
 azcopy copy "https://$storageAccountName.blob.core.windows.net/$containerSubFolder/$pageblobVHDFileName" "https://$storageAccountName.blob.core.windows.net/$containerSubFolder/$archiveVHDFileName" --blob-type=BlockBlob
 
+#blob cleanup -- delete page blob then archive block blob
+#go to RCM subscrtiption to grab the storage context
+Set-AzContext -Subscription "5a7b5fa1-9067-433d-a826-61f09d1d8e56"
+#Get the storage account context for the VHD blobs
+$storageAccountContext = (Get-AzStorageAccount -ResourceGroupName $storageaccountResourceGroupName -AccountName $storageAccountName).context
+
 #Delete page blob
 Remove-AzStorageBlob -Container $storageContainerName -Blob $pageblobVHDFileName -Context $storageAccountContext
 

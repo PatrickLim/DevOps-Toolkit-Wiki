@@ -112,7 +112,7 @@ Remove-AzSnapshot -SnapshotName $snapshotName -ResourceGroupName $vmResourceGrou
 #Copy page blob to block blob
 azcopy copy "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$pageblobVHDFileName" "https://$storageAccountName.blob.core.windows.net/$storageContainerName/$archiveVHDFileName" --blob-type=BlockBlob
 
-#Delete page blog
+#Delete page blob
 Remove-AzStorageBlob -Container $storageContainerName -Blob $pageblobVHDFileName -Context $storageAccountContext
 
 #Set block blob to archive tier

@@ -98,9 +98,6 @@ $snapshotSAS = Grant-AzSnapshotAccess -ResourceGroupName $vmResourceGroupName -S
 #Copy snapshot to page blob
 azcopy copy $snapshotSAS.accessSAS "https://$storageAccountName.blob.core.windows.net/$containerSubFolder/$pageblobVHDFileName"
 
-#go back to Arkansas ASH subscription to clean up the snapshot since already copied to storage
-Set-AzContext -Subscription "4ac13795-6f56-44f7-90b7-e38e067aa8c6"
-
 #Revoke SAS for the snapshot
 Revoke-AzSnapshotAccess -ResourceGroupName $vmResourceGroupName -SnapshotName $SnapshotName
 

@@ -114,7 +114,7 @@ Set-AzContext -Subscription "5a7b5fa1-9067-433d-a826-61f09d1d8e56"
 $storageAccountContext = (Get-AzStorageAccount -ResourceGroupName $storageaccountResourceGroupName -AccountName $storageAccountName).context
 
 #Delete page blob
-Remove-AzStorageBlob -Container $containerSubFolder -Blob $pageblobVHDFileName -Context $storageAccountContext
+Remove-AzStorageBlob -Container $storageContainerName -Blob "$vmName/$pageblobVHDFileName" -Context $storageAccountContext
 
 #Set block blob to archive tier
 $archiveblob = Get-AzStorageBlob -Container $storageContainerName -Blob $archiveVHDFileName -Context $storageAccountContext

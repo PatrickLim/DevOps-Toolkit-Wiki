@@ -139,6 +139,7 @@ ash-rcm-web-mdisk-data-snapshot.vhd
 $blobname = "ash-rcm-web_OsDisk_1_23afdcb4e89e43cb98b4073db80afae1-snapshot.vhd"
 
 #Copy block blob to page blob
-azcopy copy "https://stgsfmigration.blob.core.windows.net/vmdiskarchive/ash-rcm-web/$blobname" "https://storageaccountrgsou91c3.blob.core.windows.net/vmdiskarchive/ash-rcm-web/$blobname" --blob-type=PageBlob
+azcopy copy "https://stgsfmigration.blob.core.windows.net/vmdiskarchive/ash-rcm-web/$blobname" "https://stgdiskarchive.blob.core.windows.net/vmdiskarchive/ash-rcm-web/$blobname" --blob-type=PageBlob
+
 ```
 

@@ -41,19 +41,19 @@ Complete code:
 
 ```
 #Provide the name of your resource group where snapshot will be created
-$vmResourceGroupName = "ash-cus-web-rg"
+$vmResourceGroupName = "ash-rcm-sql-rg"
 
 #Provide the name of the virtual machine where the snapshot will be made
-$vmName = "ash-rcm-web"
+$vmName = "ash-rcm-sql"
 
 #Provide the subscription ID where the vm lives
 $vmSubcriptionID = "4ac13795-6f56-44f7-90b7-e38e067aa8c6"
 
 #Provide the name of your resource group where the blobs will be stored
-$storageaccountResourceGroupName = "rgSourceForgeMigration"
+$storageaccountResourceGroupName = "rgArchiveTier"
 
 #Provide storage account name where you want to copy the snapshot. 
-$storageAccountName = "stgsfmigration"
+$storageAccountName = "stgdiskarchive"
 
 #Name of the storage container where the downloaded snapshot will be stored
 $storageContainerName = "vmdiskarchive"

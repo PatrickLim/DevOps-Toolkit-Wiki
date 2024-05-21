@@ -102,7 +102,7 @@ netsh http add urlacl url=https://+:20098/ScanService user=Everyone
 netsh http add urlacl url=https://+:20099/ScanService user=Everyone
 netsh http add urlacl url=https://+:20100/ScanService user=Everyone
 
-Netsh http add urlacl url=https://+:20000/ScanServiceAdmin user=Everyone
+netsh http add urlacl url=https://+:20000/ScanServiceAdmin user=Everyone
 netsh http add urlacl url=https://+:20001/ScanServiceAdmin user=Everyone
 netsh http add urlacl url=https://+:20002/ScanServiceAdmin user=Everyone
 netsh http add urlacl url=https://+:20003/ScanServiceAdmin user=Everyone

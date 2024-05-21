@@ -1,5 +1,6 @@
-`
-Netsh http add urlacl url=https://+:20000/ScanService user=Everyone
+
+```
+netsh http add urlacl url=https://+:20000/ScanService user=Everyone
 netsh http add urlacl url=https://+:20001/ScanService user=Everyone
 netsh http add urlacl url=https://+:20002/ScanService user=Everyone
 netsh http add urlacl url=https://+:20003/ScanService user=Everyone
@@ -313,4 +314,4 @@ REM B455B0804C4724EAE05A4512C16B67757C0596CA
 
 REM 4c4973b4-b51a-4124-a9cd-55ba2950a021 
 
-`
+```

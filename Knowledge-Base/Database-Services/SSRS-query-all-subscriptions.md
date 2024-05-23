@@ -1,3 +1,5 @@
+
+```
 SELECT c.Name 
 , c.Path
 , s.Description AS Subscription
@@ -26,4 +28,6 @@ ReportSchedule rs ON c.ItemID = rs.ReportID
 LEFT OUTER JOIN
 Schedule sch ON rs.ScheduleID = sch.ScheduleID
 --WHERE (c.Type = 2)
-ORDER BY c.Name 
+ORDER BY c.Name
+```
+ 

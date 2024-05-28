@@ -49,8 +49,8 @@ $vmResourceGroupName = "MSC-CUS-RESGRP"
 $vmName = "msc-rcm-sql"
 
 #Provide the subscription ID where the vm lives
-#$vmSubcriptionID = "4ac13795-6f56-44f7-90b7-e38e067aa8c6"
-$vmSubcriptionID = "69592250-9a14-4f99-8239-6d7e8a143cc3"
+#$vmSubscriptionID = "4ac13795-6f56-44f7-90b7-e38e067aa8c6"
+$vmSubscriptionID = "69592250-9a14-4f99-8239-6d7e8a143cc3"
 
 #Provide the name of your resource group where the blobs will be stored
 $storageaccountResourceGroupName = "rgArchiveTier"

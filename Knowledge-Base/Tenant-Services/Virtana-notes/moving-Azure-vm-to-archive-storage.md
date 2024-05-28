@@ -70,7 +70,7 @@ $archiveVHDFileName = "blockblobarchive.vhd"
 azcopy login
 
 #go to vm subscription to grab the vm context
-Set-AzContext -Subscription $vmSubcriptionID
+Set-AzContext -Subscription $vmSubscriptionID
 
 #Set virtual machine context where snapshots will be taken
 $vmContext = Get-AzVM -ResourceGroupName $VMResourceGroupName -Name $vmName
@@ -116,7 +116,7 @@ azcopy copy "https://$storageAccountName.blob.core.windows.net/$containerSubFold
 #blob cleanup -- delete page blob then archive block blob
 #go to RCM subscrtiption to grab the storage context
 #Set-AzContext -Subscription "5a7b5fa1-9067-433d-a826-61f09d1d8e56"
-#Set-AzContext -Subscription $vmSubcriptionID
+#Set-AzContext -Subscription $vmSubscriptionID
 #Get the storage account context for the VHD blobs
 $storageAccountContext = (Get-AzStorageAccount -ResourceGroupName $storageaccountResourceGroupName -AccountName $storageAccountName).context
 
@@ -128,7 +128,7 @@ $archiveblob = Get-AzStorageBlob -Container $storageContainerName -Blob "$vmName
 $archiveblob.BlobClient.SetAccessTier("Archive", $null, "Standard")
 
 #go back to vm subscription for subsequent activity
-Set-AzContext -Subscription $vmSubcriptionID
+Set-AzContext -Subscription $vmSubscriptionID
 
 ```
 

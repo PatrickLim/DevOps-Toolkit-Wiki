@@ -56,7 +56,7 @@ $vmSubcriptionID = "69592250-9a14-4f99-8239-6d7e8a143cc3"
 $storageaccountResourceGroupName = "rgArchiveTier"
 
 #Provide storage account name where you want to copy the snapshot. 
-$storageAccountName = "stgdiskarchive"
+$storageAccountName = "stgdiskarchivemedsphere"
 
 #Name of the storage container where the downloaded snapshot will be stored
 $storageContainerName = "vmdiskarchive"

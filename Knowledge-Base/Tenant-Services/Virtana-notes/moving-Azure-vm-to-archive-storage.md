@@ -41,13 +41,16 @@ Complete code:
 
 ```
 #Provide the name of your resource group where snapshot will be created
-$vmResourceGroupName = "ash-rcm-sql-rg"
+#$vmResourceGroupName = "ash-rcm-sql-rg"
+$vmResourceGroupName = "MSC-CUS-RESGRP"
 
 #Provide the name of the virtual machine where the snapshot will be made
-$vmName = "ash-rcm-sql"
+#$vmName = "ash-rcm-sql"
+$vmName = "msc-rcm-sql"
 
 #Provide the subscription ID where the vm lives
-$vmSubcriptionID = "4ac13795-6f56-44f7-90b7-e38e067aa8c6"
+#$vmSubcriptionID = "4ac13795-6f56-44f7-90b7-e38e067aa8c6"
+$vmSubcriptionID = "69592250-9a14-4f99-8239-6d7e8a143cc3"
 
 #Provide the name of your resource group where the blobs will be stored
 $storageaccountResourceGroupName = "rgArchiveTier"

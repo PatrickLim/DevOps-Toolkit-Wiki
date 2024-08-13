@@ -72,6 +72,9 @@ azcopy login
 #go to vm subscription to grab the vm context
 Set-AzContext -Subscription $vmSubscriptionID
 
+#if Set-AzContext above returns an error like "token acquisition failed for user" then try this:
+#Connect-AzAccount -Subscription $vmSubscriptionID
+
 #Set virtual machine context where snapshots will be taken
 $vmContext = Get-AzVM -ResourceGroupName $VMResourceGroupName -Name $vmName
 

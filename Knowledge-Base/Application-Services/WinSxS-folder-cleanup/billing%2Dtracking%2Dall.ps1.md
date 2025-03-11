@@ -1,4 +1,6 @@
-`
+
+
+```
 $resultset = @()
 $output = @()
 
@@ -93,5 +95,6 @@ foreach ($entry in $resultset) {
 }
 
 $output | format-table
+```
 
-`
+

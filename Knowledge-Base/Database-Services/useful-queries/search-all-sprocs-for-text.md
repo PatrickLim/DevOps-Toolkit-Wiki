@@ -8,5 +8,6 @@ FROM
 INNER JOIN
     sys.procedures AS p ON sm.object_id = p.object_id
 WHERE
-    sm.definition LIKE '%\\ap02e1-crmc\insightcs\crmc-rcm%';
+    sm.definition LIKE '%rcm-db02e1%'
+order by 1
 ```

@@ -1,6 +1,16 @@
        
-Making a new Token
+log in to https://otp02e1-msc.openvista.net/admin/login_uid.php
+
 Step one search the user in question. 
+
+If the user is not activated, click Yes Activate Now.
+
+![==image_0==.png](/.attachments/==image_0==-a0383d0b-1d44-41cd-b7b2-cfdf9aab4af9.png) 
+
+Accept the defaults and just click Proceed:
+
+![==image_0==.png](/.attachments/==image_0==-5c55fcc2-4c74-48ab-a27b-65bc6f005743.png) 
+
 Once on the user click here
 ![==image_0==.png](/.attachments/==image_0==-5709c064-df0f-4480-a72b-4da043f8f55f.png) 
 Then choose Register/unregister OTP tokens

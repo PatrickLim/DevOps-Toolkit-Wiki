@@ -7,14 +7,23 @@
 </head>
 <body>
   <div id="app">Loading wiki...</div>
+
   <script>
     window.$docsify = {
       name: 'DevOps Toolkit Wiki',
       loadSidebar: true,
       subMaxLevel: 3,
-      homepage: 'Knowledge-Base.md'
+      homepage: 'Knowledge-Base.md',
+
+      search: 'auto',          // enables search
+      searchPlaceholder: 'Search wiki…',
+      noData: 'No results!',
+      paths: 'auto',           // index all .md files automatically
+      depth: 3                 // include headings (h1–h3)
     };
   </script>
+
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>  <!-- plugin -->
 </body>
 </html>

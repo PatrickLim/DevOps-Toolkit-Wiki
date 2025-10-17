@@ -8,7 +8,7 @@ PROD CAREVUE (meant as final)
     <add key="sADOLayoutPage1" value="d0171d51-ff84-4038-afc1-8800ab613160.System.WorkItemType.Details"/>
     <add key="sPostGresConnection" value="Host=sf.medsphere.com;Username=sfread;Password=sfread;Database=sfdb;Pooling=false" />
     <add key="sSQLconn" value="Server=tcp:sfmigrate.database.windows.net,1433;Initial Catalog=sfmigrateprod2;Persist Security Info=False;User ID=plim;Password=QWEasd123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" />
-    <add key="sPersonalAccessToken" value="4a7brcey6u35mumrxtk7opbcqlk22y2cdopioghsberce2fx4oza" />
+    <add key="sPersonalAccessToken" value="redacted" />
     <add key="sLocalFilePath" value="C:\\plim\\sfmigration\\" />
     <add key="sRecheckMinutesElapsed" value="60" />
     <add key="sUserTranslationStorage" value="DefaultEndpointsProtocol=https;AccountName=stgsfmigration;AccountKey=DYobaMZFp0SVuOxIr9CLAKxdm8w5mzmK1Kb7SI69EJIwUDBEDSRFyXqX8X6bFEl82OULFs5MkSa6W73S3m9pyw==;EndpointSuffix=core.windows.net" />
@@ -24,7 +24,7 @@ PROD
     <add key="sADOLayoutPage1" value="d0171d51-ff84-4038-afc1-8800ab613160.System.WorkItemType.Details"/>
     <add key="sPostGresConnection" value="Host=sf.medsphere.com;Username=sfread;Password=sfread;Database=sfdb;Pooling=false" />
     <add key="sSQLconn" value="Server=tcp:sfmigrate.database.windows.net,1433;Initial Catalog=sfmigrateprod;Persist Security Info=False;User ID=plim;Password=QWEasd123!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" />
-    <add key="sPersonalAccessToken" value="4a7brcey6u35mumrxtk7opbcqlk22y2cdopioghsberce2fx4oza" />
+    <add key="sPersonalAccessToken" value="redacted" />
     <add key="sLocalFilePath" value="C:\\plim\\sfmigration\\" />
     <add key="sRecheckMinutesElapsed" value="60" />
     <add key="sUserTranslationStorage" value="DefaultEndpointsProtocol=https;AccountName=stgsfmigration;AccountKey=DYobaMZFp0SVuOxIr9CLAKxdm8w5mzmK1Kb7SI69EJIwUDBEDSRFyXqX8X6bFEl82OULFs5MkSa6W73S3m9pyw==;EndpointSuffix=core.windows.net" />
@@ -40,7 +40,7 @@ LIMLAB
     <add key="sADOLayoutPage1" value="d0171d51-ff84-4038-afc1-8800ab613160.System.WorkItemType.Details"/>
     <add key="sPostGresConnection" value="Host=admin08.medsphere.com;Username=postgres;Password=postgres;Database=sfdb;Pooling=false" />
     <add key="sSQLconn" value="Server=tcp:sfmigrate.database.windows.net,1433;Initial Catalog = sourceforgemigration; Persist Security Info=False;User ID = plim; Password=QWEasd123!; MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30;" />
-    <add key="sPersonalAccessToken" value="4a7brcey6u35mumrxtk7opbcqlk22y2cdopioghsberce2fx4oza" />
+    <add key="sPersonalAccessToken" value="redacted" />
     <add key="sLocalFilePath" value="C:\\plim\\sfmigration\\" />
     <add key="sRecheckMinutesElapsed" value="60" />
     <add key="sUserTranslationStorage" value="DefaultEndpointsProtocol=https;AccountName=stgsfmigration;AccountKey=DYobaMZFp0SVuOxIr9CLAKxdm8w5mzmK1Kb7SI69EJIwUDBEDSRFyXqX8X6bFEl82OULFs5MkSa6W73S3m9pyw==;EndpointSuffix=core.windows.net" />

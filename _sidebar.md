@@ -1,0 +1,7 @@
+- [Home](README.md)
+- Database Services
+  - [Useful Queries](Database-Services/useful-queries/)
+    - [Add Initial User](Database-Services/useful-queries/add-initial-user.md)
+    - [Get Login Times](Database-Services/useful-queries/Get-Login-Times-for-User-Account.md)
+    - [List Role Permissions](Database-Services/useful-queries/list-all-permissions-for-a-role.md)
+    - [Monitor Billing Steps](Database-Services/useful-queries/Monitor-Billing-Steps.md)
